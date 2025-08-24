@@ -1,0 +1,2 @@
+jQuery(function($){function SoulMatch_init(){$.each(soulmatch_data.options,function(i,value){$(value.selector).filter(':visible').matchHeight({byRow:'0'===value.byrow?!1:!0,})})}
+jQuery(window).resize(SoulMatch_init);SoulMatch_init()})

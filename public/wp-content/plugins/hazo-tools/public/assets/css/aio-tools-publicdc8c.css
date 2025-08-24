@@ -1,0 +1,336 @@
+/*	Contact Buttons	*/
+/* Default Position Right */
+
+#button-contact-vr {
+    position: fixed;
+    bottom: 30px;
+    z-index: 99999;
+}
+/*phone*/
+#button-contact-vr .button-contact {
+    position: relative;
+}
+#button-contact-vr .button-contact .phone-vr {
+    position: relative;
+    visibility: visible;
+    background-color: transparent;
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+    z-index: 11;
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translateZ(0);
+    transition: visibility .5s;
+    left: 0;
+    bottom: 0;
+    display: block;
+}
+.phone-vr-circle-fill {
+    width: 65px;
+    height: 65px;
+    top: 12px;
+    left: 12px;
+    position: absolute;
+    box-shadow: 0 0 0 0 #c31d1d;
+    background-color: rgba(230, 8, 8, 0.7);
+    border-radius: 50%;
+    border: 2px solid transparent;
+    -webkit-animation: phone-vr-circle-fill 2.3s infinite ease-in-out;
+    animation: phone-vr-circle-fill 2.3s infinite ease-in-out;
+    transition: all .5s;
+    -webkit-transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    -webkit-animuiion: zoom 1.3s infinite;
+    animation: zoom 1.3s infinite;
+}
+.phone-vr-img-circle {
+    background-color: #e60808;
+    width: 40px;
+    height: 40px;line-height: 40px;
+    top: 25px;
+    left: 25px;
+    position: absolute;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    -webkit-animation: phonering-alo-circle-img-anim 1s infinite ease-in-out;
+    animation: phone-vr-circle-fill 1s infinite ease-in-out;
+}
+.phone-vr-img-circle a {
+    display: block;
+    line-height: 37px;
+}
+.phone-vr-img-circle img {
+    max-height: 25px;
+    max-width: 27px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+}
+@-webkit-keyframes phone-vr-circle-fill {
+  0% {-webkit-transform: rotate(0) scale(1) skew(1deg);  }
+  10% {-webkit-transform: rotate(-25deg) scale(1) skew(1deg);}
+  20% {-webkit-transform: rotate(25deg) scale(1) skew(1deg);}
+  30% {-webkit-transform: rotate(-25deg) scale(1) skew(1deg);}
+  40% {-webkit-transform: rotate(25deg) scale(1) skew(1deg);}
+  50% {-webkit-transform: rotate(0) scale(1) skew(1deg);}
+  100% {-webkit-transform: rotate(0) scale(1) skew(1deg);}
+}
+@-webkit-keyframes zoom{0%{transform:scale(.9)}70%{transform:scale(1);box-shadow:0 0 0 15px transparent}100%{transform:scale(.9);box-shadow:0 0 0 0 transparent}}@keyframes zoom{0%{transform:scale(.9)}70%{transform:scale(1);box-shadow:0 0 0 15px transparent}100%{transform:scale(.9);box-shadow:0 0 0 0 transparent}}
+.phone-bar a {
+    position: fixed;
+    bottom: 25px;
+    left: 30px;
+    z-index: -1;
+    color: #fff;
+    font-size: 16px;
+    padding: 8px 15px 7px 50px;
+    border-radius: 100px;
+    white-space: nowrap;
+}
+.phone-bar a:hover {
+    opacity: 0.8;color: #fff;
+}
+@media(max-width: 736px){
+    .phone-bar{display: none;}
+}
+
+#zalo-vr .phone-vr-circle-fill {
+    box-shadow: 0 0 0 0 #2196F3;
+    background-color: rgba(33, 150, 243, 0.7);
+}
+#zalo-vr .phone-vr-img-circle {
+    background-color: #2196F3;
+}
+#viber-vr .phone-vr-circle-fill {
+    box-shadow: 0 0 0 0 #714497;
+    background-color: rgba(113, 68, 151, 0.8);
+}
+#viber-vr .phone-vr-img-circle {
+    background-color: #714497;
+}
+#contact-vr .phone-vr-circle-fill {
+    box-shadow: 0 0 0 0 #2196F3;
+    background-color: rgba(33, 150, 243, 0.7);
+}
+#messenger  .phone-vr-circle-fill {
+    box-shadow: 0 0 0 0 #2196F3;
+    background-color: #2196f3a6;
+}
+#contact-vr .phone-vr-img-circle {
+    background-color: #2196F3;
+}
+#messenger .phone-vr-img-circle {
+    background-color: #2196f3;
+}
+
+/*css all in one*/
+#gom-all-in-one #phone-vr {
+    transition: 0.7s all;
+    -moz-transition: 0.7s all;
+  -webkit-transition: 0.7s all;
+}
+#gom-all-in-one #zalo-vr {
+    transition: 1s all;
+    -moz-transition: 1s all;
+  -webkit-transition: 1s all;
+}
+#gom-all-in-one #viber-vr {
+    transition: 1.3s all;
+    -moz-transition: 1.3s all;
+  -webkit-transition: 1.3s all;
+}
+#gom-all-in-one #contact-vr {
+    transition: 1.6s all;
+    -moz-transition: 1.6s all;
+  -webkit-transition: 1.6s all;
+}
+#button-contact-vr.active #gom-all-in-one .button-contact {
+    margin-left: -100%;
+}
+#all-in-one-vr .phone-bar {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 100%;
+    color: #fff;
+    padding: 5px 15px 5px 48px;
+    border-radius: 50px;
+    margin-left: -64px;
+    width: max-content;
+    cursor: pointer;
+}
+
+
+.bottom-menu {
+    display: none;
+    flex: 1 1 0%;
+    position: fixed;
+    bottom: 0px;
+    background: white;
+    z-index: 9999999999;
+    border-top: 1px solid rgb(241, 241, 241);
+    width: 100%;
+    opacity: 0;
+}
+.bottom-menu li {
+    display: flex;
+    flex: 1 1 0%;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    padding-top: 8px;
+    padding-bottom: 6px;
+    flex-direction: column;
+    color: rgb(36, 36, 36);
+    font-size: 10px;
+    text-decoration: none;
+    text-align: center;
+    margin-bottom: 0;
+}
+.bottom-menu li i {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #818181;
+}
+.bottom-menu li:first-child  i {
+    color: #004280;
+}
+.bottom-menu li a { 
+    font-size: 12px;
+    font-weight: 500;
+}
+.bottom-menu li img{
+    width: 20px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 5px;
+}
+
+@media (max-width: 767px) {
+    #button-contact-vr {
+        display: none;
+    }
+/*************** ADD MOBILE ONLY CSS HERE  ***************/
+    .bottom-menu {
+        opacity: 1;
+        display: flex;
+            -webkit-box-shadow: 0px -7px 21px 4px rgb(198 198 198 / 91%);
+    box-shadow: 0px -7px 21px 4px rgb(133 133 133 / 91%);
+    }
+
+    #footer { margin-bottom:60px; }
+
+}
+
+
+.sidebar-menu .header-search-form-wrapper input {
+    box-shadow: none;
+    border-right: 0;
+}
+.sidebar-menu .header-search-form-wrapper input[type="search"] {
+    height: 40px;
+    border-radius: 5px 0 0 5px;
+}
+.sidebar-menu .header-search-form-wrapper .submit-button {
+    border-radius: 0 5px 5px 0;
+    height: 40px;
+    padding: 0 10px;
+}
+.off-canvas .sidebar-menu li.header-search-form  {
+    border-top: none;
+}
+.off-canvas .sidebar-menu li.html.custom {
+    padding-bottom: 0;
+}
+@media only screen and (max-width: 1024px) {
+    .off-canvas-right .mfp-content, .off-canvas-left .mfp-content {
+        background-color: #fff;
+        width: 320px;
+    }
+    .off-canvas:not(.off-canvas-center) .nav-vertical li>a {
+        color: #333;
+    }
+    .list-product-item .name:before {
+        display: none;
+    }
+    .off-canvas:not(.off-canvas-center) .flag li.lang-item {
+        display: inline-block;
+        width: auto;
+    }
+    .off-canvas:not(.off-canvas-center) .flag  {
+        width: 100%;
+    }
+}
+
+
+.nav-dropdown-has-border .nav-dropdown {
+    z-index: 9999999;
+    border: none;
+    padding: 10px;
+    border-top: 4px solid var(--primary-color);
+}
+.nav-line-bottom>li>a:before {
+    bottom: -1px;
+}
+.nav-dropdown-has-arrow.nav-dropdown-has-border li.has-dropdown:before, .nav-dropdown-has-arrow li.has-dropdown:after {
+    border-bottom-color: var(--primary-color);
+}
+
+.nav-dropdown-default .nav-column li>a, .nav-dropdown.nav-dropdown-default>li>a {
+    border-bottom: none;
+    color: #000;
+    font-size: 14px;
+    font-weight: 500;
+    position: relative;
+}
+.nav-dropdown {
+    background-color: #fff;
+    box-shadow: 0 0 30px 0 rgb(0 0 0 / 7%);
+    padding: 1em 0;
+}
+.nav-dropdown>li>a, .nav-column>li>a {
+    font-size: 14px;
+    color: black;
+    font-weight: 500;
+}
+.nav-dropdown>li>a:hover, .nav-column>li>a:hover {
+    color: #a8b324;
+}
+.header .header-nav-main.nav > li > a {
+    font-size: 16px;
+    letter-spacing: 0;
+    font-weight: normal;
+    font-weight: normal;
+    text-transform: inherit;
+    color: black;
+}
+
+
+.header:not(.transparent) .header-nav-main.nav > li {
+    margin: 0 15px;
+}
+.header:not(.transparent) .header-nav-main.nav > li.lang-item {
+    margin: 0 10px;
+}
+
+.off-canvas:not(.off-canvas-center) li.html {
+    padding-top: 0;
+}
+/*.header:not(.transparent) .header-nav-main.nav > li.header-search > a {
+    width: 45px;
+    height: 45px;
+    background-color: #f4f4f4;
+    border-radius: 99px;
+    text-align: center;
+    justify-content: center;
+}*/
+
+
