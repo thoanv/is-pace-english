@@ -654,7 +654,7 @@
                                                                aria-atomic="true"></p>
                             <ul></ul>
                         </div>
-                        <form action="https://oea-vietnam.com/#wpcf7-f10-p1168-o1" method="post"
+                        <form action="" method="post"
                               class="wpcf7-form init" aria-label="Form liên hệ" novalidate="novalidate"
                               data-status="init">
                             <div style="display: none;">

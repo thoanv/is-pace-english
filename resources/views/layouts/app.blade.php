@@ -148,7 +148,7 @@
 
 </head>
 <body
-    class="home page-template page-template-page-blank page-template-page-blank-php page page-id-1168 header-shadow lightbox nav-dropdown-has-arrow nav-dropdown-has-shadow nav-dropdown-has-border">
+    class="home page-template page-template-page-blank single  page-template-page-blank-php page page-id-1168 header-shadow lightbox nav-dropdown-has-arrow nav-dropdown-has-shadow nav-dropdown-has-border">
 <a class="skip-link screen-reader-text" href="#main">Chuyển đến nội dung</a>
 
 <div id="wrapper">
@@ -157,7 +157,7 @@
     <main id="main" class="">
 
     @yield('content')
-</div>
+
 </main>
 @include('layouts.footer')
 </div>

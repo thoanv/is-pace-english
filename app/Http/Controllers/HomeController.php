@@ -13,6 +13,7 @@ use App\Services\TeacherService;
 use App\Services\PostService;
 use App\Services\ActivityService;
 use App\Services\CategoryService;
+use Illuminate\Support\Str;
 
 class HomeController extends Controller
 {
@@ -62,6 +63,22 @@ class HomeController extends Controller
         if(!$cate){ return abort(404); }
         $lists = [];
         if($cate['type'] == CategoryEnum::TIN_TUC){
+            if($slug){
+                $post = $this->postService->getPostBySlug($slug);
+                if(!$post){ return abort(404); }
+                $listPostSameCategories = $this->postService->getListPostSameCategories($post);
+                $listNewPosts = $this->postService->getNewPostOtherSlug($post);
+                $result  = $this->generateTOC($post['content']);
+                return view('pages.news.detail', [
+                    'cate' => $cate,
+                    'lists' => $lists,
+                    'post' => $post,
+                    'toc' => $result['toc'],
+                    'content' => $result['content'],
+                    'listNewPosts' => $listNewPosts,
+                    'listPostSameCategories' => $listPostSameCategories
+                ]);
+            }
             $lists =$this->postService->getListPosts($request);
             return view('pages.news.list', [
                 'cate' => $cate,
@@ -88,6 +105,49 @@ class HomeController extends Controller
             return redirect()->route('home');
         }
 
+    }
+
+    public function generateTOC($content)
+    {
+        preg_match_all('/<h([1-6])[^>]*>(.*?)<\/h\1>/', $content, $matches, PREG_SET_ORDER);
+
+        $toc = '<div class="toc"><ul>';
+
+        $usedIds = []; // tránh trùng id
+
+        foreach ($matches as $match) {
+            $level = $match[1];
+            $title = strip_tags($match[2]);
+
+            // Tạo id từ tiêu đề
+            $id = Str::slug($title);
+
+            // Nếu id đã tồn tại thì thêm số đằng sau
+            $originalId = $id;
+            $i = 1;
+            while (in_array($id, $usedIds)) {
+                $id = $originalId . '-' . $i;
+                $i++;
+            }
+            $usedIds[] = $id;
+
+            // Gắn id vào heading
+            $content = str_replace(
+                $match[0],
+                '<h'.$level.' id="'.$id.'">'.$title.'</h'.$level.'>',
+                $content
+            );
+
+            // Thêm vào mục lục
+            $toc .= '<li class="level-'.$level.'"><a href="#'.$id.'">'.$title.'</a></li>';
+        }
+
+        $toc .= '</ul></div>';
+
+        return [
+            'toc' => $toc,
+            'content' => $content
+        ];
     }
 
     /**
