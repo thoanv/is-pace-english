@@ -62,14 +62,14 @@
           as="style" onload="this.onload=null;this.rel='stylesheet'" onerror="this.removeAttribute('data-rocket-async')"
           media="all" data-minify="1"/>
     <link rel="stylesheet" type="text/css" href="{{asset('css/style.css')}}">
-    <link rel='prefetch' href="{{asset('wp-content/themes/flatsome/assets/js/chunk.countup6b60.js?ver=3.16.2')}}"/>
+    <link rel='prefetch' href="{{asset('wp-content/themes/flatsome/assets/js/chunk.countup.js?ver=3.16.2')}}"/>
     <link rel='prefetch'
-          href="{{asset('wp-content/themes/flatsome/assets/js/chunk.sticky-sidebar6b60.js?ver=3.16.2')}}"/>
-    <link rel='prefetch' href="{{asset('wp-content/themes/flatsome/assets/js/chunk.tooltips6b60.js?ver=3.16.2')}}"/>
+          href="{{asset('wp-content/themes/flatsome/assets/js/chunk.sticky-sidebar.js?ver=3.16.2')}}"/>
+    <link rel='prefetch' href="{{asset('wp-content/themes/flatsome/assets/js/chunk.tooltips.js?ver=3.16.2')}}"/>
     <link rel='prefetch'
-          href="{{asset('wp-content/themes/flatsome/assets/js/chunk.vendors-popups6b60.js?ver=3.16.2')}}"/>
+          href="{{asset('wp-content/themes/flatsome/assets/js/chunk.vendors-popups.js?ver=3.16.2')}}"/>
     <link rel='prefetch'
-          href="{{asset('wp-content/themes/flatsome/assets/js/chunk.vendors-slider6b60.js?ver=3.16.2')}}"/>
+          href="{{asset('wp-content/themes/flatsome/assets/js/chunk.vendors-slider.js?ver=3.16.2')}}"/>
     <script type="text/javascript">
         /*! loadCSS rel=preload polyfill. [c]2017 Filament Group, Inc. MIT License */
         (function (w) {
