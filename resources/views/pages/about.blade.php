@@ -33,7 +33,7 @@
                     <div class="col medium-12 small-12 large-12">
                         <div class="col-inner">
                             <div class="text">
-                                <p style="text-align: justify; font-style: italic">Với bề dày kinh nghiệm trong lĩnh vực
+                                <p class="text-223f81" style="text-align: justify; font-style: italic">Với bề dày kinh nghiệm trong lĩnh vực
                                     giảng dạy tiếng Anh chuyên sâu Học thuật, iSpace English tự hào là đơn vị tiên phong
                                     mang đến những trải nghiệm học tập hàng đầu cho học sinh tại khu vực nội đô Tây Hồ,
                                     Hà Nội.
@@ -43,8 +43,8 @@
                                     Anh và các kỳ thi tiếng Anh Quốc tế theo chuẩn Jhung Chứng chỉ Cambridge &
                                     IELTS.</p>
 
-                                <h1 class="about-h2 text-center">ISPACE ENGLISH - CHÚNG TÔI LÀ AI?</h1>
-                                <h2 class="about-h2 text-center">TẦM NHÌN & SỨ MỆNH</h2>
+                                <h1 class="about-h2 text-center text-bong">ISPACE ENGLISH - CHÚNG TÔI LÀ AI?</h1>
+                                <h2 class="about-h2 text-center text-bong">TẦM NHÌN & SỨ MỆNH</h2>
                                 <style>
                                     .text > p {
                                         color: rgb(68, 68, 68);
@@ -63,13 +63,13 @@
                         <div class="col-inner">
                             <div id="text-4024370902" class="text">
 
-                                <p style="text-align: justify;"><strong
-                                        style="text-transform: uppercase; font-size: 20px;">|Sứ mệnh </strong>đem đến
+                                <p style="text-align: justify;" class="text-223f81"><strong
+                                        style="text-transform: uppercase; font-size: 20px;" >|Sứ mệnh </strong>đem đến
                                     cho các con một môi trường học tập thông minh, nơi bồi dưỡng TRÍ-LỰC toàn diện cho
                                     thế hệ trẻ. </p>
                                 <br>
                                 <br>
-                                <p style="text-align: justify;"><strong
+                                <p class="text-223f81" style="text-align: justify;"><strong
                                         style="text-transform: uppercase; font-size: 20px;">|TẦM NHÌN </strong>trở thành
                                     một trường học ngoại ngữ nơi mà tất cả học sinh cảm thấy được yêu thương, tôn trọng
                                     và được khích lệ để kích hoạt tiềm năng của chính mình và nuôi dưỡng tinh thần học
@@ -164,7 +164,7 @@
 
                             <div id="text-3926705388" class="text">
 
-                                <h2 style="font-size: 2rem!important;">LỘ TRÌNH ĐÀO TẠO TOÀN DIỆN XUYÊN SUỐT</h2>
+                                <h2 style="font-size: 2rem!important;" class="text-bong">LỘ TRÌNH ĐÀO TẠO TOÀN DIỆN XUYÊN SUỐT</h2>
 
                                 <style>
                                     #text-3926705388 {
@@ -253,7 +253,7 @@
                     <div class="col medium-12 small-12 large-12">
                         <div class="col-inner text-center">
                             <div class="text">
-                                <h2 style="font-size: 2rem!important; color: #223f81 !important;">MỤC TIÊU ĐÀO TẠO TỔNG
+                                <h2 style="font-size: 2rem!important; color: #223f81 !important;" class="text-bong">MỤC TIÊU ĐÀO TẠO TỔNG
                                     QUAN</h2>
                             </div>
                         </div>
@@ -383,7 +383,7 @@
 
                             <div id="text-3926705388" class="text text-center">
 
-                                <h2 style="font-size: 2rem!important;">PHƯƠNG PHÁP GIẢNG DẠY</h2>
+                                <h2 style="font-size: 2rem!important;" class="text-bong">PHƯƠNG PHÁP GIẢNG DẠY</h2>
 
                                 <style>
                                     #text-3926705388 {
@@ -495,7 +495,7 @@
                     <div class="col medium-12 small-12 large-12">
                         <div class="col-inner text-center">
                             <div class="text">
-                                <h2 style="font-size: 2rem!important; color: #223f81 !important;">HỆ THỐNG CƠ SỞ VẬT
+                                <h2 style="font-size: 2rem!important; color: #223f81 !important;" class="text-bong">HỆ THỐNG CƠ SỞ VẬT
                                     CHẤT TIÊU CHUẨN 5 SAO
                                 </h2>
                             </div>
@@ -633,7 +633,7 @@
 
                             <div id="text-3926705388" class="text text-center">
 
-                                <h2 style="font-size: 2rem!important;">HỆ THỐNG ĐÁNH GIÁ
+                                <h2 style="font-size: 2rem!important;" class="text-bong">HỆ THỐNG ĐÁNH GIÁ
                                     & BAN QUẢN LÝ CHẤT LƯỢNG ĐÀO TẠO</h2>
 
                                 <style>

@@ -181,7 +181,7 @@
 
                 <div class="footer-primary pull-left">
                     <div class="copyright-footer">
-                        Copyright {{date('Y')}} © <strong>iSPace English</strong></div>
+                        Copyright {{date('Y')}} © <strong>iSpace English</strong></div>
                 </div>
             </div>
         </div>

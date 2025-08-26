@@ -38,79 +38,6 @@
                                     </div>
                                     <div class="banner-layers container">
                                         <div class="fill banner-link"></div>
-                                        {{--                                <div class="img has-hover x5 md-x0 lg-x0 y5 md-y20 lg-y10"--}}
-                                        {{--                                     id="image_1118304890{{$key}}">--}}
-                                        {{--                                    <div class="img-inner dark">--}}
-                                        {{--                                        <img width="728" height="280"--}}
-                                        {{--                                             src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20728%20280'%3E%3C/svg%3E"--}}
-                                        {{--                                             class="attachment-original size-original" alt="" decoding="async"--}}
-                                        {{--                                             data-lazy-srcset="https://oea-vietnam.com/wp-content/uploads/2025/07/Cover-Facebook-Size3.png 728w, https://oea-vietnam.com/wp-content/uploads/2025/07/Cover-Facebook-Size3-300x115.png 300w"--}}
-                                        {{--                                             data-lazy-sizes="(max-width: 728px) 100vw, 728px"--}}
-                                        {{--                                             data-lazy-src="wp-content/uploads/2025/07/Cover-Facebook-Size3.png"/>--}}
-                                        {{--                                        <noscript>--}}
-                                        {{--                                            <img width="728" height="280"--}}
-                                        {{--                                                 src="wp-content/uploads/2025/07/Cover-Facebook-Size3.png"--}}
-                                        {{--                                                 class="attachment-original size-original" alt=""--}}
-                                        {{--                                                 decoding="async"--}}
-                                        {{--                                                 srcset="https://oea-vietnam.com/wp-content/uploads/2025/07/Cover-Facebook-Size3.png 728w, https://oea-vietnam.com/wp-content/uploads/2025/07/Cover-Facebook-Size3-300x115.png 300w"--}}
-                                        {{--                                                 sizes="(max-width: 728px) 100vw, 728px"/>--}}
-                                        {{--                                        </noscript>--}}
-                                        {{--                                    </div>--}}
-
-                                        {{--                                    <style>--}}
-                                        {{--                                        #image_1118304890{{$key}} {--}}
-                                        {{--                                            width: 83%;--}}
-                                        {{--                                        }--}}
-
-                                        {{--                                        @media (min-width: 550px) {--}}
-                                        {{--                                            #image_1118304890{{$key}} {--}}
-                                        {{--                                                width: 57%;--}}
-                                        {{--                                            }--}}
-                                        {{--                                        }--}}
-
-                                        {{--                                        @media (min-width: 850px) {--}}
-                                        {{--                                            #image_1118304890{{$key}} {--}}
-                                        {{--                                                width: 50%;--}}
-                                        {{--                                            }--}}
-                                        {{--                                        }--}}
-                                        {{--                                    </style>--}}
-                                        {{--                                </div>--}}
-
-                                        {{--                                <div class="img has-hover x50 md-x95 lg-x90 y25 md-y20 lg-y5"--}}
-                                        {{--                                     id="image_587798993{{$key}}">--}}
-                                        {{--                                    <div class="img-inner dark">--}}
-                                        {{--                                        <img width="656" height="639"--}}
-                                        {{--                                             src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20656%20639'%3E%3C/svg%3E"--}}
-                                        {{--                                             class="attachment-original size-original" alt="" decoding="async"--}}
-                                        {{--                                             data-lazy-srcset="https://oea-vietnam.com/wp-content/uploads/2025/07/Cover-Facebook-Size4.png 656w, https://oea-vietnam.com/wp-content/uploads/2025/07/Cover-Facebook-Size4-300x292.png 300w"--}}
-                                        {{--                                             data-lazy-sizes="(max-width: 656px) 100vw, 656px"--}}
-                                        {{--                                             data-lazy-src="https://oea-vietnam.com/wp-content/uploads/2025/07/Cover-Facebook-Size4.png"/>--}}
-                                        {{--                                        <noscript><img width="656" height="639"--}}
-                                        {{--                                                       src="wp-content/uploads/2025/07/Cover-Facebook-Size4.png"--}}
-                                        {{--                                                       class="attachment-original size-original" alt=""--}}
-                                        {{--                                                       decoding="async"--}}
-                                        {{--                                                       srcset="https://oea-vietnam.com/wp-content/uploads/2025/07/Cover-Facebook-Size4.png 656w, https://oea-vietnam.com/wp-content/uploads/2025/07/Cover-Facebook-Size4-300x292.png 300w"--}}
-                                        {{--                                                       sizes="(max-width: 656px) 100vw, 656px"/></noscript>--}}
-                                        {{--                                    </div>--}}
-
-                                        {{--                                    <style>--}}
-                                        {{--                                        #image_587798993{{$key}} {--}}
-                                        {{--                                            width: 73%;--}}
-                                        {{--                                        }--}}
-
-                                        {{--                                        @media (min-width: 550px) {--}}
-                                        {{--                                            #image_587798993{{$key}} {--}}
-                                        {{--                                                width: 43%;--}}
-                                        {{--                                            }--}}
-                                        {{--                                        }--}}
-
-                                        {{--                                        @media (min-width: 850px) {--}}
-                                        {{--                                            #image_587798993{{$key}} {--}}
-                                        {{--                                                width: 40%;--}}
-                                        {{--                                            }--}}
-                                        {{--                                        }--}}
-                                        {{--                                    </style>--}}
-                                        {{--                                </div>--}}
                                         @if($slide['link'])
                                             <div id="text-box-966456746{{$key}}"
                                                  class="text-box banner-layer x15 md-x10 lg-x15 y75 md-y60 lg-y60 res-text">
@@ -233,7 +160,7 @@
                     <div class="col medium-12 small-12 large-12" data-animate="fadeInLeft">
                         <div class="col-inner text-center">
                             <div id="text-977406082" class="text heading-title text-center">
-                                <h2>Giới thiệu về ISPACE ENGLISH</h2>
+                                <h2 class="text-bong">Giới thiệu về ISPACE ENGLISH</h2>
                             </div>
                             {!! $general['come_to_us'] !!}
                         </div>

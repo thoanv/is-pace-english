@@ -52,7 +52,7 @@ class UserService extends BaseService
         $data = $request->only('name', 'email', 'image', 'phone');
         $data['is_admin'] = isset($request['is_admin']) ? CommonEnum::ACTIVATED : CommonEnum::UNACTIVATED;
         $data['is_login'] = isset($request['is_login']) ? CommonEnum::ACTIVATED : CommonEnum::UNACTIVATED;
-        $data['password'] = Hash::make('Scots@2025');
+        $data['password'] = Hash::make('123456');
         $user = $this->userRepo->create($data);
         if($data['is_admin'] ==  CommonEnum::UNACTIVATED){
             return $user->roles()->sync([$request->role_id]);

@@ -26,11 +26,11 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="file-upload text-center">
-                            <div class="upload_image" data-name="logo_green">
-                                <input type="hidden" class="logo_green" name="logo_green"
-                                       value="{{$general['logo_green']}}" data-bs-original-title="" title="">
-                                <img src="{{ $general['logo_green']?? '/admin/images/placeholder.png'}}" width="180px"
-                                     alt="" class="preview-logo_green">
+                            <div class="upload_image" data-name="logo">
+                                <input type="hidden" class="logo" name="logo"
+                                       value="{{$general['logo']}}" data-bs-original-title="" title="">
+                                <img src="{{ $general['logo']?? '/admin/images/placeholder.png'}}" width="180px"
+                                     alt="" class="preview-logo">
                             </div>
                         </div>
                     </div>
