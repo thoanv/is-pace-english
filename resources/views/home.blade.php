@@ -55,7 +55,7 @@
                                                 </div>
 
                                                 <style>
-                                                    #text-box-966456746{{$key}}        {
+                                                    #text-box-966456746{{$key}}         {
                                                         width: 62%;
                                                     }
 
@@ -64,13 +64,13 @@
                                                     }
 
                                                     @media (min-width: 550px) {
-                                                        #text-box-966456746{{$key}}        {
+                                                        #text-box-966456746{{$key}}         {
                                                             width: 40%;
                                                         }
                                                     }
 
                                                     @media (min-width: 850px) {
-                                                        #text-box-966456746{{$key}}        {
+                                                        #text-box-966456746{{$key}}         {
                                                             width: 24%;
                                                         }
                                                     }
@@ -82,7 +82,7 @@
 
 
                                 <style>
-                                    #banner-482679248{{$key}}        {
+                                    #banner-482679248{{$key}}         {
                                         padding-top: 700px;
                                     }
 
@@ -101,7 +101,7 @@
                                     }
 
                                     @media (min-width: 550px) {
-                                        #banner-482679248{{$key}}        {
+                                        #banner-482679248{{$key}}         {
                                             padding-top: 700px;
                                         }
                                     }
@@ -232,13 +232,14 @@
                     $about = \App\Models\Category::where([['status', \App\Enums\CommonEnum::ACTIVATED], ['type', \App\Enums\CategoryEnum::GIOI_THIEU]])->whereNull('parent_id')->first();
                 @endphp
                 @if($about)
-                <div class="row row-large align-middle">
-                    <div class="col medium-12 small-12 large-12 text-center" data-animate="fadeInLeft">
-                        <a href="{{route('page', ['cate_slug'=> $about['slug']])}}" class="button primary lowercase btn-custom" style="border-radius:99px;">
-                            <span>Tìm hiểu thêm</span>
-                        </a>
+                    <div class="row row-large align-middle">
+                        <div class="col medium-12 small-12 large-12 text-center" data-animate="fadeInLeft">
+                            <a href="{{route('page', ['cate_slug'=> $about['slug']])}}"
+                               class="button primary lowercase btn-custom" style="border-radius:99px;">
+                                <span>Tìm hiểu thêm</span>
+                            </a>
+                        </div>
                     </div>
-                </div>
                 @endif
             </div>
 
@@ -467,7 +468,8 @@
                                                                     fill="#7E7E7E"></path>
                                                                 </svg>
 
-                                                            <span style="margin-left: 5px">{{date('d/m/Y', strtotime($post['date_publish']))}}</span>
+                                                            <span
+                                                                style="margin-left: 5px">{{date('d/m/Y', strtotime($post['date_publish']))}}</span>
                                                         </span>
                                                     </div>
 
@@ -487,10 +489,11 @@
                         $cate = \App\Models\Category::where([['status', \App\Enums\CommonEnum::ACTIVATED], ['type', \App\Enums\CategoryEnum::TIN_TUC]])->whereNull('parent_id')->first();
                     @endphp
                     @if($cate)
-                    <a href="{{route('page', ['cate_slug' => $cate['slug']])}}" target="_self" class="button primary lowercase btn-custom"
-                       style="border-radius:99px;">
-                        <span>Xem chi tiết</span>
-                    </a>
+                        <a href="{{route('page', ['cate_slug' => $cate['slug']])}}" target="_self"
+                           class="button primary lowercase btn-custom"
+                           style="border-radius:99px;">
+                            <span>Xem chi tiết</span>
+                        </a>
                     @endif
                 </div>
 
@@ -501,6 +504,90 @@
                 </style>
             </div>
         </div>
+        <section class="section form-register">
+            <div class="row">
+                <div class="col small-12 large-6">1</div>
+                <div class="col small-12 large-6">
+                    <div class="col-inner">
+                        <div class="home-form">
+                            <div class="wpcf7 js" id="wpcf7-f10-p1168-o1">
+                                <div class="screen-reader-response"><p role="status" aria-live="polite"
+                                                                       aria-atomic="true"></p>
+                                    <ul></ul>
+                                </div>
+                                <form action="/#wpcf7-f10-p1168-o1" method="post" class="wpcf7-form init"
+                                      aria-label="Form liên hệ" novalidate="novalidate" data-status="init">
+                                    <div class="form-dk" style="background: unset!important;">
+                                        <h3 style="text-align: center">Đăng ký tư vấn
+                                        </h3>
+                                        <div class="form-item">
+                                            <p><span class="wpcf7-form-control-wrap" data-name="hoten">
+                                                <input size="40"
+                                                  class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
+                                                  aria-required="true"
+                                                  aria-invalid="false"
+                                                  placeholder="Họ và tên"
+                                                  value=""
+                                                  type="text"
+                                                  name="hoten"></span>
+                                            </p>
+                                        </div>
+
+                                        <div class="form-item">
+                                            <p><span class="wpcf7-form-control-wrap" data-name="sdt">
+                                            <input size=""
+                                                class="wpcf7-form-control wpcf7-tel wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-tel"
+                                                aria-required="true"
+                                                aria-invalid="false"
+                                                placeholder="Số điện thoại"
+                                                value=""
+                                                type="tel"
+                                                name="sdt"></span>
+                                            </p>
+                                        </div>
+
+                                        <div class="form-item">
+                                            <select class="form-control form-select">
+                                                <option value="">Độ tuổi con</option>
+                                                <option value="">Từ 3 - 5 tuổi</option>
+                                                <option value="">Từ 6 - 11 tuổi</option>
+                                                <option value="">Trên tuổi</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-item">
+                                            <select class="form-control form-select">
+                                                <option value="">Cơ sở i-Space</option>
+                                                <option value="">Từ 3 - 5 tuổi</option>
+                                                <option value="">Từ 6 - 11 tuổi</option>
+                                                <option value="">Trên tuổi</option>
+                                            </select>
+                                        </div>
+                                        <div class="text-center">
+                                            <p>
+                                                <button
+                                                    class="button wpcf7-form-control has-spinner wpcf7-submit primary lowercase btn-custom"
+                                                    style="border-radius:99px"><br>
+                                                    <span>Đăng ký</span><br>
+                                                </button>
+                                                <span class="wpcf7-spinner"></span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="wpcf7-response-output" aria-hidden="true"></div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <style>
+                .form-register {
+                    background: url('/images/bg-register.png') top right no-repeat;
+                    padding: 150px 30px;
+                }
+            </style>
+        </section>
+
         <div class="row" id="row-2033504995">
             <div id="col-32583027" class="col small-12 large-12">
                 <div class="col-inner text-left">
@@ -546,127 +633,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="row row-large align-middle" id="row-1198841006">
-            <div id="col-1185019884" class="col medium-6 small-12 large-6">
-                <div class="col-inner">
-                    <div class="img has-hover x md-x lg-x y md-y lg-y" id="image_372881644">
-                        <div class="img-inner dark">
-                            <img width="591" height="715"
-                                 src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20591%20715'%3E%3C/svg%3E"
-                                 class="attachment-original size-original" alt="" decoding="async"
-                                 data-lazy-srcset="https://oea-vietnam.com/wp-content/uploads/2022/09/Group-11499.jpeg 591w, https://oea-vietnam.com/wp-content/uploads/2022/09/Group-11499-248x300.jpeg 248w"
-                                 data-lazy-sizes="(max-width: 591px) 100vw, 591px"
-                                 data-lazy-src="wp-content/uploads/2022/09/Group-11499.jpg"/>
-                            <noscript><img width="591" height="715" src="wp-content/uploads/2022/09/Group-11499.jpg"
-                                           class="attachment-original size-original" alt="" decoding="async"
-                                           srcset="https://oea-vietnam.com/wp-content/uploads/2022/09/Group-11499.jpeg 591w, https://oea-vietnam.com/wp-content/uploads/2022/09/Group-11499-248x300.jpeg 248w"
-                                           sizes="(max-width: 591px) 100vw, 591px"/></noscript>
-                        </div>
-
-                        <style>
-                            #image_372881644 {
-                                width: 100%;
-                            }
-                        </style>
-                    </div>
-
-                </div>
-            </div>
-            <div id="col-1124371740" class="col home-form medium-6 small-12 large-6">
-                <div class="col-inner">
-                    <div class="wpcf7 no-js" id="wpcf7-f10-p1168-o1" lang="vi" dir="ltr">
-                        <div class="screen-reader-response"><p role="status" aria-live="polite"
-                                                               aria-atomic="true"></p>
-                            <ul></ul>
-                        </div>
-                        <form action="" method="post"
-                              class="wpcf7-form init" aria-label="Form liên hệ" novalidate="novalidate"
-                              data-status="init">
-                            <div style="display: none;">
-                                <input type="hidden" name="_wpcf7" value="10"/>
-                                <input type="hidden" name="_wpcf7_version" value="5.9.3"/>
-                                <input type="hidden" name="_wpcf7_locale" value="vi"/>
-                                <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f10-p1168-o1"/>
-                                <input type="hidden" name="_wpcf7_container_post" value="1168"/>
-                                <input type="hidden" name="_wpcf7_posted_data_hash" value=""/>
-                                <input type="hidden" name="_wpcf7_lang" value="vi"/>
-                                <input type="hidden" name="_wpcf7_recaptcha_response" value=""/>
-                            </div>
-                            <div class="form-dk">
-                                <h3 style="text-align: center">Đăng ký tư vấn
-                                </h3>
-                                <div class="form-item">
-                                    <p><span class="wpcf7-form-control-wrap" data-name="hoten"><input size="40"
-                                                                                                      class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
-                                                                                                      aria-required="true"
-                                                                                                      aria-invalid="false"
-                                                                                                      placeholder="Họ và tên"
-                                                                                                      value=""
-                                                                                                      type="text"
-                                                                                                      name="hoten"/></span>
-                                    </p>
-                                </div>
-                                <div class="form-item">
-                                    <p><span class="wpcf7-form-control-wrap" data-name="email"><input size="40"
-                                                                                                      class="wpcf7-form-control wpcf7-email wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-email"
-                                                                                                      aria-required="true"
-                                                                                                      aria-invalid="false"
-                                                                                                      placeholder="Địa chỉ email"
-                                                                                                      value=""
-                                                                                                      type="email"
-                                                                                                      name="email"/></span>
-                                    </p>
-                                </div>
-                                <div class="form-item">
-                                    <p><span class="wpcf7-form-control-wrap" data-name="sdt"><input size="40"
-                                                                                                    class="wpcf7-form-control wpcf7-tel wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-tel"
-                                                                                                    aria-required="true"
-                                                                                                    aria-invalid="false"
-                                                                                                    placeholder="Số điện thoại"
-                                                                                                    value=""
-                                                                                                    type="tel"
-                                                                                                    name="sdt"/></span>
-                                    </p>
-                                </div>
-                                <div class="form-item">
-                                    <p><span class="wpcf7-form-control-wrap" data-name="tinnhan"><textarea cols="40"
-                                                                                                           rows="10"
-                                                                                                           class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required"
-                                                                                                           aria-required="true"
-                                                                                                           aria-invalid="false"
-                                                                                                           placeholder="Lời nhắn"
-                                                                                                           name="tinnhan"></textarea></span>
-                                    </p>
-                                </div>
-                                <div class="text-center">
-                                    <p>
-                                        <button
-                                            class="button wpcf7-form-control has-spinner wpcf7-submit primary lowercase btn-custom"
-                                            style="border-radius:99px"><br/>
-                                            <span>Đăng ký</span><br/>
-                                        </button>
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="wpcf7-response-output" aria-hidden="true"></div>
-                        </form>
-                    </div>
-
-                </div>
-
-                <style>
-                    #col-1124371740 > .col-inner {
-                        margin: 0px 0px 0px 0;
-                    }
-
-                    @media (min-width: 850px) {
-                        #col-1124371740 > .col-inner {
-                            margin: 0px 0px 0px 59px;
-                        }
-                    }
-                </style>
             </div>
         </div>
     </div>

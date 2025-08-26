@@ -871,6 +871,15 @@
     .text-223f81{
         color: #223f81 !important;
     }
+    .form-select{
+        box-shadow: none;
+        height: 45px;
+        padding: 0 40px;
+        border: .1rem solid #999;
+        border-radius: 3.6rem;
+        margin-bottom: 1.4rem;
+        font-size: 16px;
+    }
 </style>
 </body>
 </html>
