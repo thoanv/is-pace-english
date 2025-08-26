@@ -856,6 +856,7 @@
     <link rel="stylesheet" href="/wp-content/cache/min/1/5d1a03a9692abe096ff5863deef595f3.css" media="all"
           data-minify="1"/>
 </noscript>
+
 @stack('libraries')
 @stack('scripts')
 <style>
