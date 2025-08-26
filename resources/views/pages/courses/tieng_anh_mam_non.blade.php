@@ -839,25 +839,16 @@ GIÀU KINH NGHIỆM
                                     </div>
 
                                 </div>
-
-
                             </div>
-
                         @endforeach
-
                     </div>
                 </div>
-
                 <style>
                     #col-1465885178 > .col-inner {
                         margin: 40px 0px 0px 0px;
                     }
                 </style>
             </div>
-
-
         </div>
-
-
     </div>
 @endsection

@@ -8,7 +8,7 @@
     $units = Unit::where('status', CommonEnum::ACTIVATED)->take(5)->get()
 @endphp
 <div style="background: #FFF">
-    <footer id="footer" class="footer-wrapper">
+    <footer id="footer" class="footer-wrapper" style="background-color: #223f81 !important;">
         <section class="section dark" id="section_2098355080">
             <div class="bg section-bg fill bg-fill  bg-loaded">
             </div>
@@ -145,7 +145,7 @@
                             <div class="is-divider divider clearfix"
                                  style="max-width:100%;height:1px;background-color:rgb(251, 251, 251);"></div>
                             <div id="text-1506926233" class="text mg0">
-                                Copyright {{date('Y')}} © <strong><a href="/">iSPace English</a></strong>
+                                Copyright {{date('Y')}} © <strong><a href="/">i-Space English</a></strong>
                                 <style>
                                     #text-1506926233 {
                                         text-align: center;
@@ -181,7 +181,7 @@
 
                 <div class="footer-primary pull-left">
                     <div class="copyright-footer">
-                        Copyright {{date('Y')}} © <strong>iSpace English</strong></div>
+                        Copyright {{date('Y')}} © <strong>i-Space English</strong></div>
                 </div>
             </div>
         </div>

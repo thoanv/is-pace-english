@@ -162,7 +162,7 @@
                             <div id="text-977406082" class="text heading-title text-center">
                                 <h2 class="text-bong">Giới thiệu về ISPACE ENGLISH</h2>
                             </div>
-                            {!! $general['come_to_us'] !!}
+                            <div class="text-223f81">{!! $general['come_to_us'] !!}</div>
                         </div>
                     </div>
                 </div>
@@ -170,7 +170,7 @@
                     <div id="col-120865468" class="col medium-6 small-12 large-6" data-animate="fadeInLeft">
                         <div class="col-inner">
                             <div class="img has-hover x md-x lg-x y md-y lg-y" id="image_256186464">
-                                <div class="img-inner dark">
+                                <div class="img-inner dark" style="border-radius: 8px">
                                     <img width="500" height="500"
                                          src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20500%20500'%3E%3C/svg%3E"
                                          class="attachment-original size-original" alt="{{$general['name']}}"
@@ -200,7 +200,7 @@
                     <div id="col-605122882" class="col medium-6 small-12 large-6" data-animate="fadeInRight">
                         <div class="col-inner">
                             <div class="img has-hover x md-x lg-x y md-y lg-y" id="image_256186463">
-                                <div class="img-inner dark">
+                                <div class="img-inner dark" style="border-radius: 8px">
                                     <img width="500" height="500"
                                          src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20500%20500'%3E%3C/svg%3E"
                                          class="attachment-original size-original" alt="{{$general['name']}}"
@@ -504,89 +504,6 @@
                 </style>
             </div>
         </div>
-        <section class="section form-register">
-            <div class="row">
-                <div class="col small-12 large-6">1</div>
-                <div class="col small-12 large-6">
-                    <div class="col-inner">
-                        <div class="home-form">
-                            <div class="wpcf7 js" id="wpcf7-f10-p1168-o1">
-                                <div class="screen-reader-response"><p role="status" aria-live="polite"
-                                                                       aria-atomic="true"></p>
-                                    <ul></ul>
-                                </div>
-                                <form action="/#wpcf7-f10-p1168-o1" method="post" class="wpcf7-form init"
-                                      aria-label="Form liên hệ" novalidate="novalidate" data-status="init">
-                                    <div class="form-dk" style="background: unset!important;">
-                                        <h3 style="text-align: center">Đăng ký tư vấn
-                                        </h3>
-                                        <div class="form-item">
-                                            <p><span class="wpcf7-form-control-wrap" data-name="hoten">
-                                                <input size="40"
-                                                  class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
-                                                  aria-required="true"
-                                                  aria-invalid="false"
-                                                  placeholder="Họ và tên"
-                                                  value=""
-                                                  type="text"
-                                                  name="hoten"></span>
-                                            </p>
-                                        </div>
-
-                                        <div class="form-item">
-                                            <p><span class="wpcf7-form-control-wrap" data-name="sdt">
-                                            <input size=""
-                                                class="wpcf7-form-control wpcf7-tel wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-tel"
-                                                aria-required="true"
-                                                aria-invalid="false"
-                                                placeholder="Số điện thoại"
-                                                value=""
-                                                type="tel"
-                                                name="sdt"></span>
-                                            </p>
-                                        </div>
-
-                                        <div class="form-item">
-                                            <select class="form-control form-select">
-                                                <option value="">Độ tuổi con</option>
-                                                <option value="">Từ 3 - 5 tuổi</option>
-                                                <option value="">Từ 6 - 11 tuổi</option>
-                                                <option value="">Trên tuổi</option>
-                                            </select>
-                                        </div>
-                                        <div class="form-item">
-                                            <select class="form-control form-select">
-                                                <option value="">Cơ sở i-Space</option>
-                                                <option value="">Từ 3 - 5 tuổi</option>
-                                                <option value="">Từ 6 - 11 tuổi</option>
-                                                <option value="">Trên tuổi</option>
-                                            </select>
-                                        </div>
-                                        <div class="text-center">
-                                            <p>
-                                                <button
-                                                    class="button wpcf7-form-control has-spinner wpcf7-submit primary lowercase btn-custom"
-                                                    style="border-radius:99px"><br>
-                                                    <span>Đăng ký</span><br>
-                                                </button>
-                                                <span class="wpcf7-spinner"></span>
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="wpcf7-response-output" aria-hidden="true"></div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <style>
-                .form-register {
-                    background: url('/images/bg-register.png') top right no-repeat;
-                    padding: 150px 30px;
-                }
-            </style>
-        </section>
 
         <div class="row" id="row-2033504995">
             <div id="col-32583027" class="col small-12 large-12">
@@ -635,5 +552,6 @@
                 </div>
             </div>
         </div>
+        @include('components.form-register')
     </div>
 @endsection
