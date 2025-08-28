@@ -880,6 +880,20 @@
         margin-bottom: 1.4rem;
         font-size: 16px;
     }
+    .number-box {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 35px;
+        height: 35px;
+        background: linear-gradient(180deg, #4ea6ff, #2a7dff);
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+        border-radius: 8px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+        margin-right: 10px;
+    }
 </style>
 </body>
 </html>

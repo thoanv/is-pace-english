@@ -95,8 +95,10 @@ class HomeController extends Controller
                 $course = $this->courseService->getCourseBySlug($slug);
                 if(!$course){ return abort(404); }
                 $courses = $this->courseService->getCourseOthers($course);
-
-                return view('pages.courses.detail', [
+                if($course['id'] == 2){
+                    $view = "pages.courses.tieng_anh_mam_non";
+                }
+                return view($view, [
                     'cate' => $cate,
                     'course' => $course,
                     'courses' => $courses
