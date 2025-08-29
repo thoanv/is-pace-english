@@ -356,9 +356,7 @@
             <div class="bg section-bg fill bg-fill  ">
             </div>
             <div class="section-content relative">
-
                 <div class="row align-top" id="row-1823503581">
-
                     <div id="col-1931238190" class="col medium-12 small-12 large-12">
                         <div class="col-inner text-center" style="margin-top: 30px">
                             <div id="text-3926705388" class="text">

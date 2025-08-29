@@ -98,6 +98,12 @@ class HomeController extends Controller
                 if($course['id'] == 2){
                     $view = "pages.courses.tieng_anh_mam_non";
                 }
+                elseif($course['id'] == 4){
+                    $view = "pages.courses.tieng_anh_tieu_hoc";
+                }
+                elseif($course['id'] == 5){
+                    $view = "pages.courses.tieng_anh_thieu_nien";
+                }
                 return view($view, [
                     'cate' => $cate,
                     'course' => $course,
