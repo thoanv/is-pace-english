@@ -269,16 +269,16 @@
 
                                 <h2><span style="font-size: 18px; font-weight: bold">Lộ trình học tập tại iSpace English:</span>
                                 </h2>
-                                <p style="font-size: 16px; color: #444444; line-height: 24px; font-weight: 500;">⮞ Sử
+                                <p style="font-size: 16px; color: #444444; line-height: 24px; font-weight: 500;"><i class="fa fa-caret-right" aria-hidden="true"></i> Sử
                                     dụng tiếng Anh toàn diện với 4 kỹ năng: Nghe – Nói – Đọc – Viết.</p>
-                                <p style="font-size: 16px; color: #444444; line-height: 24px; font-weight: 500;">⮞ Học
+                                <p style="font-size: 16px; color: #444444; line-height: 24px; font-weight: 500;"><i class="fa fa-caret-right" aria-hidden="true"></i> Học
                                     tập tiến bộ, nâng cao điểm số môn tiếng Anh tại</p>
-                                <p style="font-size: 16px; color: #444444; line-height: 24px; font-weight: 500;">⮞ Sẵn
+                                <p style="font-size: 16px; color: #444444; line-height: 24px; font-weight: 500;"><i class="fa fa-caret-right" aria-hidden="true"></i> Sẵn
                                     sàng cho các Kỳ thi tiếng Anh chuẩn quốc tế: Cambridge YLE, KET, PET, IELTS, TOEFL
                                     Primary/Junior/iBT.</p>
-                                <p style="font-size: 16px; color: #444444; line-height: 24px; font-weight: 500;">⮞ Tự
+                                <p style="font-size: 16px; color: #444444; line-height: 24px; font-weight: 500;"><i class="fa fa-caret-right" aria-hidden="true"></i> Tự
                                     tin hòa nhập, giao tiếp và thuyết trình tiếng Anh trước đám đông.</p>
-                                <p style="font-size: 16px; color: #444444; line-height: 24px; font-weight: 500;">⮞ Đam
+                                <p style="font-size: 16px; color: #444444; line-height: 24px; font-weight: 500;"><i class="fa fa-caret-right" aria-hidden="true"></i> Đam
                                     mê đọc sách, yêu thích học hỏi, khám phá và nâng cao tinh thần “Học tập Trọn
                                     đời”.</p>
                                 <style>
@@ -504,12 +504,12 @@
                     <div id="col-189056114" class="col medium-6 small-12 large-6">
                         <div class="col-inner">
 
-                            <p><strong>⮞ Các Cơ sở Đào tạo của iSpace English</strong> được thiết kế theo chủ đề
+                            <p><strong><i class="fa fa-caret-right" aria-hidden="true"></i> Các Cơ sở Đào tạo của iSpace English</strong> được thiết kế theo chủ đề
                                 <strong>Không gian vũ trụ và các
                                     hành tinh</strong>, khơi gợi trí tò mò, tinh thần khám phá và ý chí chinh phục thử
                                 thách trong
                                 hành trình học tập thông minh của các “<strong>Phi hành gia iSpace</strong>”.</p>
-                            <p><strong>⮞ Phòng học Hiện đại</strong> , đảm bảo môi trường học tập tối ưu với hệ thống
+                            <p><strong><i class="fa fa-caret-right" aria-hidden="true"></i> Phòng học Hiện đại</strong> , đảm bảo môi trường học tập tối ưu với hệ thống
                                 trang thiết bị tiên tiến:</p>
                             <ul id="text-3189061326" class="text">
                                 <li style="font-size: 16px; color: #444444; line-height: 24px;">
