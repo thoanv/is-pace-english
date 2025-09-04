@@ -1,5 +1,7 @@
 @extends('layouts.app')
 @section('title', 'Tiếng anh mầm non')
+@section('image', $course['image'])
+@section('canonical', route('page',['category_slug' => 'cac-khoa-hoc', 'slug' => 'tieng-anh-mam-non-2']))
 @section('content')
     <section class="dark header-page section" style="padding: 0;">
         <div class="bg section-bg fill bg-fill bg-loaded"></div>

@@ -136,42 +136,75 @@
                                         @endphp
                                         <li id="menu-item-1438{{$key}}"
                                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1438 menu-item-design-default">
-                                            <a style="text-transform: uppercase" href="{{route('page', ['cate_slug' => $cate['slug']])}}" class="nav-top-link">{{$cate['name']}}</a></li>
+                                            <a style="text-transform: uppercase"
+                                               href="{{route('page', ['cate_slug' => $cate['slug']])}}"
+                                               class="nav-top-link">{{$cate['name']}}</a></li>
                                     @endif
                                 @endforeach
                                 <li id="menu-item-1438{{$key}}"
                                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1438 menu-item-design-default">
-                                    <a href="" class="nav-top-link" style="text-transform: uppercase">Các khóa học</a>
+                                    <a href="" class="nav-top-link" style="text-transform: uppercase">E-learning</a>
                                 </li>
                                 @foreach($menu['content'] as $key => $item)
                                     @if($key > 0)
                                         @php
                                             $cate = \App\Models\Category::find($item['id']);
                                         @endphp
-                                        @if (!empty($item['children'] ?? []))
+                                        @if($cate['type'] == \App\Enums\CategoryEnum::KHOA_HOC)
                                             <li id="menu-item-1439{{$key}}"
                                                 class="menu-item menu-item-type-post_type_archive menu-item-object-programme menu-item-has-children menu-item-1439 menu-item-design-default has-dropdown">
-                                                <a href="{{route('page', ['cate_slug' => $cate['slug']])}}" class="nav-top-link" aria-expanded="false" style="text-transform: uppercase"
-                                                   aria-haspopup="menu">{{$cate['name']}}<i class="icon-angle-down"></i></a>
+                                                <a href="javascript:void(0)"
+                                                   class="nav-top-link" aria-expanded="false"
+                                                   style="text-transform: uppercase"
+                                                   aria-haspopup="menu">{{$cate['name']}}<i
+                                                        class="icon-angle-down"></i></a>
+                                                @php
+                                                $courses = \App\Models\Course::where('status', \App\Enums\CommonEnum::ACTIVATED)->get();
+                                                @endphp
+                                                @if(count($courses))
                                                 <ul class="sub-menu nav-dropdown nav-dropdown-simple">
-                                                    @foreach($item['children'] as $v_c)
-                                                    @php
-                                                        $cate_c = \App\Models\Category::find($v_c['id']);
-                                                    @endphp
-                                                    <li
-                                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1770" style="text-transform: uppercase">
-                                                        <a href="{{route('page', ['cate_slug' => $cate_c['slug']])}}">{{$cate_c['name']}}</a>
-                                                    </li>
+                                                    @foreach($courses as $v_course)
+                                                        <li
+                                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1770"
+                                                            style="text-transform: uppercase">
+                                                            <a href="{{route('page', ['cate_slug' => $cate['slug'], 'slug' => $v_course['slug']])}}">{{$v_course['name']}}</a>
+                                                        </li>
                                                     @endforeach
 
                                                 </ul>
+                                                @endif
                                             </li>
                                         @else
-                                            <li id="menu-item-1438{{$key}}"
-                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1438 menu-item-design-default" style="text-transform: uppercase">
-                                                <a href="{{route('page', ['cate_slug' => $cate['slug']])}}" class="nav-top-link">{{$cate['name']}}</a></li>
-                                        @endif
+                                            @if (!empty($item['children'] ?? []))
+                                                <li id="menu-item-1439{{$key}}"
+                                                    class="menu-item menu-item-type-post_type_archive menu-item-object-programme menu-item-has-children menu-item-1439 menu-item-design-default has-dropdown">
+                                                    <a href="{{route('page', ['cate_slug' => $cate['slug']])}}"
+                                                       class="nav-top-link" aria-expanded="false"
+                                                       style="text-transform: uppercase"
+                                                       aria-haspopup="menu">{{$cate['name']}}<i
+                                                            class="icon-angle-down"></i></a>
+                                                    <ul class="sub-menu nav-dropdown nav-dropdown-simple">
+                                                        @foreach($item['children'] as $v_c)
+                                                            @php
+                                                                $cate_c = \App\Models\Category::find($v_c['id']);
+                                                            @endphp
+                                                            <li
+                                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1770"
+                                                                style="text-transform: uppercase">
+                                                                <a href="{{route('page', ['cate_slug' => $cate_c['slug']])}}">{{$cate_c['name']}}</a>
+                                                            </li>
+                                                        @endforeach
 
+                                                    </ul>
+                                                </li>
+                                            @else
+                                                <li id="menu-item-1438{{$key}}"
+                                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1438 menu-item-design-default"
+                                                    style="text-transform: uppercase">
+                                                    <a href="{{route('page', ['cate_slug' => $cate['slug']])}}"
+                                                       class="nav-top-link">{{$cate['name']}}</a></li>
+                                            @endif
+                                        @endif
                                     @endif
 
                                 @endforeach

@@ -32,7 +32,11 @@
                         @foreach($slides as $key => $slide)
 
                             <div class="banner has-hover" id="banner-482679248{{$key}}">
+                                @if($slide['link'])
+                                <a href="{{$slide['link']}}" target="_blank">
+                                @endif
                                 <div class="banner-inner fill">
+
                                     <div class="banner-bg fill">
                                         <div class="bg fill bg-fill "></div>
                                     </div>
@@ -43,15 +47,15 @@
                                                  class="text-box banner-layer x15 md-x10 lg-x15 y75 md-y60 lg-y60 res-text">
                                                 <div class="text-box-content text dark">
 
-                                                    <div class="text-inner text-center">
+{{--                                                    <div class="text-inner text-center">--}}
 
-                                                        <a rel="noopener noreferrer" href="{{$slide['link']}}"
-                                                           target="_blank" class="button white btn-custom"
-                                                           style="border-radius:99px;">
-                                                            <span>TÌM HIỂU THÊM</span>
-                                                        </a>
+{{--                                                        <a rel="noopener noreferrer" href="{{$slide['link']}}"--}}
+{{--                                                           target="_blank" class="button white btn-custom"--}}
+{{--                                                           style="border-radius:99px;">--}}
+{{--                                                            <span>TÌM HIỂU THÊM</span>--}}
+{{--                                                        </a>--}}
 
-                                                    </div>
+{{--                                                    </div>--}}
                                                 </div>
 
                                                 <style>
@@ -78,9 +82,11 @@
                                             </div>
                                         @endif
                                     </div>
+
                                 </div>
-
-
+                                    @if($slide['link'])
+                                </a>
+                                @endif
                                 <style>
                                     #banner-482679248{{$key}}         {
                                         padding-top: 700px;
@@ -107,6 +113,7 @@
                                     }
                                 </style>
                             </div>
+
                         @endforeach
 
                     </div>
@@ -378,12 +385,8 @@
                                         <div class="box-image">
                                             <div class="image-cover" style="padding-top:100%;">
                                                 <img width="300" height="225"
-                                                     src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%20225'%3E%3C/svg%3E"
-                                                     class="attachment-medium size-medium wp-post-image" alt=""
-                                                     decoding="async"
-                                                     data-lazy-srcset="{{$teacher['image']}} 300w, {{$teacher['image']}} 1024w"
-                                                     data-lazy-sizes="(max-width: 300px) 100vw, 300px"
-                                                     data-lazy-src="{{$teacher['image']}}"/>
+                                                     src="{{$teacher['image']}}"
+                                                     class="attachment-medium size-medium wp-post-image" alt="{{$teacher['name']}}"/>
                                                 <noscript><img width="300" height="225"
                                                                src="{{$teacher['image']}}"
                                                                class="attachment-medium size-medium wp-post-image"
@@ -397,7 +400,7 @@
                                                 Giáo viên
                                             </div>
                                             <h4>{{$teacher['name']}}</h4>
-                                            <div class="desc">
+                                            <div class="desc content-teacher">
                                                 {!! $teacher['description'] !!}
                                             </div>
                                         </div>
@@ -414,6 +417,9 @@
                 <style>
                     #col-811636745 > .col-inner {
                         margin: 30px 0px 0px 0px;
+                    }
+                    .content-teacher p{
+                        margin-bottom: 5px;
                     }
                 </style>
             </div>

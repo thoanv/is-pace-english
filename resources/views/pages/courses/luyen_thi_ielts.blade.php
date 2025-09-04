@@ -1,5 +1,7 @@
 @extends('layouts.app')
 @section('title', 'Luyện thị IELTS')
+@section('image', $course['image'])
+@section('canonical', route('page',['category_slug' => 'cac-khoa-hoc', 'slug' => 'luyen-thi-ielts-6']))
 @section('content')
     <section class="dark header-page section" style="padding: 0;">
         <div class="bg section-bg fill bg-fill bg-loaded"></div>

@@ -155,10 +155,10 @@
 
     <main id="main" class="">
 
-    @yield('content')
+        @yield('content')
 
-</main>
-@include('layouts.footer')
+    </main>
+    @include('layouts.footer')
 </div>
 <div id="main-menu" class="mobile-sidebar no-scrollbar mfp-hide">
     <div class="sidebar-menu no-scrollbar ">
@@ -175,7 +175,7 @@
                 </noscript>
                 <img width="1020" height="1020"
                      src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201020%201020'%3E%3C/svg%3E"
-                     class="header-logo-dark" alt="Oxford English Academy &#8211; OEA Vietnam"
+                     class="header-logo-dark" alt="iS-Pace"
                      data-lazy-src="{{$info['logo']}}"/>
                 <noscript><img width="1020" height="1020" src="{{$info['logo']}}"
                                class="header-logo-dark" alt="{{$info['name']}}"/></noscript>
@@ -219,40 +219,63 @@
                 </div>
             </li>
             @if($menu && $menu['content'] && !empty($menu['content']))
-            @foreach($menu['content'] as $key => $item)
-            @if($key < 1)
-                @php
-                    $cate = \App\Models\Category::find($item['id']);
-                @endphp
-            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1438"><a
-                    href="{{route('page', ['cate_slug' => $cate['slug']])}}">{{$cate['name']}}</a></li>
-            @endif
-            @endforeach
+                @foreach($menu['content'] as $key => $item)
+                    @if($key < 1)
+                        @php
+                            $cate = \App\Models\Category::find($item['id']);
+                        @endphp
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1438"><a
+                                href="{{route('page', ['cate_slug' => $cate['slug']])}}">{{$cate['name']}}</a></li>
+                    @endif
+                @endforeach
                 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1438"><a
-                        href="">Các khóa học</a></li>
+                        href="">E-learning</a></li>
 
                 @foreach($menu['content'] as $key => $item)
                     @if($key > 0)
                         @php
                             $cate = \App\Models\Category::find($item['id']);
                         @endphp
-                        @if (!empty($item['children'] ?? []))
+                        @if($cate['type'] == \App\Enums\CategoryEnum::KHOA_HOC)
                             <li class="menu-item menu-item-type-post_type_archive menu-item-object-programme menu-item-has-children menu-item-1439">
-                                <a href="{{route('page', ['cate_slug' => $cate['slug']])}}">{{$cate['name']}}</a>
+                                <a href="javascript:void(0)">{{$cate['name']}}</a>
+                                @php
+                                    $courses = \App\Models\Course::where('status', \App\Enums\CommonEnum::ACTIVATED)->get();
+                                @endphp
+                                @if(count($courses))
                                 <ul class="sub-menu nav-sidebar-ul children">
-                                    @foreach($item['children'] as $v_c)
-                                        @php
-                                            $cate_c = \App\Models\Category::find($v_c['id']);
-                                        @endphp
-                                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1770"><a
-                                            href="{{route('page', ['cate_slug' => $cate_c['slug']])}}">{{$cate_c['name']}}</a></li>
+                                    @foreach($courses as $v_course)
+                                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1770">
+                                            <a
+                                                href="{{route('page', ['cate_slug' => $cate['slug'], 'slug' => $v_course['slug']])}}">{{$v_course['name']}}</a>
+                                        </li>
                                     @endforeach
 
                                 </ul>
+                                    @endif
                             </li>
                         @else
-                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2142"><a
-                                    href="{{route('page', ['cate_slug' => $cate['slug']])}}">{{$cate['name']}}</a></li>
+                            @if (!empty($item['children'] ?? []))
+                                <li class="menu-item menu-item-type-post_type_archive menu-item-object-programme menu-item-has-children menu-item-1439">
+                                    <a href="{{route('page', ['cate_slug' => $cate['slug']])}}">{{$cate['name']}}</a>
+                                    <ul class="sub-menu nav-sidebar-ul children">
+                                        @foreach($item['children'] as $v_c)
+                                            @php
+                                                $cate_c = \App\Models\Category::find($v_c['id']);
+                                            @endphp
+                                            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1770">
+                                                <a
+                                                    href="{{route('page', ['cate_slug' => $cate_c['slug']])}}">{{$cate_c['name']}}</a>
+                                            </li>
+                                        @endforeach
+
+                                    </ul>
+                                </li>
+                            @else
+                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2142"><a
+                                        href="{{route('page', ['cate_slug' => $cate['slug']])}}">{{$cate['name']}}</a>
+                                </li>
+                            @endif
                         @endif
                     @endif
                 @endforeach
@@ -342,30 +365,54 @@
                     @endif
                 @endforeach
                 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1438"><a
-                        href="">Các khóa học</a></li>
+                        href="">E-learning</a></li>
 
                 @foreach($menu['content'] as $key => $item)
                     @if($key > 0)
                         @php
                             $cate = \App\Models\Category::find($item['id']);
                         @endphp
-                        @if (!empty($item['children'] ?? []))
+                        @if($cate['type'] == \App\Enums\CategoryEnum::KHOA_HOC)
                             <li class="menu-item menu-item-type-post_type_archive menu-item-object-programme menu-item-has-children menu-item-1439">
-                                <a href="{{route('page', ['cate_slug' => $cate['slug']])}}">{{$cate['name']}}</a>
-                                <ul class="sub-menu nav-sidebar-ul children">
-                                    @foreach($item['children'] as $v_c)
-                                        @php
-                                            $cate_c = \App\Models\Category::find($v_c['id']);
-                                        @endphp
-                                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1770"><a
-                                                href="{{route('page', ['cate_slug' => $cate_c['slug']])}}">{{$cate_c['name']}}</a></li>
-                                    @endforeach
+                                <a href="">{{$cate['name']}}</a>
+                                @php
+                                    $courses = \App\Models\Course::where('status', \App\Enums\CommonEnum::ACTIVATED)->get();
+                                @endphp
+                                @if(count($courses))
+                                    <ul class="sub-menu nav-sidebar-ul children">
+                                        @foreach($courses as $v_course)
 
-                                </ul>
+                                            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1770">
+                                                <a
+                                                    href="{{route('page', ['cate_slug' => $cate['slug'], 'slug' => $v_course['slug']])}}">{{$v_course['name']}}</a>
+                                            </li>
+                                        @endforeach
+
+                                    </ul>
+                                @endif
                             </li>
                         @else
-                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2142"><a
-                                    href="{{route('page', ['cate_slug' => $cate['slug']])}}">{{$cate['name']}}</a></li>
+                            @if (!empty($item['children'] ?? []))
+                                <li class="menu-item menu-item-type-post_type_archive menu-item-object-programme menu-item-has-children menu-item-1439">
+                                    <a href="{{route('page', ['cate_slug' => $cate['slug']])}}">{{$cate['name']}}</a>
+                                    <ul class="sub-menu nav-sidebar-ul children">
+                                        @foreach($item['children'] as $v_c)
+                                            @php
+                                                $cate_c = \App\Models\Category::find($v_c['id']);
+                                            @endphp
+                                            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1770">
+                                                <a
+                                                    href="{{route('page', ['cate_slug' => $cate_c['slug']])}}">{{$cate_c['name']}}</a>
+                                            </li>
+                                        @endforeach
+
+                                    </ul>
+                                </li>
+                            @else
+                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2142"><a
+                                        href="{{route('page', ['cate_slug' => $cate['slug']])}}">{{$cate['name']}}</a>
+                                </li>
+                            @endif
                         @endif
                     @endif
                 @endforeach
@@ -421,9 +468,6 @@
 <a href="tel:{{$info['phone']}}" id="callnowbutton"
    class="call-now-button  cnb-zoom-100  cnb-zindex-10  cnb-text  cnb-single cnb-right cnb-displaymode cnb-displaymode-always"
    style="background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMiAzMiI+PHBhdGggZD0iTTI3LjAxMzU1LDIzLjQ4ODU5bC0xLjc1MywxLjc1MzA1YTUuMDAxLDUuMDAxLDAsMCwxLTUuMTk5MjgsMS4xODI0M2MtMS45NzE5My0uNjkzNzItNC44NzMzNS0yLjM2NDM4LTguNDM4NDgtNS45Mjk1UzYuMzg3LDE0LjAyOCw1LjY5MzMsMTIuMDU2MTVBNS4wMDA3OCw1LjAwMDc4LDAsMCwxLDYuODc1NzMsNi44NTY4N0w4LjYyODc4LDUuMTAzNzZhMSwxLDAsMCwxLDEuNDE0MzEuMDAwMTJsMi44MjgsMi44Mjg4QTEsMSwwLDAsMSwxMi44NzEsOS4zNDY4TDExLjA2NDcsMTEuMTUzYTEuMDAzOCwxLjAwMzgsMCwwLDAtLjA4MjEsMS4zMjE3MSw0MC43NDI3OCw0MC43NDI3OCwwLDAsMCw0LjA3NjI0LDQuNTgzNzQsNDAuNzQxNDMsNDAuNzQxNDMsMCwwLDAsNC41ODM3NCw0LjA3NjIzLDEuMDAzNzksMS4wMDM3OSwwLDAsMCwxLjMyMTcxLS4wODIwOWwxLjgwNjIyLTEuODA2MjdhMSwxLDAsMCwxLDEuNDE0MTItLjAwMDEybDIuODI4OCwyLjgyOEExLjAwMDA3LDEuMDAwMDcsMCwwLDEsMjcuMDEzNTUsMjMuNDg4NTlaIiBmaWxsPSIjZmZmZmZmIi8+PC9zdmc+); background-color:#ce0e19;"><span>{{$info['phone']}}</span></a>
-<noscript><img height="1" width="1" style="display: none;"
-               src="https://www.facebook.com/tr?id=309224251667435&amp;ev=PageView&amp;noscript=1&amp;cd%5Bpage_title%5D=Trang+ch%E1%BB%A7&amp;cd%5Bpost_type%5D=page&amp;cd%5Bpost_id%5D=1168&amp;cd%5Bplugin%5D=PixelYourSite&amp;cd%5Buser_role%5D=guest&amp;cd%5Bevent_url%5D=oea-vietnam.com%2F"
-               alt=""></noscript>
 <script type="text/javascript" data-rocket-type='text/javascript'
         src="{{asset('wp-includes/js/jquery/jquery.min5aed.js?ver=3.6.4')}}" id='jquery-core-js' defer></script>
 <script type="text/javascript" data-rocket-type='text/javascript'
@@ -588,7 +632,7 @@
         "usesTrailingSlash": "1",
         "imageExt": "jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php",
         "fileExt": "jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php|html|htm",
-        "siteUrl": "https:\/\/oea-vietnam.com",
+        "siteUrl": "https:\/\/ispaceenglish.edu.vn",
         "onHoverDelay": "100",
         "rateThrottle": "3"
     };
@@ -860,7 +904,7 @@
 @stack('libraries')
 @stack('scripts')
 <style>
-    .text-bong{
+    .text-bong {
         font-weight: 700;
         font-size: 40px;
         text-align: center;
@@ -868,10 +912,12 @@
         text-shadow: var(--text-shadow);
         text-transform: uppercase;
     }
-    .text-223f81{
+
+    .text-223f81 {
         color: #223f81 !important;
     }
-    .form-select{
+
+    .form-select {
         box-shadow: none;
         height: 45px;
         padding: 0 40px;
@@ -880,6 +926,7 @@
         margin-bottom: 1.4rem;
         font-size: 16px;
     }
+
     .number-box {
         display: inline-flex;
         justify-content: center;

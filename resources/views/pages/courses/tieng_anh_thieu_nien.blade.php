@@ -1,5 +1,7 @@
 @extends('layouts.app')
 @section('title', 'Tiếng anh tiểu học')
+@section('image', $course['image'])
+@section('canonical', route('page',['category_slug' => 'cac-khoa-hoc', 'slug' => 'tieng-anh-thieu-nien-5']))
 @section('content')
     <section class="dark header-page section" style="padding: 0;">
         <div class="bg section-bg fill bg-fill bg-loaded"></div>
@@ -34,23 +36,19 @@
                         <div class="col-inner">
                             <div class="text">
                                 <h1 class="text-bong">
-                                    KHÓA HỌC TIẾNG ANH TIỂU HỌC - PRIMARY
+                                    KHÓA HỌC TIẾNG ANH THIẾU NIÊN - JUNIOR PLUS
+                                    & MÔ HÌNH HỌC FLEX-TIME ƯU VIỆT
                                 </h1>
-                                <h3 class="text-223f81" style="text-align: justify;">
-                                    <strong>03 CAM KẾT “VÀNG” CỦA KHÓA TIẾNG ANH TIỂU HỌC</strong>
-                                </h3>
                                 <p class="text-223f81" style="text-align: justify;">
-                                    Tiếng Anh ở bậc Tiểu học là nền tảng vững chức quyết định sự tự tin và hiệu quả cho
-                                    hành trình vươn tầm quốc tế của các bạn nhỏ.
-
+                                    JUNIOR PLUS là khóa học được thiết kế đặc biệt nhằm giúp học sinh trong độ tuổi
+                                    Thiếu niên vượt qua mọi khó khăn trong việc học tiếng Anh cấp Trung học Cơ sở và
+                                    Trung học Phổ thông. JUNIOR PLUS tập trung vào việc <strong>giải quyết những khó
+                                        khăn</strong> cốt
+                                    lõi mà phần lớn học sinh Teens tại Việt Nam thường gặp như: <i>thiếu nền tảng ngữ
+                                        pháp,
+                                        vốn từ vựng hạn chế, ít cơ hội rèn luyện kỹ năng Nghe – Nói, và đặc biệt là sự e
+                                        ngại khi phải sử dụng tiếng Anh trước đám đông.</i>
                                 </p>
-                                <p class="text-223f81" style="text-align: justify;">
-                                    Khi bắt đầu làm quen với ngôn ngữ mới trong độ tuổi từ 6-11, não bộ tiếp nhận nhanh,
-                                    khả năng bắt chước phát âm và phản xạ cực kỳ nhạy bén. Khóa học tiếng Anh tiểu học
-                                    PRIMARY tại iSpace English được xây dựng với <strong>03 CAM KẾT VÀNG:</strong>
-
-                                </p>
-
                             </div>
                             <p>
                         </div>
@@ -59,43 +57,31 @@
                         <div class="col-inner">
                             <div id="text-4024370902" class="text">
 
-                                <h4 style="text-align: justify; align-items: center; display: flex"
-                                    class="text-223f81 align-middle">
-                                    <span class="number-box">1</span> <strong>GIAO TIẾP LINH HOẠT - PHÁT ÂM CHUẨN TIẾNG
-                                        ANH BẢN XỨ</strong>
-                                </h4>
-                                <p class="text-223f81" style="text-align: justify;">Khóa học tiếng Anh Tiểu học Primary
-                                    áp dụng chương trình giảng dạy chuẩn khung Chứng chỉ Cambridge quốc tế kết hợp với
-                                    năng lực giảng dạy vượt trội của Đội ngũ giáo viên Bản Ngữ & Việt Nam tận tâm, giàu
-                                    kinh nghiệm giảng dạy, từ đó giúp con hình thành phản xạ tiếng Anh tự nhiên, phát âm
-                                    chuẩn như người bản xứ Anh.</p>
-
-                                <h4 style="text-align: justify; align-items: center; display: flex"
-                                    class="text-223f81 align-middle">
-                                    <span class="number-box">2</span> <strong>BỨT PHÁ ĐIỂM 9-10 MÔN TIẾNG ANH TRÊN
-                                        LỚP</strong>
-                                </h4>
-                                <p class="text-223f81" style="text-align: justify;">
-                                    Chương trình Primary luôn <strong>bám sát từ cơ bản đến nâng cao</strong> theo nội
-                                    dung <strong>sách giáo
-                                        khoa môn tiếng Anh</strong> tại các trường trên địa bàn quận Tây Hồ, kết hợp
-                                    phương pháp
-                                    giảng dạy đề cao tính tương tác & hoạt động nhóm đa dạng, giúp con nắm chắc kiến
-                                    thức và vượt trội trên lớp. Không chỉ học để biết, ISPACE giúp bé học để tự tin, nắm
-                                    chắc kiến thức, tăng điểm số vượt trội!
-
+                                <p class="text-223f81" style="text-align: justify;">Với chương trình học hiện đại, giáo
+                                    trình cập nhật và phương pháp giảng dạy cá nhân hóa, Khóa học JUNIOR PLUS tại iSpace
+                                    English giúp học sinh:
                                 </p>
-
-                                <h4 style="text-align: justify; align-items: center; display: flex"
-                                    class="text-223f81 align-middle">
-                                    <span class="number-box">3</span> <strong>CAM KẾT CHẤT LƯỢNG HỌC TẬP ĐẦU RA CHUẨN
-                                        CAMBRIDGE YLE
-                                    </strong>
-                                </h4>
                                 <p class="text-223f81" style="text-align: justify;">
-                                    ISPACE định hướng lộ trình rõ ràng, ôn luyện bài bản, giúp con tự tin bước vào kỳ
-                                    thi Chuẩn quốc tế Cambridge với cam kết chuẩn Khung tham chiếu Châu Âu từ <strong>Pre-A1
-                                        Starters, A1 Movers đến A2 Flyers</strong> cho học sinh tiểu học.
+                                    <i class="fa fa-caret-right" aria-hidden="true"></i>
+                                    <strong>Bứt phá điểm số môn tiếng Anh</strong> nhờ giáo trình bài bản và hệ thống
+                                    bài tập bổ trợ.
+                                </p>
+                                <p class="text-223f81" style="text-align: justify;">
+                                    <i class="fa fa-caret-right" aria-hidden="true"></i>
+                                    <strong> Tự tin giao tiếp tiếng Anh</strong> qua các hoạt động thảo luận, thuyết
+                                    trình, dự án học tập.
+                                </p>
+                                <p class="text-223f81" style="text-align: justify;">
+                                    <i class="fa fa-caret-right" aria-hidden="true"></i>
+                                    <strong> Hình thành thói quen học tập chủ động và sáng tạo</strong>, thay vì học thụ
+                                    động và đối phó.
+                                </p>
+                                <p class="text-223f81" style="text-align: justify;">ISPACE cam kết mang đến <strong>sự
+                                        thay đổi
+                                        rõ rệt</strong> cho con sau mỗi kỳ học – để Ba Mẹ tự hào an tâm, con tự tin và
+                                    tiếng Anh trở
+                                    thành <strong>lợi thế thật sự cho tương lai học tập của con yêu.</strong>
+
                                 </p>
                                 <style>
                                     #text-4024370902 {
@@ -119,20 +105,20 @@
                             <div class="img has-hover img-radius x md-x lg-x y md-y lg-y" id="image_1810835688">
                                 <div class="img-inner  dark">
                                     <img width="800" height="600"
-                                         src="/images/tieng-anh-tieu-hoc/02. Ảnh Tiểu học 02.png"
+                                         src="/images/tieng-anh-thieu-nien/02. Ảnh Khóa JUNIOR_02.png"
                                          class="attachment-original size-original entered lazyloaded"
                                          alt="Tầm nhìn và sứ mệnh" decoding="async"
-                                         data-lazy-srcset="/images/tieng-anh-tieu-hoc/02. Ảnh Tiểu học 02.png 800w, /images/tieng-anh-tieu-hoc/02. Ảnh Tiểu học 02.pngg 300w"
+                                         data-lazy-srcset="/images/tieng-anh-thieu-nien/02. Ảnh Khóa JUNIOR_02.png 800w, /images/tieng-anh-thieu-nien/02. Ảnh Khóa JUNIOR_02.pngg 300w"
                                          data-lazy-sizes="(max-width: 800px) 100vw, 800px"
-                                         data-lazy-src="/images/tieng-anh-tieu-hoc/02. Ảnh Tiểu học 02.png"
+                                         data-lazy-src="/images/tieng-anh-thieu-nien/02. Ảnh Khóa JUNIOR_02.png"
                                          data-ll-status="loaded"
                                          sizes="(max-width: 800px) 100vw, 800px"
-                                         srcset="/images/tieng-anh-tieu-hoc/02. Ảnh Tiểu học 02.png 800w, /images/tieng-anh-tieu-hoc/02. Ảnh Tiểu học 02.pngg 300w">
+                                         srcset="/images/tieng-anh-thieu-nien/02. Ảnh Khóa JUNIOR_02.png 800w, /images/tieng-anh-thieu-nien/02. Ảnh Khóa JUNIOR_02.pngg 300w">
                                     <noscript><img width="800" height="600"
-                                                   src="/images/tieng-anh-tieu-hoc/02. Ảnh Tiểu học 02.png"
+                                                   src="/images/tieng-anh-thieu-nien/02. Ảnh Khóa JUNIOR_02.png"
                                                    class="attachment-original size-original"
                                                    alt="Tầm nhìn và sứ mệnh" decoding="async"
-                                                   srcset="/images/tieng-anh-tieu-hoc/02. Ảnh Tiểu học 02.png 800w, /images/tieng-anh-tieu-hoc/02. Ảnh Tiểu học 02.pngg 300w"
+                                                   srcset="/images/tieng-anh-thieu-nien/02. Ảnh Khóa JUNIOR_02.png 800w, /images/tieng-anh-thieu-nien/02. Ảnh Khóa JUNIOR_02.pngg 300w"
                                                    sizes="(max-width: 800px) 100vw, 800px"/></noscript>
                                 </div>
 
@@ -183,9 +169,9 @@
                         <div class="col-inner" style="margin-top: 30px">
                             <div id="text-3926705388" class="text">
 
-                                <h2 style="font-size: 2rem!important;line-height: 50px;" class="text-bong">CÙNG PHƯƠNG
-                                    PHÁP GIẢNG DẠY P-P-P<br>
-                                    CHẠM TỚI PHIÊN BẢN TỐT NHẤT CỦA CON
+                                <h2 style="font-size: 2rem!important;line-height: 50px;" class="text-bong">VÌ SAO JUNIOR
+                                    PLUS LÀ SỰ LỰA CHỌN TUYỆT VỜI
+                                    CHO HỌC SINH TEENS?
                                 </h2>
 
                                 <style>
@@ -194,33 +180,24 @@
                                     }
                                 </style>
                             </div>
-
-                            <p>Học viên ở độ tuổi Tiểu học 6-11 tuổi khi tham gia <strong>Chương trình tiếng Anh Tiểu
-                                    học
-                                    PRIMARY</strong> tại iSpace English tiếp thu kiến thức Ngữ pháp & Từ vựng tiếng Anh
-                                hiêu quả hơn
-                                bao giờ hết nhờ <strong>Phương pháp Giảng dạy tiếng Anh P-P-P</strong> được Đội ngũ Giáo
-                                viên ISPACE áp
-                                dụng triệt để trong các tiết học.
-                            </p>
                         </div>
                     </div>
 
 
                     <div id="col-469935036" class="col medium-6 small-12 large-6">
                         <div class="col-inner">
+                            <h4 style="text-align: justify; align-items: center; display: flex; color: #ffffff!important;"
+                                class="text-223f81 align-middle">
+                                <span class="number-box">1</span> <strong>GIÁO VIÊN GIỎI CHUYÊN MÔN & GIÀU KINH NGHIỆM
+                                </strong>
+                            </h4>
                             <p>
-                                <i class="fa fa-caret-right" aria-hidden="true"></i>
-                                Phương pháp P-P-P là 1 quy trình dạy học ngôn ngữ gồm 3 bước:<br>
-                                - <strong>Presentation</strong> (Giới thiệu kiến thức),<br>
-                                - <strong>Practive</strong> (Luyện tập có kiểm soát)<br>
-                                - <strong>Production</strong> (Sử dụng ngôn ngữ linh hoạt, tự do).
-                            </p>
-                            <p>
-                                <i class="fa fa-caret-right" aria-hidden="true"></i>
-                                Nguyên tắc cốt lõi của Phương pháp giảng dạy tiếng Anh này là giúp học viên tiếp thu
-                                ngôn ngữ theo quy trình từ nhận biết đến thực hành và cuối cùng là sử dụng một cách tự
-                                nhiên
+                                Toàn bộ đội ngũ Giảng viên tại ISPACE đều được tuyển chọn kỹ lưỡng: 100% Giảng viên tham
+                                gia giảng dạy Khóa học Junior Plus đều tốt nghiệp chương trình Cử nhân/Thạc sĩ Ngôn ngữ
+                                Anh/Tiếng Anh Sư phạm tại các trường ĐH Ngoại ngữ hàng đầu cả nước. Các Thầy Cô đều có
+                                kinh nghiệm giảng dạy dày dặn và phương pháp sư phạm hiện đại. Thầy Cô luôn tạo ra môi
+                                trường học tập năng động, kích thích tính chủ động & sáng tạo của học sinh độ tuổi thiếu
+                                niên.
                             </p>
 
                         </div>
@@ -235,14 +212,14 @@
                                          src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20800%20600'%3E%3C/svg%3E"
                                          class="attachment-original size-original"
                                          alt="Lộ trình đào tạo" decoding="async"
-                                         data-lazy-srcset="/images/tieng-anh-tieu-hoc/03. Ảnh Tiểu học_03.png 800w, /images/tieng-anh-tieu-hoc/03. Ảnh Tiểu học_03.png 300w"
+                                         data-lazy-srcset="/images/tieng-anh-thieu-nien/03. Ảnh Khóa JUNIOR_03.png 800w, /images/tieng-anh-thieu-nien/03. Ảnh Khóa JUNIOR_03.png 300w"
                                          data-lazy-sizes="(max-width: 800px) 100vw, 800px"
-                                         data-lazy-src="/images/tieng-anh-tieu-hoc/03. Ảnh Tiểu học_03.png">
+                                         data-lazy-src="/images/tieng-anh-thieu-nien/03. Ảnh Khóa JUNIOR_03.png">
                                     <noscript><img width="800" height="600"
-                                                   src="/images/tieng-anh-tieu-hoc/03. Ảnh Tiểu học_03.png"
+                                                   src="/images/tieng-anh-thieu-nien/03. Ảnh Khóa JUNIOR_03.png"
                                                    class="attachment-original size-original"
                                                    alt="Lộ trình đào tạo" decoding="async"
-                                                   srcset="/images/tieng-anh-tieu-hoc/03. Ảnh Tiểu học_03.png 800w, /images/tieng-anh-tieu-hoc/03. Ảnh Tiểu học_03.png 300w"
+                                                   srcset="/images/tieng-anh-thieu-nien/03. Ảnh Khóa JUNIOR_03.png 800w, /images/tieng-anh-thieu-nien/03. Ảnh Khóa JUNIOR_03.png 300w"
                                                    sizes="(max-width: 800px) 100vw, 800px"/></noscript>
                                 </div>
 
@@ -257,6 +234,106 @@
                     </div>
 
 
+                    <div id="col-469935036" class="col medium-6 small-12 large-6">
+                        <div class="col-inner">
+
+
+                            <div class="img has-hover img-radius x md-x lg-x y md-y lg-y" id="image_1810835688">
+                                <div class="img-inner  dark">
+                                    <img width="800" height="600"
+                                         src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20800%20600'%3E%3C/svg%3E"
+                                         class="attachment-original size-original"
+                                         alt="Lộ trình đào tạo" decoding="async"
+                                         data-lazy-srcset="/images/tieng-anh-thieu-nien/04. Ảnh Khóa JUNIOR_04.png 800w, /images/tieng-anh-thieu-nien/04. Ảnh Khóa JUNIOR_04.png 300w"
+                                         data-lazy-sizes="(max-width: 800px) 100vw, 800px"
+                                         data-lazy-src="/images/tieng-anh-thieu-nien/04. Ảnh Khóa JUNIOR_04.png">
+                                    <noscript><img width="800" height="600"
+                                                   src="/images/tieng-anh-thieu-nien/04. Ảnh Khóa JUNIOR_04.png"
+                                                   class="attachment-original size-original"
+                                                   alt="Lộ trình đào tạo" decoding="async"
+                                                   srcset="/images/tieng-anh-thieu-nien/04. Ảnh Khóa JUNIOR_04.png 800w, /images/tieng-anh-thieu-nien/04. Ảnh Khóa JUNIOR_04.png 300w"
+                                                   sizes="(max-width: 800px) 100vw, 800px"/></noscript>
+                                </div>
+
+                                <style>
+                                    #image_1810835688 {
+                                        width: 100%;
+                                    }
+                                </style>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div id="col-469935036" class="col medium-6 small-12 large-6">
+                        <div class="col-inner">
+                            <h4 style="text-align: justify; align-items: center; display: flex; color: #ffffff!important;"
+                                class="text-223f81 align-middle">
+                                <span class="number-box">2</span> <strong>SĨ SỐ LỚP NHỎ - TỐI ƯU
+                                    TRẢI NGHIỆM HỌC TẬP CÁ NHÂN HÓA
+                                </strong>
+                            </h4>
+                            <p>
+                                Với lớp học có sĩ số giới hạn (chỉ 5 học sinh), các con sẽ nhận được sự chú ý, quan tâm
+                                tỉ mỉ từ Giáo viên, giúp nâng cao chất lượng học tập, cá nhân hóa lộ trình học tập theo
+                                năng lực tiếp thu kiến thức của mỗi bạn, từ đó giúp các con thích nghi nhanh với môi
+                                trường & phong cách học tập chủ động và tiến bộ nhanh nhất.
+
+                            </p>
+
+                        </div>
+                    </div>
+
+                    <div id="col-469935036" class="col medium-6 small-12 large-6">
+                        <div class="col-inner">
+                            <h4 style="text-align: justify; align-items: center; display: flex; color: #ffffff!important;"
+                                class="text-223f81 align-middle">
+                                <span class="number-box">3</span> <strong>GIÁO TRÌNH BIÊN SOẠN ĐỘC QUYỀN, THIẾT KẾ BÁM
+                                    SÁT SGK TRÊN TRƯỜNG
+                                </strong>
+                            </h4>
+                            <p>
+                                ISPACE hiểu rằng để đạt được kết quả tốt nhất, học viên cần được học tập với tài liệu uy
+                                tín, chất lượng. Chính vì vậy, ISPACE tập trung vào xây dựng Giáo trình học chi tiết,
+                                bài bản, được cập nhật mới nhất từ các NXB danh tiếng Cambridge, Pearson, đồng thời vẫn
+                                theo sát nội dung Khung
+                                chương trình giảng dạy của bộ sách tiếng Anh THCS của Bộ Giáo dục (Global Success). Bên
+                                cạnh đó, các con được ôn tập với tài liệu ôn thi học kỳ, hệ thống bài tập bổ trợ bám sát
+                                từng Unit học trên trường từ đó giúp học sinh nhanh chóng bứt phá điểm số môn tiếng Anh
+                                ở mức Khá-Giỏi.
+                            </p>
+
+                        </div>
+                    </div>
+                    <div id="col-469935036" class="col medium-6 small-12 large-6">
+                        <div class="col-inner">
+
+
+                            <div class="img has-hover img-radius x md-x lg-x y md-y lg-y" id="image_1810835688">
+                                <div class="img-inner  dark">
+                                    <img width="800" height="600"
+                                         src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20800%20600'%3E%3C/svg%3E"
+                                         class="attachment-original size-original"
+                                         alt="Lộ trình đào tạo" decoding="async"
+                                         data-lazy-srcset="/images/tieng-anh-thieu-nien/05. Ảnh Khóa JUNIOR_05.png 800w, /images/tieng-anh-thieu-nien/05. Ảnh Khóa JUNIOR_05.png 300w"
+                                         data-lazy-sizes="(max-width: 800px) 100vw, 800px"
+                                         data-lazy-src="/images/tieng-anh-thieu-nien/05. Ảnh Khóa JUNIOR_05.png">
+                                    <noscript><img width="800" height="600"
+                                                   src="/images/tieng-anh-thieu-nien/05. Ảnh Khóa JUNIOR_05.png"
+                                                   class="attachment-original size-original"
+                                                   alt="Lộ trình đào tạo" decoding="async"
+                                                   srcset="/images/tieng-anh-thieu-nien/05. Ảnh Khóa JUNIOR_05.png 800w, /images/tieng-anh-thieu-nien/05. Ảnh Khóa JUNIOR_05.png 300w"
+                                                   sizes="(max-width: 800px) 100vw, 800px"/></noscript>
+                                </div>
+
+                                <style>
+                                    #image_1810835688 {
+                                        width: 100%;
+                                    }
+                                </style>
+                            </div>
+
+                        </div>
+                    </div>
                     <style>
                         #row-1823503581 > .col > .col-inner {
                             padding: 0px 0px 0px 0px;
@@ -297,87 +374,93 @@
                         <div class="col-inner text-center">
                             <div class="text">
                                 <h2 style="font-size: 2rem!important; color: #223f81 !important;" class="text-bong">
-                                    PHƯƠNG PHÁP GIẢNG DẠY CLIL
+                                    MỤC TIÊU ĐẦU RA<br>
+                                    TIẾNG ANH THIẾU NIÊN - JUNIOR PLUS
+
                                 </h2>
 
                             </div>
                             <p class="text-223f81" style="text-align: justify;">
-                                <strong>Với Phương pháp Giảng dạy CLIL (Content and Language Integrated
-                                    Learning)</strong> đi kèm với
-                                phương châm “HỌC ĐỂ DÙNG”, các bạn nhỏ ở độ tuổi tiểu học tại iSpace English đều có cơ
-                                hội học & thực hành tiếng Anh một cách khoa học và phù hợp.
-
-
+                                Khóa JUNIOR PLUS được thiết kế với mục tiêu không chỉ giúp Học viên <strong>cải thiện
+                                    điểm số
+                                    tiếng Anh trên trường</strong>, mà còn trang bị cho các em <strong>năng lực ngôn ngữ
+                                    toàn diện, sự tự tin
+                                    và niềm yêu thích học tập lâu dài.</strong> Sau khi hoàn thành chương trình, Học
+                                viên sẽ đạt được
+                                những kết quả quan trọng như:
                             </p>
+
+                            <h4 style="text-align: justify; align-items: center; display: flex;"
+                                class="text-223f81 align-middle">
+                                <span class="number-box">1</span> <strong>Củng cố năng lực tiếng Anh toàn diện 4 kỹ
+                                    năng Nghe – Nói – Đọc – Viết
+
+                                </strong>
+                            </h4>
                             <p class="text-223f81" style="text-align: justify;">
-                                <strong>CLIL tích hợp giữa học nội dung và ngôn ngữ - Content and Language Integrated
-                                    Learning.</strong>
-                                ISPACE tự hào là đơn vị tiên phong trong việc ứng dụng CLIL vào giảng dạy Tiếng Anh cho
-                                lứa tuổi thiếu nhi 6-11 tuổi tại Việt Nam. Với Phương pháp CLIL, con sẽ được:
+                                Junior Plus tập trung phát triển đồng đều 4 kỹ năng thiết yếu, giúp học sinh không
+                                chỉ giỏi ngữ pháp và từ vựng để làm bài kiểm tra, mà còn có thể nghe hiểu tài liệu
+                                thực tế, đọc hiểu nhanh chóng, nói tự tin và viết mạch lạc.
 
                             </p>
+
+                            <h4 style="text-align: justify; align-items: center; display: flex;"
+                                class="text-223f81 align-middle">
+                                <span class="number-box">2</span> <strong>Học tập tiến bộ, nâng cao điểm số môn tiếng
+                                    Anh trên trường
+                                </strong>
+                            </h4>
+                            <p class="text-223f81" style="text-align: justify;">
+                                Bài giảng và tài liệu của khóa học được xây dựng bám sát chương trình SGK, kết hợp cùng
+                                các buổi <strong>học bổ trợ MIỄN PHÍ</strong> nhằm giúp học sinh khắc phục lỗ hổng kiến
+                                thức, rèn luyện
+                                kỹ năng làm bài kiểm tra và đạt kết quả <strong>Khá – Giỏi</strong> trong các kỳ thi học
+                                kỳ, thi chuyển
+                                cấp.
+                            </p>
+
+                            <h4 style="text-align: justify; align-items: center; display: flex;"
+                                class="text-223f81 align-middle">
+                                <span class="number-box">3</span> <strong>Sẵn sàng cho các kỳ thi Anh ngữ Chuẩn Quốc tế
+                                    Cambridge KET/PET
+
+                                </strong>
+                            </h4>
+                            <p class="text-223f81" style="text-align: justify;">
+                                Khóa học giúp học sinh từng bước làm quen với cấu trúc đề thi, luyện tập với nguồn đề uy
+                                tín từ Cambridge. Nhờ vậy, học sinh có thể tự tin đăng ký và đạt kết quả tốt trong các
+                                kỳ thi quốc tế, mở ra nhiều cơ hội học tập và học bổng sau này.
+
+                            </p>
+
+                            <h4 style="text-align: justify; align-items: center; display: flex;"
+                                class="text-223f81 align-middle">
+                                <span class="number-box">4</span> <strong>Tự tin hòa nhập, giao tiếp và thuyết trình
+                                    tiếng Anh trước đám đông
+                                </strong>
+                            </h4>
+                            <p class="text-223f81" style="text-align: justify;">
+                                Thông qua các hoạt động ngoại khóa, thảo luận nhóm, và đặc biệt là Video Dự án theo chủ
+                                đề, học sinh được rèn luyện khả năng diễn đạt ý tưởng mạch lạc, phản xạ tiếng Anh nhanh
+                                nhạy và thuyết trình một cách thuyết phục. Đây là kỹ năng quan trọng giúp các em nổi bật
+                                trong môi trường học tập hiện đại.
+                            </p>
+
                         </div>
                     </div>
-                    <div id="col-1885320906" class="col medium-6 small-12 large-6">
+                    <div id="col-1585278703" class="col medium-12 small-12 large-12">
                         <div class="col-inner" style="padding-top: 0">
-                            <div id="text-4024370902" class="text">
-                                <p class="text-223f81" style="text-align: justify;">
-                                    <i class="fa fa-caret-right" aria-hidden="true"></i>
-                                    <strong>Trải nghiệm môi trường học tập đa văn hóa:</strong> kết hợp việc học ngôn
-                                    ngữ trong các bối
-                                    cảnh văn hóa khác nhau, giúp con dễ dàng hòa nhập với môi trường quốc tế sau này và
-                                    nâng cao khả năng sáng tạo.
-
-                                </p>
-                                <p class="text-223f81" style="text-align: justify;">
-                                    <i class="fa fa-caret-right" aria-hidden="true"></i>
-                                    <strong>Trau dồi kiến thức liên môn:</strong> vừa giúp con cải thiện được ngôn ngữ
-                                    mục tiêu mà còn tăng cường được kiến thức ở các môn học đa dạng như Sinh học, Địa
-                                    lý, toán học & Vật lý…
-                                </p>
-
-                                <p class="text-223f81" style="text-align: justify;">
-                                    <i class="fa fa-caret-right" aria-hidden="true"></i>
-                                    <strong>Được trải nghiệm giao tiếp tiếng Anh bằng cả 5 giác quan:</strong> Những bài
-                                    tập thuyết trình trước lớp với sơ đồ tư duy; hoạt động nhóm,… sẽ rèn luyện kỹ năng
-                                    làm việc nhóm và khả năng giao tiếp trước đám đông.
-                                </p>
-
-                                <style>
-                                    #text-4024370902 {
-                                        color: rgb(68, 68, 68);
-                                    }
-
-                                    #text-4024370902 > * {
-                                        color: rgb(68, 68, 68);
-                                    }
-
-
-                                </style>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div id="col-1585278703" class="col medium-6 small-12 large-6">
-                        <div class="col-inner" style="padding-top: 0">
-
-
                             <div class="img has-hover img-radius x md-x lg-x y md-y lg-y" id="image_1810835688">
                                 <div class="img-inner  dark">
                                     <img width="800" height="600"
-                                         src="/images/tieng-anh-tieu-hoc/04. Ảnh Tiểu học_04.png"
+                                         src="/images/tieng-anh-thieu-nien/05. Ảnh Khóa JUNIOR_06.png"
                                          class="attachment-original size-original entered lazyloaded"
-                                         alt="Tầm nhìn và sứ mệnh" decoding="async"
-                                         data-lazy-srcset="/images/tieng-anh-tieu-hoc/04. Ảnh Tiểu học_04.png 800w, /images/tieng-anh-tieu-hoc/04. Ảnh Tiểu học_04.png 300w"
-                                         data-lazy-sizes="(max-width: 800px) 100vw, 800px"
-                                         data-lazy-src="/images/tieng-anh-tieu-hoc/04. Ảnh Tiểu học_04.png"
-                                         data-ll-status="loaded" sizes="(max-width: 800px) 100vw, 800px"
-                                         srcset="/images/tieng-anh-tieu-hoc/04. Ảnh Tiểu học_04.png 800w, /images/tieng-anh-tieu-hoc/04. Ảnh Tiểu học_04.png 300w">
+                                         alt="Tầm nhìn và sứ mệnh" decoding="async">
                                     <noscript><img width="800" height="600"
-                                                   src="/images/tieng-anh-tieu-hoc/04. Ảnh Tiểu học_04.png"
+                                                   src="/images/tieng-anh-thieu-nien/05. Ảnh Khóa JUNIOR_06.png"
                                                    class="attachment-original size-original"
                                                    alt="Tầm nhìn và sứ mệnh" decoding="async"
-                                                   srcset="/images/tieng-anh-tieu-hoc/04. Ảnh Tiểu học_04.png 800w, /images/tieng-anh-tieu-hoc/04. Ảnh Tiểu học_04.png 300w"
+                                                   srcset="/images/tieng-anh-thieu-nien/05. Ảnh Khóa JUNIOR_06.png 800w, /images/tieng-anh-thieu-nien/05. Ảnh Khóa JUNIOR_06.png 300w"
                                                    sizes="(max-width: 800px) 100vw, 800px"/></noscript>
                                 </div>
 
@@ -429,8 +512,8 @@
 
                             <div id="text-3926705388" class="text text-center">
 
-                                <h2 style="font-size: 2rem!important;" class="text-bong">LỘ TRÌNH & GIÁO TRÌNH HỌC TIẾNG
-                                    ANH TIỂU HỌC
+                                <h2 style="font-size: 2rem!important;" class="text-bong">PHƯƠNG PHÁP GIẢNG DẠY KHÓA HỌC
+                                    JUNIOR PLUS
                                 </h2>
 
                                 <style>
@@ -439,31 +522,11 @@
                                     }
                                 </style>
                             </div>
-                            <p>iSpace English lựa chọn <strong>Bộ Giáo trình LOOK</strong> (phiên bản mới nhất) - một
-                                sản phẩm của <strong>Nhà
-                                    xuất bản Khoa học National Geographic Learning</strong> làm nền tảng cho chương
-                                trình tiếng Anh
-                                tiểu học Primary.
+                            <p>ISPACE ENGLISH áp dụng đồng thời <strong>3 phương pháp giảng dạy tiên tiến nhất hiện nay: CLIL,
+                                    Project-Based và PPP</strong> để đảm bảo Học viên nắm vững kiến thức vững chắc, tự tin, linh hoạt
+                                và sẵn sàng hội nhập trong môi trường quốc tế.
 
-                            </p>
-                            <p>Chương trình Primary gồm 6 cấp độ & mỗi cấp độ của Bộ giáo trình cụ thể bao gồm các tài
-                                liệu học như sau:
-                            </p>
-                            <p style="font-style: italic">
-                                <i class="fa fa-hand-o-right" aria-hidden="true"></i>
-                                <i>01 Sách Học sinh – <strong>Look Student Book</strong></i>
-                            </p>
 
-                            <p style="font-style: italic">
-                                <i class="fa fa-hand-o-right" aria-hidden="true"></i>
-                                <i>01 Sách Bài tập – <strong>Look Workbook</strong></i>
-                            </p>
-
-                            <p style="font-style: italic">
-                                <i class="fa fa-hand-o-right" aria-hidden="true"></i>
-                                <i>01 Sách Bổ trợ Tăng cường – <strong>Look Worksheet Practice.
-                                    </strong></i>
-                            </p>
                         </div>
                     </div>
                     <div id="col-1585278703" class="col medium-12 small-12 large-12">
@@ -471,20 +534,14 @@
                             <div class="img has-hover img-radius x md-x lg-x y md-y lg-y" id="image_1810835688">
                                 <div class="img-inner  dark">
                                     <img width="800" height="600"
-                                         src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20800%20600'%3E%3C/svg%3E"
+                                         src="/images/tieng-anh-thieu-nien/07. Ảnh Khóa JUNIOR_07.png"
                                          class="attachment-original size-original entered lazyloaded"
-                                         alt="Tầm nhìn và sứ mệnh" decoding="async"
-                                         data-lazy-srcset="/images/tieng-anh-tieu-hoc/05_Ảnh_Tiểu_học_05.png 800w, /images/tieng-anh-tieu-hoc/05_Ảnh_Tiểu_học_05.png 300w"
-                                         data-lazy-sizes="(max-width: 800px) 100vw, 800px"
-                                         data-lazy-src="/images/tieng-anh-tieu-hoc/05_Ảnh_Tiểu_học_05.png"
-                                         data-ll-status="loaded"
-                                         sizes="(max-width: 800px) 100vw, 800px"
-                                         srcset="/images/tieng-anh-tieu-hoc/05_Ảnh_Tiểu_học_05.png 800w, /images/tieng-anh-tieu-hoc/05_Ảnh_Tiểu_học_05.png 300w">
+                                         alt="Tầm nhìn và sứ mệnh" decoding="async">
                                     <noscript><img width="800" height="600"
-                                                   src="/images/tieng-anh-tieu-hoc/05_Ảnh_Tiểu_học_05.png"
+                                                   src="/images/tieng-anh-thieu-nien/07. Ảnh Khóa JUNIOR_07.png"
                                                    class="attachment-original size-original"
                                                    alt="Tầm nhìn và sứ mệnh" decoding="async"
-                                                   srcset="/images/tieng-anh-tieu-hoc/05_Ảnh_Tiểu_học_05.png 800w, /images/tieng-anh-tieu-hoc/05_Ảnh_Tiểu_học_05.png 300w"
+                                                   srcset="/images/tieng-anh-thieu-nien/07. Ảnh Khóa JUNIOR_07.png 800w, /images/tieng-anh-thieu-nien/07. Ảnh Khóa JUNIOR_07.png 300w"
                                                    sizes="(max-width: 800px) 100vw, 800px"/></noscript>
                                 </div>
 
@@ -522,249 +579,6 @@
                 }
 
                 #section_951596077 .ux-shape-divider--bottom svg {
-                    height: 150px;
-                    --divider-width: 100%;
-                }
-            </style>
-        </section>
-        <section class="section" id="section_540041822">
-            <div class="bg section-bg fill bg-fill  bg-loaded">
-            </div>
-            <div class="section-content relative">
-                <div class="row align-middle" id="row-1179098426">
-                    <div class="col medium-12 small-12 large-12">
-                        <div class="col-inner text-center">
-                            <div class="text">
-                                <h2 style="font-size: 2rem!important; color: #223f81 !important;" class="text-bong">
-                                    GIÁO TRÌNH "LOOK" CÓ GÌ ĐẶC BIỆT?
-                                </h2>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="col-1585278703" class="col medium-6 small-12 large-6">
-                        <div class="col-inner" style="padding-top: 0">
-
-
-                            <div class="img has-hover img-radius x md-x lg-x y md-y lg-y" id="image_1810835688">
-                                <div class="img-inner  dark">
-                                    <img width="800" height="600"
-                                         src="/images/tieng-anh-tieu-hoc/06. Ảnh Tiểu học_06.png"
-                                         class="attachment-original size-original entered lazyloaded"
-                                         alt="Tầm nhìn và sứ mệnh" decoding="async"
-                                         data-lazy-srcset="/images/tieng-anh-tieu-hoc/06. Ảnh Tiểu học_06.png 800w, /images/tieng-anh-tieu-hoc/06. Ảnh Tiểu học_06.png 300w"
-                                         data-lazy-sizes="(max-width: 800px) 100vw, 800px"
-                                         data-lazy-src="/images/tieng-anh-tieu-hoc/06. Ảnh Tiểu học_06.png"
-                                         data-ll-status="loaded" sizes="(max-width: 800px) 100vw, 800px"
-                                         srcset="/images/tieng-anh-tieu-hoc/06. Ảnh Tiểu học_06.png 800w, /images/tieng-anh-tieu-hoc/06. Ảnh Tiểu học_06.png 300w">
-                                    <noscript><img width="800" height="600"
-                                                   src="/images/tieng-anh-tieu-hoc/06. Ảnh Tiểu học_06.png"
-                                                   class="attachment-original size-original"
-                                                   alt="Tầm nhìn và sứ mệnh" decoding="async"
-                                                   srcset="/images/tieng-anh-tieu-hoc/06. Ảnh Tiểu học_06.png 800w, /images/tieng-anh-tieu-hoc/06. Ảnh Tiểu học_06.png 300w"
-                                                   sizes="(max-width: 800px) 100vw, 800px"/></noscript>
-                                </div>
-
-                                <style>
-                                    #image_1810835688 {
-                                        width: 100%;
-                                    }
-                                </style>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <div id="col-1885320906" class="col medium-6 small-12 large-6">
-                        <div class="col-inner" style="padding-top: 0">
-                            <div id="text-4024370902" class="text">
-                                <p class="text-223f81" style="text-align: justify;">
-                                    <i class="fa fa-caret-right" aria-hidden="true"></i>
-                                    <strong>Khơi gợi trí tò mò & truyền cảm hứng học tập</strong> <br>
-                                    - Trẻ được "du hành" qua những hình ảnh, video chân thực, câu chuyện sống động từ
-                                    các Nhà Thám hiểm Địa lý Quốc gia <br>
-                                    - Mỗi bài học là một chuyến phiêu lưu hấp dẫn.
-                                </p>
-                                <p class="text-223f81" style="text-align: justify;">
-                                    <i class="fa fa-caret-right" aria-hidden="true"></i>
-                                    <strong>Nội dung chủ đề học đa dạng, mang tính toàn cầu</strong> <br>
-                                    - Từ thiên nhiên kỳ thú đến những nét văn hoá độc đáo, tất cả được lồng ghép thông
-                                    minh để trẻ vừa học ngôn ngữ vừa mở mang thế giới quan.<br>
-                                    - Các bài học ngắn gọn, rõ ràng, có tính ứng dụng cao.<br>
-                                    - Phần mở rộng bài đọc gồm truyện ngụ ngôn, truyện có thật, truyền thuyết giúp phát
-                                    triển kỹ năng đọc hiểu sâu hơn.
-
-                                </p>
-                                <p class="text-223f81" style="text-align: justify;">
-                                    <i class="fa fa-caret-right" aria-hidden="true"></i>
-                                    <strong> Xây dựng nền tảng ngôn ngữ toàn diện</strong> <br>
-                                    - Từ vựng trong bối cảnh thực tế, dễ ghi nhớ và sử dụng linh hoạt.<br>
-                                    - Ngữ pháp rõ ràng, đề cao tính thực hành.<br>
-                                    - Phát triển kỹ năng viết, ngữ âm và phản xạ giao tiếp.<br>
-                                    - Bài hát, video sinh động, gần gũi, dễ tiếp thu.
-                                </p>
-
-                                <p class="text-223f81" style="text-align: justify;">
-                                    <i class="fa fa-caret-right" aria-hidden="true"></i>
-                                    <strong> Tích hợp nội dung, hướng đến chinh phục Kỳ thi Cambridge</strong> <br>
-                                    - LOOK đồng hành cùng trẻ chinh phục các cấp độ tương ứng của chứng chỉ Cambridge
-                                    YLE Starters/Movers/Flyers
-                                    <br>
-                                    - Giúp các con tự tin, sẵn sàng cho những cấp học cao hơn ở bậc Cambridge THCS
-                                    (KET/PET)
-                                    <br>
-                                </p>
-                                <style>
-                                    #text-4024370902 {
-                                        color: rgb(68, 68, 68);
-                                    }
-
-                                    #text-4024370902 > * {
-                                        color: rgb(68, 68, 68);
-                                    }
-
-
-                                </style>
-                            </div>
-
-                        </div>
-                    </div>
-                    <style>
-                        #row-1179098426 > .col > .col-inner {
-                            padding: 40px 0px 0px 0px;
-                        }
-                    </style>
-                </div>
-            </div>
-
-
-            <style>
-                #section_540041822 {
-                    padding-top: 30px;
-                    padding-bottom: 30px;
-                }
-
-                #section_540041822 .ux-shape-divider--top svg {
-                    height: 150px;
-                    --divider-top-width: 100%;
-                }
-
-                #section_540041822 .ux-shape-divider--bottom svg {
-                    height: 150px;
-                    --divider-width: 100%;
-                }
-            </style>
-        </section>
-        <section class="section dark" id="section_1679542751">
-            <div class="bg section-bg fill bg-fill bg-loaded">
-            </div>
-            <div class="section-content relative">
-                <div class="row align-middle" id="row-1823503581">
-                    <div id="col-1931238190" class="col medium-12 small-12 large-12">
-                        <div class="col-inner" style="margin-top: 30px">
-                            <div id="text-3926705388" class="text">
-
-                                <h2 style="font-size: 2rem!important;line-height: 50px;" class="text-bong">
-                                    CẤU TRÚC KHÓA HỌC TIẾNG ANH TIỂU HỌC
-                                </h2>
-
-                                <style>
-                                    #text-3926705388 {
-                                        font-size: 1.75rem;
-                                    }
-                                </style>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div id="col-469935036" class="col medium-6 small-12 large-6">
-                        <div class="col-inner">
-                            <p>
-                                <i class="fa fa-caret-right" aria-hidden="true"></i>
-                                01 khoá học Primary = 36 giờ (~ 3 tháng); 24 buổi học ; 2 buổi học/tuần; 1 buổi học =1.5
-                                phút
-
-                            </p>
-                            <p>
-                                <i class="fa fa-caret-right" aria-hidden="true"></i>
-                                Sĩ Số lớp: 15-16 HV
-                            </p>
-                            <p style="margin-bottom: 15px">
-                                <i class="fa fa-caret-right" aria-hidden="true"></i>
-                                03 buổi học <strong>NGOẠI KHÓA (EXTRA-CURRICULAR)</strong> cuối khoá giúp HV phát triển các kỹ năng mềm,
-                                tự tin thuyết trình, biểu diễn showcase:
-                            </p>
-                            <p  style="margin-bottom: 15px">
-                                <i class="fa fa-check" aria-hidden="true"></i>
-                                <strong>Cấp độ Pre-Starter, Prim 1, Prim 2:</strong>
-                                <i>thủ công thuyết trình, kể chuyện, lồng tiếng phim TA…</i>
-                            </p>
-                            <p  style="margin-bottom: 15px">
-                                <i class="fa fa-check" aria-hidden="true"></i>
-                                <strong>Cấp độ Prim 3-4-5:</strong>
-                                <i>thuyết trình theo sơ đồ tư duy, Đọc & cảm thụ sách truyện, tiếng Anh khoa học…</i>
-                            </p>
-                        </div>
-                    </div>
-                    <div id="col-469935036" class="col medium-6 small-12 large-6">
-                        <div class="col-inner">
-
-
-                            <div class="img has-hover img-radius x md-x lg-x y md-y lg-y" id="image_1810835688">
-                                <div class="img-inner  dark">
-                                    <img width="800" height="600"
-                                         src="/images/tieng-anh-tieu-hoc/07. Ảnh Tiểu học_07.png"
-                                         class="attachment-original size-original entered lazyloaded"
-                                         alt="Lộ trình đào tạo" decoding="async"
-                                         data-lazy-srcset="/images/tieng-anh-tieu-hoc/03. Ảnh Tiểu học_03.png 800w, /images/tieng-anh-tieu-hoc/03. Ảnh Tiểu học_03.png 300w"
-                                         data-lazy-sizes="(max-width: 800px) 100vw, 800px"
-                                         data-lazy-src="/images/tieng-anh-tieu-hoc/03. Ảnh Tiểu học_03.png"
-                                         data-ll-status="loaded" sizes="(max-width: 800px) 100vw, 800px"
-                                         srcset="/images/tieng-anh-tieu-hoc/03. Ảnh Tiểu học_03.png 800w, /images/tieng-anh-tieu-hoc/03. Ảnh Tiểu học_03.png 300w">
-                                    <noscript><img width="800" height="600"
-                                                   src="/images/tieng-anh-tieu-hoc/07. Ảnh Tiểu học_07.png"
-                                                   class="attachment-original size-original"
-                                                   alt="Lộ trình đào tạo" decoding="async"
-                                                   srcset="/images/tieng-anh-tieu-hoc/07. Ảnh Tiểu học_07.png 800w, /images/tieng-anh-tieu-hoc/07. Ảnh Tiểu học_07.png 300w"
-                                                   sizes="(max-width: 800px) 100vw, 800px"/></noscript>
-                                </div>
-
-                                <style>
-                                    #image_1810835688 {
-                                        width: 100%;
-                                    }
-                                </style>
-                            </div>
-
-                        </div>
-                    </div>
-
-
-                    <style>
-                        #row-1823503581 > .col > .col-inner {
-                            padding: 0px 0px 0px 0px;
-                        }
-                    </style>
-                </div>
-            </div>
-
-
-            <style>
-                #section_1679542751 {
-                    padding-top: 30px;
-                    padding-bottom: 30px;
-                }
-
-                #section_1679542751 .section-bg.bg-loaded {
-                    background-image: url('/images/bg-about.jpeg');
-                }
-
-                #section_1679542751 .ux-shape-divider--top svg {
-                    height: 150px;
-                    --divider-top-width: 100%;
-                }
-
-                #section_1679542751 .ux-shape-divider--bottom svg {
                     height: 150px;
                     --divider-width: 100%;
                 }
