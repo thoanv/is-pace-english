@@ -828,7 +828,7 @@ GIÀU KINH NGHIỆM
                                             </div>
                                             <h4>{{$name}}</h4>
 
-                                            <div class="desc">
+                                            <div class="desc teachers">
                                                 <p>{!! $teacher['description'] !!}</p>
                                             </div>
                                         </div>
@@ -847,6 +847,9 @@ GIÀU KINH NGHIỆM
                 <style>
                     #col-1465885178 > .col-inner {
                         margin: 40px 0px 0px 0px;
+                    }
+                    .teachers p{
+                        margin-bottom: 0px !important;
                     }
                 </style>
             </div>
