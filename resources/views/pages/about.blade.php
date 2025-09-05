@@ -812,12 +812,8 @@ GIÀU KINH NGHIỆM
                                         <div class="box-image">
                                             <div class="image-cover" style="padding-top:100%;">
                                                 <img width="300" height="225"
-                                                     src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%20225'%3E%3C/svg%3E"
-                                                     class="attachment-medium size-medium wp-post-image" alt="{{$name}}"
-                                                     decoding="async"
-                                                     data-lazy-srcset="{{$img}} 300w, {{$img}} 1024w"
-                                                     data-lazy-sizes="(max-width: 300px) 100vw, 300px"
-                                                     data-lazy-src="{{$img}}">
+                                                     src="{{$img}}"
+                                                     class="attachment-medium size-medium wp-post-image" alt="{{$name}}">
                                                 <noscript><img width="300" height="225"
                                                                src="{{$img}}"
                                                                class="attachment-medium size-medium wp-post-image" alt="{{$name}}"
