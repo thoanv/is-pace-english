@@ -11,7 +11,7 @@
                 <h2 class="title text-223f81">{{$post['title']}} {{$post['title']}}</h2>
             </a>
             <div class="box-text" style="padding: 3px 0 10px;">
-                <div class="news-date">
+                <div class="news-date" style="margin-bottom: 0">
                     <div class="category">
                         Tin tức
                     </div>
