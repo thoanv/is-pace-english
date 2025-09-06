@@ -941,6 +941,105 @@
         box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
         margin-right: 10px;
     }
+    .postss .achievement-card {
+        background: white;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        display: flex;
+        gap: 20px;
+        padding: 20px;
+        margin-bottom: 24px;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .postss .achievement-card:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .postss .image-section {
+        flex-shrink: 0;
+        width: 140px;
+    }
+
+    .postss .image-section img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        object-fit: cover;
+    }
+
+    .postss .content-section {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .postss .title {
+        font-size: 16px;
+        font-weight: 700;
+        color: #333;
+        line-height: 1.3;
+    }
+
+    .postss .description {
+        font-size: 13px;
+        color: #666;
+        line-height: 1.5;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+    .postss .see-more-btn {
+        align-self: flex-start;
+        background: none;
+        border: none;
+        color: #1976d2;
+        font-size: 13px;
+        font-weight: 500;
+        cursor: pointer;
+        text-decoration: none;
+        display: inline-flex;
+        align-items: center;
+        gap: 4px;
+        padding: 4px 0;
+        transition: color 0.2s ease;
+    }
+
+    .postss .see-more-btn:hover {
+        color: #1565c0;
+        text-decoration: underline;
+    }
+
+    .postss .see-more-btn::after {
+        content: '→';
+        font-size: 12px;
+    }
+
+    /* Mobile responsive adjustments */
+    @media (max-width: 639px) {
+        .postss .achievement-card {
+            flex-direction: column;
+            padding: 16px;
+        }
+
+        .postss .image-section {
+            width: 100%;
+        }
+
+        .postss .title {
+            font-size: 15px;
+        }
+
+        .postss .description {
+            font-size: 12px;
+            -webkit-line-clamp: 4;
+        }
+    }
 </style>
 </body>
 </html>

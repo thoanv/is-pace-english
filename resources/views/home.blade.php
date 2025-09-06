@@ -431,66 +431,29 @@
                             class="section-title section-title-center"><b></b><span class="section-title-main">Tin tức &amp; Sự kiện</span><b></b>
                         </h3>
                     </div>
-                    <div
-                        class="row equalize-box large-columns-3 medium-columns-2 small-columns-1 slider row-slider slider-nav-circle slider-nav-outside slider-nav-push"
-                        data-flickity-options='{"imagesLoaded": true, "groupCells": "100%", "dragThreshold" : 5, "cellAlign": "left","wrapAround": true,"prevNextButtons": true,"percentPosition": true,"pageDots": false, "rightToLeft": false, "autoPlay" : false}'>
+                    <div class="row">
                         @foreach($posts as $post)
-                            <div class="col post-item">
-                                <div class="col-inner">
-                                    <a href="{{route('page',['cate_slug' => $post->category?->slug, 'slug' => $post['slug']])}}"
-                                       class="plain">
-                                        <div class="box box-normal box-text-bottom box-blog-post has-hover">
-                                            <div class="box-image">
-                                                <div class="image-zoom image-cover" style="padding-top:80%;">
-                                                    <img width="1200" height="628"
-                                                         src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201200%20628'%3E%3C/svg%3E"
-                                                         class="attachment-original size-original wp-post-image"
-                                                         alt="{{$post['title']}}" decoding="async"
-                                                         data-lazy-srcset="{{$post['image']}} 1200w, {{$post['image']}} 300w, {{$post['image']}} 1024w"
-                                                         data-lazy-sizes="(max-width: 1200px) 100vw, 1200px"
-                                                         data-lazy-src="wp-content/uploads/2025/04/khoa-hoc-ielts.jpg"/>
-                                                    <noscript><img width="1200" height="628"
-                                                                   src="{{$post['image']}}"
-                                                                   class="attachment-original size-original wp-post-image"
-                                                                   alt="{{$post['title']}}"
-                                                                   decoding="async"
-                                                                   srcset="{{$post['image']}} 1200w, {{$post['image']}} 300w, {{$post['image']}} 1024w"
-                                                                   sizes="(max-width: 1200px) 100vw, 1200px"/>
-                                                    </noscript>
-                                                </div>
-                                            </div>
-                                            <div class="box-text text-left">
-                                                <div class="box-text-inner blog-post-inner">
+                            <div class="col small-12 large-6 postss">
+                                <div class="achievement-card">
+                                    <div class="image-section">
+                                        <img src="{{$post['image']}}" alt="IELTS Achievement Certificate">
+                                    </div>
 
+                                    <div class="content-section">
+                                        <h2 class="title">{{$post['title']}}</h2>
 
-                                                    <div class="box-meta">
-                                                <span class="cat">
-                                                    {{$post->category?->name}}        </span>
-                                                        <span style="margin-left: auto">
-                                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                                                 xmlns="http://www.w3.org/2000/svg">
-                                                                <path
-                                                                    d="M1.75 13.75C1.75 14.0266 1.97344 14.25 2.25 14.25H13.75C14.0266 14.25 14.25 14.0266 14.25 13.75V7.1875H1.75V13.75ZM13.75 2.875H11.125V1.875C11.125 1.80625 11.0688 1.75 11 1.75H10.125C10.0562 1.75 10 1.80625 10 1.875V2.875H6V1.875C6 1.80625 5.94375 1.75 5.875 1.75H5C4.93125 1.75 4.875 1.80625 4.875 1.875V2.875H2.25C1.97344 2.875 1.75 3.09844 1.75 3.375V6.125H14.25V3.375C14.25 3.09844 14.0266 2.875 13.75 2.875Z"
-                                                                    fill="#7E7E7E"></path>
-                                                                </svg>
+                                        <p class="description">
+                                           {!! $post['description'] !!}
+                                        </p>
 
-                                                            <span
-                                                                style="margin-left: 5px">{{date('d/m/Y', strtotime($post['date_publish']))}}</span>
-                                                        </span>
-                                                    </div>
-
-                                                    <h5 class="post-title is-large ">{{$post['title']}}</h5>
-                                                    <div class="is-divider"></div>
-                                                    <p class="from_the_blog_excerpt ">{{$post['description']}}</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </a>
+                                        <a href="{{route('page',['cate_slug' => $post->category?->slug, 'slug' => $post['slug']])}}" class="see-more-btn">XEM THÊM</a>
+                                    </div>
                                 </div>
                             </div>
-                        @endforeach
 
+                        @endforeach
                     </div>
+
                     @php
                         $cate = \App\Models\Category::where([['status', \App\Enums\CommonEnum::ACTIVATED], ['type', \App\Enums\CategoryEnum::TIN_TUC]])->whereNull('parent_id')->first();
                     @endphp
