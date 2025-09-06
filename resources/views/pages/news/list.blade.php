@@ -33,12 +33,7 @@
                                         <img width="1200" height="628"
                                              src="{{$image}}"
                                              class="attachment-full size-full wp-post-image entered lazyloaded"
-                                             alt="{{$title}}" decoding="async"
-                                             data-lazy-srcset="{{$image}} 1200w, {{$image}} 300w, {{$image}} 1024w"
-                                             data-lazy-sizes="(max-width: 1200px) 100vw, 1200px"
-                                             data-lazy-src="{{$image}}"
-                                             data-ll-status="loaded" sizes="(max-width: 1200px) 100vw, 1200px"
-                                             srcset="{{$image}} 1200w, {{$image}} 300w, {{$image}} 1024w">
+                                             alt="{{$title}}">
                                         <noscript><img width="1200" height="628"
                                                        src="{{$image}}"
                                                        class="attachment-full size-full wp-post-image"
