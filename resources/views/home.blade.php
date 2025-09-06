@@ -436,17 +436,18 @@
                             <div class="col small-12 large-6 postss">
                                 <div class="achievement-card">
                                     <div class="image-section">
-                                        <img src="{{$post['image']}}" alt="IELTS Achievement Certificate">
+                                        <a href="{{route('page',['cate_slug' => $post->category?->slug, 'slug' => $post['slug']])}}">
+                                        <img src="{{$post['image']}}" alt="{{$post['title']}}">
+                                        </a>
                                     </div>
 
-                                    <div class="content-section">
-                                        <h2 class="title">{{$post['title']}}</h2>
-
-                                        <p class="description">
-                                           {!! $post['description'] !!}
+                                    <div class="content-section" title="{{$post['title']}}">
+                                        <a href="{{route('page',['cate_slug' => $post->category?->slug, 'slug' => $post['slug']])}}">
+                                        <h2 class="title text-223f81">{{$post['title']}} {{$post['title']}}</h2>
+                                        </a>
+                                        <p class="description text-223f81" title="{!! $post['description'] !!}">
+                                           {!! $post['description'] !!} {!! $post['description'] !!}
                                         </p>
-
-                                        <a href="{{route('page',['cate_slug' => $post->category?->slug, 'slug' => $post['slug']])}}" class="see-more-btn">XEM THÊM</a>
                                     </div>
                                 </div>
                             </div>

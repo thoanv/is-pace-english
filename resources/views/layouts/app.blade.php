@@ -948,8 +948,8 @@
         overflow: hidden;
         display: flex;
         gap: 20px;
-        padding: 20px;
-        margin-bottom: 24px;
+        padding: 15px;
+        margin-bottom: 0;
         transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
 
@@ -960,12 +960,12 @@
 
     .postss .image-section {
         flex-shrink: 0;
-        width: 140px;
+        width: 180px;
     }
 
     .postss .image-section img {
         width: 100%;
-        height: auto;
+        height: 115px;
         border-radius: 8px;
         object-fit: cover;
     }
@@ -978,20 +978,30 @@
     }
 
     .postss .title {
-        font-size: 16px;
+        font-size: 18px;
         font-weight: 700;
         color: #333;
         line-height: 1.3;
-    }
-
-    .postss .description {
-        font-size: 13px;
-        color: #666;
-        line-height: 1.5;
+        text-align: left;
         display: -webkit-box;
         -webkit-line-clamp: 3;
         -webkit-box-orient: vertical;
         overflow: hidden;
+        height: 45px;
+        margin-bottom: 0;
+    }
+
+    .postss .description {
+        font-size: 14px;
+        color: #666;
+        line-height: 1.4;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-align: left;
+        height: 56px;
+        margin-bottom: 0;
     }
 
     .postss .see-more-btn {
@@ -1024,20 +1034,31 @@
     @media (max-width: 639px) {
         .postss .achievement-card {
             flex-direction: column;
-            padding: 16px;
-        }
+            padding: 0 0 16px 0;
 
+        }
+        .postss .content-section{
+            padding: 0 16px;
+        }
+        .postss .image-section img{
+            height: 200px;
+            border-radius: 8px;
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+        }
         .postss .image-section {
             width: 100%;
         }
 
         .postss .title {
-            font-size: 15px;
+            font-size: 17px;
+            height: 65px;
         }
 
         .postss .description {
-            font-size: 12px;
+            font-size: 14px;
             -webkit-line-clamp: 4;
+            height: 80px;
         }
     }
 </style>
