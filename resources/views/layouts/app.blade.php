@@ -965,7 +965,7 @@
 
     .postss .image-section img {
         width: 100%;
-        height: 115px;
+        height: 143px;
         border-radius: 8px;
         object-fit: cover;
     }
@@ -974,7 +974,7 @@
         flex: 1;
         display: flex;
         flex-direction: column;
-        gap: 12px;
+        gap: 2px;
     }
 
     .postss .title {

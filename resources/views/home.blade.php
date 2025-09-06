@@ -433,24 +433,7 @@
                     </div>
                     <div class="row">
                         @foreach($posts as $post)
-                            <div class="col small-12 large-6 postss">
-                                <div class="achievement-card">
-                                    <div class="image-section">
-                                        <a href="{{route('page',['cate_slug' => $post->category?->slug, 'slug' => $post['slug']])}}">
-                                        <img src="{{$post['image']}}" alt="{{$post['title']}}">
-                                        </a>
-                                    </div>
-
-                                    <div class="content-section" title="{{$post['title']}}">
-                                        <a href="{{route('page',['cate_slug' => $post->category?->slug, 'slug' => $post['slug']])}}">
-                                        <h2 class="title text-223f81">{{$post['title']}} {{$post['title']}}</h2>
-                                        </a>
-                                        <p class="description text-223f81" title="{!! $post['description'] !!}">
-                                           {!! $post['description'] !!} {!! $post['description'] !!}
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
+                            @include('components.item-post', ['post' => $post])
 
                         @endforeach
                     </div>
