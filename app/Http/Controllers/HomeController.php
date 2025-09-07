@@ -66,6 +66,7 @@ class HomeController extends Controller
             if($slug){
                 $post = $this->postService->getPostBySlug($slug);
                 if(!$post){ return abort(404); }
+                $updateView = $this->postService->updateView($post);
                 $listPostSameCategories = $this->postService->getListPostSameCategories($post);
                 $listNewPosts = $this->postService->getNewPostOtherSlug($post);
                 $result  = $this->generateTOC($post['content']);

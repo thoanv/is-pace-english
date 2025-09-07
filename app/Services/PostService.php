@@ -98,4 +98,9 @@ class PostService extends BaseService
     public function getListPostSameCategories($post){
         return $this->repo->getListPostSameCategories($post);
     }
+    public function updateView($post){
+        $post->view = $post->view + 1;
+        $post->save();
+        return true;
+    }
 }

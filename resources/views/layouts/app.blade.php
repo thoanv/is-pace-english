@@ -965,7 +965,7 @@
 
     .postss .image-section img {
         width: 100%;
-        height: 143px;
+        height: 175px;
         border-radius: 8px;
         object-fit: cover;
     }
