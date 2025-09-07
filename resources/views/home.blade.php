@@ -126,9 +126,10 @@
                 <div class="slider-botom">
 
                     <p>
-                        <svg viewBox="0 0 1920 205" fill="none" xmlns="http://www.w3.org/2000/svg"> Đã xóa:
-                            <path d="M0 0C748.498 184.586 1168.9 184.445 1920 0V205H0V0Z" fill="white"/>
-                        </svg>
+{{--                        <svg viewBox="0 0 1920 205" fill="none" xmlns="http://www.w3.org/2000/svg"> Đã xóa:--}}
+{{--                            <path d="M0 0C748.498 184.586 1168.9 184.445 1920 0V205H0V0Z" fill="white"/>--}}
+{{--                        </svg>--}}
+                    </p>
                         <br/>
                 </div>
 
@@ -159,7 +160,7 @@
                 }
             </style>
         </section>
-        <section class="section home-about" id="section_417320324">
+        <section class="section home-about" id="section_417320324" style="margin-top: 35px;">
             <div class="bg section-bg fill bg-fill  bg-loaded">
             </div>
             <div class="section-content relative">
