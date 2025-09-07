@@ -431,7 +431,7 @@
     </svg>
 </div>
 <div class="contact-box-bottom">
-    <a class="contact-box-wrapper nut-chat-zalo" href="https://zalo.me/4226591107898478913" rel="nofollow"
+    <a class="contact-box-wrapper nut-chat-zalo" href="https://zalo.me/{{$info['phone']}}" rel="nofollow"
        target="_blank">
         <div class="contact-icon-box" style="border: none;">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 161.5 161.5">
