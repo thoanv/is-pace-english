@@ -36,7 +36,6 @@
                         <div class="col-inner">
                             <div class="text">
                                 <h1 class="text-bong">
-                                    KHÓA HỌC TIẾNG ANH MẦM NON - PRESCHOOL
                                     PHƯƠNG PHÁP GIẢNG DẠY ĐA GIÁC QUAN
                                 </h1>
                                 <p class="text-223f81" style="text-align: justify;">PRESCHOOL không

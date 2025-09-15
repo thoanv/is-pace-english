@@ -1,10 +1,10 @@
 @php
-$route = route('page',['cate_slug' => $post->category?->slug]);
+$route = route('page',['cate_slug' => $post->category?->slug, 'slug' => $post['slug']]);
 @endphp
 <div class="col small-12 large-6 postss">
     <div class="achievement-card">
         <div class="image-section">
-            <a href="{{route('page',['cate_slug' => $post->category?->slug, 'slug' => $post['slug']])}}">
+            <a href="{{$route}}">
                 <img src="{{$post['image']}}" alt="{{$post['title']}}">
             </a>
         </div>
@@ -16,7 +16,7 @@ $route = route('page',['cate_slug' => $post->category?->slug]);
             <div class="box-text" style="padding: 3px 0 10px;">
                 <div class="news-date" style="margin-bottom: 0">
                     <div class="category">
-                        <a href="{{$route}}">{{$post->category?->name}}</a>
+                        <a href="{{route('page',['cate_slug' => $post->category?->slug])}}">{{$post->category?->name}}</a>
                     </div>
                     <div class="news-date-item">
                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">

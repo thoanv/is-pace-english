@@ -39,9 +39,9 @@ class PostRepository extends AbstractRepository
         return $this->model->where('status', CommonEnum::ACTIVATED)->take(5)->orderBy('id', 'DESC')->get();
     }
 
-    public function getListPosts($request)
+    public function getListPosts($request, $ids = [])
     {
-        return $this->model->where('status', CommonEnum::ACTIVATED)->orderBy('id', 'DESC')->paginate(6);
+        return $this->model->where('status', CommonEnum::ACTIVATED)->whereIn('category_id', $ids)->orderBy('id', 'DESC')->paginate(1);
     }
     public function getPostBySlug($slug)
     {

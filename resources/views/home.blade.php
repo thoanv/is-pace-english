@@ -373,16 +373,11 @@
                             class="section-title section-title-center"><b></b><span class="section-title-main">Đội ngũ giáo viên bản ngữ & Việt Nam giàu kinh nghiệm</span><b></b>
                         </h3>
                     </div>
-
-
                     <div class="row large-columns-4 medium-columns-3 small-columns-1">
                         @foreach($teachers as $teacher)
                             <div class="col team-item post-item">
                                 <div class="team-box-wrap">
-
                                     <div class="team-box">
-
-
                                         <div class="box-image">
                                             <div class="image-cover" style="padding-top:100%;">
                                                 <img width="300" height="225"
@@ -406,10 +401,7 @@
                                             </div>
                                         </div>
                                     </div>
-
                                 </div>
-
-
                             </div>
                         @endforeach
                     </div>
@@ -435,7 +427,6 @@
                     <div class="row">
                         @foreach($posts as $post)
                             @include('components.item-post', ['post' => $post])
-
                         @endforeach
                     </div>
 

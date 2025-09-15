@@ -86,8 +86,8 @@ class PostService extends BaseService
         return $this->repo->posts();
     }
 
-    public function getListPosts($request){
-        return $this->repo->getListPosts($request);
+    public function getListPosts($request, $ids){
+        return $this->repo->getListPosts($request, $ids);
     }
     public function getPostBySlug($slug){
         return $this->repo->getPostBySlug($slug);

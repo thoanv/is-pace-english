@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Enums\CategoryEnum;
+use App\Models\Category;
 use App\Models\General;
 use App\Models\Teacher;
 use App\Services\MenuService;
@@ -80,7 +81,9 @@ class HomeController extends Controller
                     'listPostSameCategories' => $listPostSameCategories
                 ]);
             }
-            $lists =$this->postService->getListPosts($request);
+            $category = Category::with('children')->find($cate['id']);
+            $ids = $category->allChildrenIds();
+            $lists =$this->postService->getListPosts($request, $ids);
             return view('pages.news.list', [
                 'cate' => $cate,
                 'lists' => $lists

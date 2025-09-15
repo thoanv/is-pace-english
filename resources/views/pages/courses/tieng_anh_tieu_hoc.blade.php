@@ -215,7 +215,7 @@
                                 <i class="fa fa-caret-right" aria-hidden="true"></i>
                                 Phương pháp P-P-P là 1 quy trình dạy học ngôn ngữ gồm 3 bước:<br>
                                 - <strong>Presentation</strong> (Giới thiệu kiến thức),<br>
-                                - <strong>Practive</strong> (Luyện tập có kiểm soát)<br>
+                                - <strong>Practice</strong> (Luyện tập có kiểm soát)<br>
                                 - <strong>Production</strong> (Sử dụng ngôn ngữ linh hoạt, tự do).
                             </p>
                             <p>
