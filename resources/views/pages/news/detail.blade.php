@@ -8,6 +8,9 @@
 <style>.lwptoc .lwptoc_i {
         border: 1px solid #000000;
     }</style>
+@php
+    $route = route('page', ['cate_slug'=> $post->category?->slug, 'slug' => $post['slug']]);
+@endphp
 @section('content')
     <div id="content" class="blog-wrapper blog-single page-wrapper">
         <section class="breadcrumbs-section">
@@ -63,83 +66,98 @@
                     </div>
                     <div class="share">
                         <p> Chia sẻ: </p>
-                        <div class="social-icons share-icons share-row relative icon-style-fill"><a
+                        <div class="social-icons share-icons share-row relative icon-style-fill">
+                            <a
                                 href="whatsapp://send?text=KH%C3%93A%20H%E1%BB%8CC%20IELTS%20SUMMER%20FAST%20TRACK%202025%3A%20T%C4%82NG%20T%E1%BB%90C%20%C4%90%E1%BB%82%20B%E1%BB%A8T%20PH%C3%81 - https://oea-vietnam.com/khoa-hoc-ielts-summer-fast-track-2025-tang-toc-de-but-pha/"
                                 data-action="share/whatsapp/share"
                                 class="icon primary button circle tooltip whatsapp show-for-medium"
-                                title="Chia sẻ trên WhatApp" aria-label="Chia sẻ trên WhatApp"><i
-                                    class="icon-whatsapp"></i></a><a
-                                href="https://www.facebook.com/sharer.php?u=https://oea-vietnam.com/khoa-hoc-ielts-summer-fast-track-2025-tang-toc-de-but-pha/"
+                                title="Chia sẻ trên WhatApp" aria-label="Chia sẻ trên WhatApp">
+                                <i class="icon-whatsapp" style="top: 6px"></i></a>
+                            <a
+                                href="https://www.facebook.com/sharer.php?u={{$route}}"
                                 data-label="Facebook"
                                 onclick="window.open(this.href,this.title,'width=500,height=500,top=300px,left=300px');  return false;"
                                 rel="noopener noreferrer nofollow" target="_blank"
                                 class="icon primary button circle tooltip facebook" title="Chia sẻ trên Facebook"
-                                aria-label="Chia sẻ trên Facebook"><i class="icon-facebook"></i></a><a
-                                href="https://twitter.com/share?url=https://oea-vietnam.com/khoa-hoc-ielts-summer-fast-track-2025-tang-toc-de-but-pha/"
+                                aria-label="Chia sẻ trên Facebook">
+                                <i class="icon-facebook" style="top: 6px"></i>
+                            </a>
+                            <a
+                                href="https://twitter.com/share?url={{$route}}"
                                 onclick="window.open(this.href,this.title,'width=500,height=500,top=300px,left=300px');  return false;"
                                 rel="noopener noreferrer nofollow" target="_blank"
                                 class="icon primary button circle tooltip twitter" title="Chia sẻ trên Twitter"
-                                aria-label="Chia sẻ trên Twitter"><i class="icon-twitter"></i></a><a
+                                aria-label="Chia sẻ trên Twitter">
+                                <i class="icon-twitter" style="top: 6px"></i>
+                            </a><a
                                 href="mailto:enteryour@addresshere.com?subject=KH%C3%93A%20H%E1%BB%8CC%20IELTS%20SUMMER%20FAST%20TRACK%202025%3A%20T%C4%82NG%20T%E1%BB%90C%20%C4%90%E1%BB%82%20B%E1%BB%A8T%20PH%C3%81&amp;body=Check%20this%20out:%20https://oea-vietnam.com/khoa-hoc-ielts-summer-fast-track-2025-tang-toc-de-but-pha/"
                                 rel="nofollow" class="icon primary button circle tooltip email"
-                                title="Gửi email đến bạn bè" aria-label="Gửi email đến bạn bè"><i
-                                    class="icon-envelop"></i></a><a
-                                href="https://pinterest.com/pin/create/button/?url=https://oea-vietnam.com/khoa-hoc-ielts-summer-fast-track-2025-tang-toc-de-but-pha/&amp;media=https://oea-vietnam.com/wp-content/uploads/2025/04/khoa-hoc-ielts-1024x536.jpg&amp;description=KH%C3%93A%20H%E1%BB%8CC%20IELTS%20SUMMER%20FAST%20TRACK%202025%3A%20T%C4%82NG%20T%E1%BB%90C%20%C4%90%E1%BB%82%20B%E1%BB%A8T%20PH%C3%81"
+                                title="Gửi email đến bạn bè" aria-label="Gửi email đến bạn bè">
+                                <i class="icon-envelop" style="top: 6px"></i>
+                            </a>
+                            <a
+                                href="https://pinterest.com/pin/create/button/?url={{$route}} ;media={{$post['image']}}&amp;description=KH%C3%93A%20H%E1%BB%8CC%20IELTS%20SUMMER%20FAST%20TRACK%202025%3A%20T%C4%82NG%20T%E1%BB%90C%20%C4%90%E1%BB%82%20B%E1%BB%A8T%20PH%C3%81"
                                 onclick="window.open(this.href,this.title,'width=500,height=500,top=300px,left=300px');  return false;"
                                 rel="noopener noreferrer nofollow" target="_blank"
                                 class="icon primary button circle tooltip pinterest" title="Ghim Pinterest"
-                                aria-label="Ghim Pinterest"><i class="icon-pinterest"></i></a><a
-                                href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://oea-vietnam.com/khoa-hoc-ielts-summer-fast-track-2025-tang-toc-de-but-pha/&amp;title=KH%C3%93A%20H%E1%BB%8CC%20IELTS%20SUMMER%20FAST%20TRACK%202025%3A%20T%C4%82NG%20T%E1%BB%90C%20%C4%90%E1%BB%82%20B%E1%BB%A8T%20PH%C3%81"
+                                aria-label="Ghim Pinterest">
+                                <i class="icon-pinterest" style="top: 6px"></i>
+                            </a>
+                            <a
+                                href="https://www.linkedin.com/shareArticle?mini=true&amp;url={{$route}}&amp;title=KH%C3%93A%20H%E1%BB%8CC%20IELTS%20SUMMER%20FAST%20TRACK%202025%3A%20T%C4%82NG%20T%E1%BB%90C%20%C4%90%E1%BB%82%20B%E1%BB%A8T%20PH%C3%81"
                                 onclick="window.open(this.href,this.title,'width=500,height=500,top=300px,left=300px');  return false;"
                                 rel="noopener noreferrer nofollow" target="_blank"
                                 class="icon primary button circle tooltip linkedin" title="Chia sẻ trên LinkedIn"
-                                aria-label="Chia sẻ trên LinkedIn"><i class="icon-linkedin"></i></a></div>
+                                aria-label="Chia sẻ trên LinkedIn">
+                                <i class="icon-linkedin" style="top: 6px"></i>
+                            </a>
+                        </div>
                     </div>
 
                     <div id="comments" class="comments-area">
 
-                        <span class="title_comment">Bình luận của bạn</span>
-                        <div id="formcmmaxweb">
+{{--                        <span class="title_comment">Bình luận của bạn</span>--}}
+{{--                        <div id="formcmmaxweb">--}}
 
-                            <div class="cancel-comment-reply">
-                                <small><a rel="nofollow" id="cancel-comment-reply-link"
-                                          href="/khoa-hoc-ielts-summer-fast-track-2025-tang-toc-de-but-pha/#respond"
-                                          style="display:none;">Nhấp chuột vào đây để hủy trả lời.</a></small>
-                            </div>
-
-
-                            <form action="http://oea-vietnam.com/wp-comments-post.php" method="post" id="commentform"
-                                  novalidate="novalidate">
+{{--                            <div class="cancel-comment-reply">--}}
+{{--                                <small><a rel="nofollow" id="cancel-comment-reply-link"--}}
+{{--                                          href="/khoa-hoc-ielts-summer-fast-track-2025-tang-toc-de-but-pha/#respond"--}}
+{{--                                          style="display:none;">Nhấp chuột vào đây để hủy trả lời.</a></small>--}}
+{{--                            </div>--}}
 
 
-                                <p>
-                                    <textarea name="comment" id="comment" cols="50" rows="4" tabindex="4"
-                                              placeholder="Hãy viết bình luận của bạn tại đây"></textarea>
-                                </p>
-                                <div class="name-email">
+{{--                            <form action="http://oea-vietnam.com/wp-comments-post.php" method="post" id="commentform"--}}
+{{--                                  novalidate="novalidate">--}}
 
 
-                                    <p>
-                                        <input placeholder="Họ và tên" type="text" name="author" id="author" value=""
-                                               tabindex="1" aria-required="true">
-                                    </p>
-                                    <p>
-                                        <input placeholder="Email" type="text" name="email" id="email" value=""
-                                               size="22" tabindex="2" aria-required="true">
-                                    </p>
+{{--                                <p>--}}
+{{--                                    <textarea name="comment" id="comment" cols="50" rows="4" tabindex="4"--}}
+{{--                                              placeholder="Hãy viết bình luận của bạn tại đây"></textarea>--}}
+{{--                                </p>--}}
+{{--                                <div class="name-email">--}}
 
 
-                                    <p><input name="submit" type="submit" id="submit" tabindex="5" value="Gửi">
-                                        <input type="hidden" name="comment_post_ID" value="8717" id="comment_post_ID">
-                                        <input type="hidden" name="comment_parent" id="comment_parent" value="0">
-                                    </p>
+{{--                                    <p>--}}
+{{--                                        <input placeholder="Họ và tên" type="text" name="author" id="author" value=""--}}
+{{--                                               tabindex="1" aria-required="true">--}}
+{{--                                    </p>--}}
+{{--                                    <p>--}}
+{{--                                        <input placeholder="Email" type="text" name="email" id="email" value=""--}}
+{{--                                               size="22" tabindex="2" aria-required="true">--}}
+{{--                                    </p>--}}
 
-                                </div>
+
+{{--                                    <p><input name="submit" type="submit" id="submit" tabindex="5" value="Gửi">--}}
+{{--                                        <input type="hidden" name="comment_post_ID" value="8717" id="comment_post_ID">--}}
+{{--                                        <input type="hidden" name="comment_parent" id="comment_parent" value="0">--}}
+{{--                                    </p>--}}
+
+{{--                                </div>--}}
 
 
-                            </form>
+{{--                            </form>--}}
 
-                        </div>
+{{--                        </div>--}}
                     </div><!-- #comments .comments-area -->            </div>
 
             </div>
