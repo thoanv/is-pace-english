@@ -48,7 +48,7 @@ class AjaxController extends BaseController
             case 'categories':
                 $model = Category::find($id);
                 break;
-            case 'sliders':
+            case 'slides':
                 $model = Slide::find($id);
                 break;
             case 'users':
@@ -72,7 +72,6 @@ class AjaxController extends BaseController
             case 'menus':
                 $model = Menu::find($id);
                 break;
-
             default:
                 break;
         }

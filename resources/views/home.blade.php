@@ -94,6 +94,10 @@
 
                                     #banner-482679248{{$key}} .bg.bg-loaded {
                                         background-image: url('{{$slide['image']}}');
+                                        background-repeat: no-repeat;
+                                        background-position: center;  /* canh giữa ảnh */
+                                        background-size: cover;       /* phủ kín khung, cắt bớt nếu cần */
+                                        /*width: 100%;*/
                                     }
 
                                     #banner-482679248{{$key}} .ux-shape-divider--top svg {
@@ -107,9 +111,22 @@
                                     }
 
                                     @media (min-width: 550px) {
+
+                                    }
+                                    @media (max-width: 768px) {
                                         #banner-482679248{{$key}}         {
-                                            padding-top: 700px;
+                                            padding-top: 197px!important;
                                         }
+                                        #banner-482679248{{$key}} .bg.bg-loaded {
+                                            background-size: contain !important;  /* ảnh co gọn theo chiều ngang */
+                                            /*background-position: top center;*/
+                                            height: auto;              /* chiều cao co theo ảnh */
+                                            min-height: 200px; /* Chiều rộng = 100%, chiều cao tự động */
+                                        }
+                                        .flickity-viewport{
+                                            height: 196px!important;
+                                        }
+
                                     }
                                 </style>
                             </div>
@@ -284,7 +301,7 @@
                                         class="section-title-main">Khóa học đa dạng phù hợp cho mọi lứa tuổi</span><b></b>
                                 </h3></div>
                             <div
-                                class="row large-columns-3 medium-columns- small-columns-1 slider row-slider slider-nav-circle slider-nav-outside slider-nav-light slider-nav-push"
+                                class="row large-columns-4 medium-columns- small-columns-1 slider row-slider slider-nav-circle slider-nav-outside slider-nav-light slider-nav-push"
                                 data-flickity-options='{"imagesLoaded": true, "groupCells": "100%", "dragThreshold" : 5, "cellAlign": "left","wrapAround": true,"prevNextButtons": true,"percentPosition": true,"pageDots": false, "rightToLeft": false, "autoPlay" : false}'>
                                 @foreach($courses as $course)
                                     <div class="col programme-item post-item">
@@ -307,7 +324,7 @@
 
                                                 </div>
                                                 <div class="program-box-content text-center">
-                                                    <h3 class="cut-text">
+                                                    <h3 class="cut-text" style="font-size: 20px">
                                                         {{$course['name']}} </h3>
                                                     <div class="desc">
                                                         {{$course['description']}}
@@ -468,12 +485,7 @@
                                                 data-rocket-lazyload="fitvidscompatible"
                                                 data-lazy-src="{{$activitiy['link']}}"
                                                 data-ll-status="loaded" class="entered lazyloaded"></iframe>
-                                        <noscript>
-                                            <iframe title="YouTube video player"
-                                                    src="https://www.youtube.com/embed/3-jnB5VeFe0"
-                                                    width="560" height="315" frameborder="0"
-                                                    allowfullscreen="allowfullscreen"></iframe>
-                                        </noscript>
+
                                         <br>
 
                                     </p>

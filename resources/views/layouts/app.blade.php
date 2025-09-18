@@ -915,6 +915,7 @@
 
     .text-223f81 {
         color: #223f81 !important;
+        font-weight: 500;
     }
 
     .form-select {
@@ -1114,7 +1115,14 @@
     .pagination .page-item:last-child .page-link {
         border-radius: 50%;
     }
-
+    @media (max-width: 768px) {
+        .text-bong{
+            font-size: 30px;
+        }
+        .home-form .form-dk{
+            padding: 40px 16px;
+        }
+    }
 </style>
 </body>
 </html>

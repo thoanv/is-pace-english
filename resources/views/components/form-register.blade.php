@@ -7,7 +7,11 @@
     <div class="section-content relative">
         <div class="row align-middle" id="row-2170850">
             <div class="col medium-6 small-12 large-6">
-                <img src="/images/ing_tu_van.png">
+                <div class="img has-hover img-radius x md-x lg-x y md-y lg-y" id="image_5252338">
+                    <div class="img-inner box-shadow-2 box-shadow-2-hover dark">
+                <img src="/images/ing_tu_van.png" lass="attachment-large size-large entered lazyloaded" alt="tư vấn">
+                    </div>
+                </div>
             </div>
             <div class="col small-12 large-6">
                 <div class="col-inner">
@@ -29,7 +33,7 @@
                                                        class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
                                                        aria-required="true"
                                                        aria-invalid="false"
-                                                       placeholder="Họ và tên"
+                                                       placeholder="Họ và tên học sinh"
                                                        value=""
                                                        type="text"
                                                        name="hoten" style="margin-bottom: 0">
@@ -46,7 +50,7 @@
                                                    class="wpcf7-form-control wpcf7-tel wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-tel"
                                                    aria-required="true"
                                                    aria-invalid="false"
-                                                   placeholder="Số điện thoại"
+                                                   placeholder="Số điện thoại phụ huynh"
                                                    value=""
                                                    type="tel"
                                                    name="sdt" style="margin-bottom: 0">

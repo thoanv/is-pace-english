@@ -217,7 +217,7 @@ html :where(.is-position-sticky) {
 }
 
 .container-width, .full-width .ubermenu-nav, .container, .row {
-    max-width: 1250px
+    max-width: 1350px
 }
 
 .row.row-collapse {

@@ -40,8 +40,7 @@
                                     Chúng tôi tin rằng, với những nỗ lực không ngừng trong việc nghiên cứu và phát triển
                                     chương trình học, iSpace English sẽ trở thành hành trang, niềm tin, động lực và
                                     nguồn cảm hứng giúp học sinh vượt qua mọi thử thách, chinh phục điểm số môn tiếng
-                                    Anh và các kỳ thi tiếng Anh Quốc tế theo chuẩn Jhung Chứng chỉ Cambridge &
-                                    IELTS.</p>
+                                    Anh và các kỳ thi tiếng Anh Quốc tế theo chuẩn Chứng chi Cambridge & IELTS.</p>
 
                                 <h1 class="about-h2 text-center text-bong">ISPACE ENGLISH - CHÚNG TÔI LÀ AI?</h1>
                                 <h2 class="about-h2 text-center text-bong">TẦM NHÌN & SỨ MỆNH</h2>
@@ -173,7 +172,7 @@
                                 </style>
                             </div>
 
-                            <p>Lộ trình đào tạo của iSpace English được Ban Nghiên cứu & Phát triển Chương trình (R&D)
+                            <p style="font-weight: 500">Lộ trình đào tạo của iSpace English được Ban Nghiên cứu & Phát triển Chương trình (R&D)
                                 xây dựng dựa trên quy chuẩn năng lực đầu ra theo Khung Tham chiếu chung châu Âu về ngôn
                                 ngữ <strong>(CEFR)</strong>, đồng thời tích hợp nội dung các dạng bài thi chứng chỉ
                                 tiếng Anh Cambridge
@@ -261,7 +260,7 @@
                     <div id="col-189056114" class="col medium-6 small-12 large-6">
                         <div class="col-inner">
 
-                            <p>Chương trình giảng dạy tại iSpace English được xây dựng nhằm trang bị cho học sinh không
+                            <p class="text-223f81">Chương trình giảng dạy tại iSpace English được xây dựng nhằm trang bị cho học sinh không
                                 chỉ năng lực giao tiếp tiếng Anh mà còn cả những phẩm chất cốt lõi và kỹ năng thiết yếu
                                 của thế hệ Công dân Toàn cầu (Global Citizen) – giúp các bạn nhỏ chinh phục ước mơ và tự
                                 tin hòa nhập thế giới.</p>
@@ -269,27 +268,27 @@
 
                                 <h2><span style="font-size: 18px; font-weight: bold">Lộ trình học tập tại iSpace English:</span>
                                 </h2>
-                                <p style="font-size: 16px; color: #444444; line-height: 24px; font-weight: 500;"><i class="fa fa-caret-right" aria-hidden="true"></i> Sử
+                                <p style="font-size: 16px; line-height: 24px; font-weight: 500;"><i class="fa fa-caret-right" aria-hidden="true"></i> Sử
                                     dụng tiếng Anh toàn diện với 4 kỹ năng: Nghe – Nói – Đọc – Viết.</p>
-                                <p style="font-size: 16px; color: #444444; line-height: 24px; font-weight: 500;"><i class="fa fa-caret-right" aria-hidden="true"></i> Học
+                                <p style="font-size: 16px; line-height: 24px; font-weight: 500;"><i class="fa fa-caret-right" aria-hidden="true"></i> Học
                                     tập tiến bộ, nâng cao điểm số môn tiếng Anh tại</p>
-                                <p style="font-size: 16px; color: #444444; line-height: 24px; font-weight: 500;"><i class="fa fa-caret-right" aria-hidden="true"></i> Sẵn
+                                <p style="font-size: 16px; line-height: 24px; font-weight: 500;"><i class="fa fa-caret-right" aria-hidden="true"></i> Sẵn
                                     sàng cho các Kỳ thi tiếng Anh chuẩn quốc tế: Cambridge YLE, KET, PET, IELTS, TOEFL
                                     Primary/Junior/iBT.</p>
-                                <p style="font-size: 16px; color: #444444; line-height: 24px; font-weight: 500;"><i class="fa fa-caret-right" aria-hidden="true"></i> Tự
+                                <p style="font-size: 16px; line-height: 24px; font-weight: 500;"><i class="fa fa-caret-right" aria-hidden="true"></i> Tự
                                     tin hòa nhập, giao tiếp và thuyết trình tiếng Anh trước đám đông.</p>
-                                <p style="font-size: 16px; color: #444444; line-height: 24px; font-weight: 500;"><i class="fa fa-caret-right" aria-hidden="true"></i> Đam
+                                <p style="font-size: 16px; line-height: 24px; font-weight: 500;"><i class="fa fa-caret-right" aria-hidden="true"></i> Đam
                                     mê đọc sách, yêu thích học hỏi, khám phá và nâng cao tinh thần “Học tập Trọn
                                     đời”.</p>
                                 <style>
                                     #text-3189061326 {
                                         font-size: 1.75rem;
                                         line-height: 0.95;
-                                        color: #1f3e99;
+                                        color: #223f81;
                                     }
 
                                     #text-3189061326 > * {
-                                        color: #1f3e99;
+                                        color: #223f81;
                                     }
                                 </style>
                             </div>
@@ -504,26 +503,26 @@
                     <div id="col-189056114" class="col medium-6 small-12 large-6">
                         <div class="col-inner">
 
-                            <p><strong><i class="fa fa-caret-right" aria-hidden="true"></i> Các Cơ sở Đào tạo của iSpace English</strong> được thiết kế theo chủ đề
+                            <p class="text-223f81"><strong><i class="fa fa-caret-right" aria-hidden="true"></i> Các Cơ sở Đào tạo của iSpace English</strong> được thiết kế theo chủ đề
                                 <strong>Không gian vũ trụ và các
                                     hành tinh</strong>, khơi gợi trí tò mò, tinh thần khám phá và ý chí chinh phục thử
                                 thách trong
                                 hành trình học tập thông minh của các “<strong>Phi hành gia iSpace</strong>”.</p>
-                            <p><strong><i class="fa fa-caret-right" aria-hidden="true"></i> Phòng học Hiện đại</strong> , đảm bảo môi trường học tập tối ưu với hệ thống
+                            <p class="text-223f81"><strong><i class="fa fa-caret-right" aria-hidden="true"></i> Phòng học Hiện đại</strong> , đảm bảo môi trường học tập tối ưu với hệ thống
                                 trang thiết bị tiên tiến:</p>
-                            <ul id="text-3189061326" class="text">
-                                <li style="font-size: 16px; color: #444444; line-height: 24px;">
+                            <ul id="text-3189061326" class="text text-223f81">
+                                <li  style="font-size: 16px; line-height: 24px;">
                                     <strong>Tivi tương tác thông minh (Interactive Smart TV)</strong>
                                 </li>
-                                <li style="font-size: 16px; color: #444444; line-height: 24px;">
+                                <li style="font-size: 16px; line-height: 24px;">
                                     <strong>Phần mềm giảng dạy độc quyền</strong>, công cụ kết nối Internet, giáo cụ
                                     trực quan hỗ trợ học sinh tiếp thu bài nhanh và hiệu quả
                                 </li>
-                                <li style="font-size: 16px; color: #444444; line-height: 24px;">
+                                <li style="font-size: 16px; line-height: 24px;">
                                     <strong>Giáo trình và sách bài tập hiện đại, dễ học, có hàm lượng thông tin
                                         cao</strong> – đến từ các nhà xuất bản giáo dục uy tín hàng đầu thế giới
                                 </li>
-                                <li style="font-size: 16px; color: #444444; line-height: 24px;">
+                                <li style="font-size: 16px; line-height: 24px;">
                                     <strong>Thư viện sách đa dạng</strong>, gồm nhiều thể loại sách và truyện song ngữ,
                                     giúp học viên làm giàu vốn kiến thức nền và phát triển hiểu biết xã hội
                                 </li>
@@ -743,7 +742,7 @@
 GIÀU KINH NGHIỆM
 </span><b></b>
                         </h3></div>
-                    <p style="text-align: justify;">
+                    <p style="text-align: justify;" class="text-223f81">
                         <strong>Ms. Hương Đặng</strong>, Nhà Sáng lập & Giám đốc Điều hành của iSpace English cùng các
                         Cộng sự là các giáo viên giàu kinh nghiệm, với năng lực giảng dạy xuất sắc đến từ Trường Đại học
                         Ngoại ngữ, ĐH Quốc gia Hà Nội - Ngôi trường Đại học uy tín hàng đầu cả nước trong lĩnh vực Giảng
@@ -781,30 +780,32 @@ GIÀU KINH NGHIỆM
                         </div>
                         <div class="col small-12 large-7">
                             <div class="col-inner">
-                                <h2>
+                                <h2  class="text-223f81">
                                     <strong>Founder ISPACE ENGLISH - Cô Hương Đặng</strong>
                                 </h2>
-                                <p><i>15 năm kinh nghiệm cấp Quản lý tại các Chuỗi giáo dục Trung tâm tiếng Anh uy tín
+                                <p  class="text-223f81"><i>15 năm kinh nghiệm cấp Quản lý tại các Chuỗi giáo dục Trung tâm tiếng Anh uy tín
                                         10 năm kinh nghiệm Biên soạn Chương trình giảng dạy & Đào tạo cho các Chuỗi giáo
                                         dục trung tâm tiếng Anh</i></p>
-                                <p><i>Cử nhân loại Giỏi ngành Sư phạm tiếng Anh, ĐH Ngoại ngữ - ĐH Quốc Gia Hà Nội
+                                <p  class="text-223f81"><i>Cử nhân loại Giỏi ngành Sư phạm tiếng Anh, ĐH Ngoại ngữ - ĐH Quốc Gia Hà Nội
                                         Thạc sỹ loại Giỏi ngành Lý luận & Phương pháp giảng dạy tiếng Anh, ĐH Ngoại ngữ
                                         - ĐH Quốc Gia Hà Nội</i></p>
-                                <p><i>Chứng chỉ IELTS 7.5 (Speaking 8.0)</i></p>
+                                <p  class="text-223f81"><i>Chứng chỉ IELTS 7.5 (Speaking 8.0)</i></p>
                             </div>
                         </div>
                     </div>
-                    <p style="text-align: justify;">Ngoài Đội ngũ Giáo viên Việt Nam, Giáo viên nước ngoài tại iSpace
+                    <p style="text-align: justify;"  class="text-223f81">Ngoài Đội ngũ Giáo viên Việt Nam, Giáo viên nước ngoài tại iSpace
                         English là những Thầy Cô Bản ngữ đến từ các Quốc gia như Anh Quốc (UK), Ireland, Úc, Mỹ (US) và
                         Nam Phi. Với từ 3-5 năm kinh nghiệm giảng dạy cho trẻ em Việt Nam, mỗi bài học dưới sự dẫn dắt
                         hoạt động tài tình của các Thầy Cô Bản ngữ như các bài hát, hoạt động thể chất, trò chơi vận
                         động vui nhộn giúp khơi dậy khả năng tư duy, liên tưởng cho học viên từ đó giúp các em nắm vững
                         và thành thạo kiến thức ngôn ngữ nhanh chóng.</p>
-                    <div class="row large-columns-4 medium-columns-3 small-columns-1">
+                    <div
+                        class="row large-columns-4 medium-columns- small-columns-1 slider row-slider slider-nav-circle slider-nav-outside slider-nav-light slider-nav-push"
+                        data-flickity-options='{"imagesLoaded": true, "groupCells": "100%", "dragThreshold" : 5, "cellAlign": "left","wrapAround": true,"prevNextButtons": true,"percentPosition": true,"pageDots": false, "rightToLeft": false, "autoPlay" : false}'>
                         @foreach($teachers as $teacher)
                             @php
-                            $img = $teacher['image'];
-                            $name = $teacher['name'];
+                                $img = $teacher['image'];
+                                $name = $teacher['name'];
                             @endphp
                             <div class="col team-item post-item">
                                 <div class="team-box-wrap">
@@ -840,7 +841,6 @@ GIÀU KINH NGHIỆM
                             </div>
 
                         @endforeach
-
                     </div>
                 </div>
 
