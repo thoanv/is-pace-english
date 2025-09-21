@@ -11,7 +11,7 @@ $route = route('page',['cate_slug' => $post->category?->slug, 'slug' => $post['s
 
         <div class="content-section" title="{{$post['title']}}">
             <a href="{{$route}}">
-                <h2 class="title text-223f81">{{$post['title']}} {{$post['title']}}</h2>
+                <h2 class="title text-223f81">{{$post['title']}}</h2>
             </a>
             <div class="box-text" style="padding: 3px 0 10px;">
                 <div class="news-date" style="margin-bottom: 0">
