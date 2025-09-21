@@ -41,6 +41,14 @@
                     </a>
                 </li>
             @endcan
+            @can('viewAny', \App\Models\Recruitment::class)
+                <li class="{{ Request::is('admin/recruitments*') ? 'active' : '' }}">
+                    <a href="{{route('recruitments.index')}}">
+                        <span class="pcoded-micon"><i class="feather icon-heart"></i></span>
+                        <span class="pcoded-mtext">Tuyển dụng</span>
+                    </a>
+                </li>
+            @endcan
             @can('viewAny', \App\Models\Course::class)
                 <li class="{{ Request::is('admin/courses*') ? 'active' : '' }}">
                     <a href="{{route('courses.index')}}">

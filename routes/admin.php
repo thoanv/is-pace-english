@@ -14,6 +14,7 @@ use App\Http\Controllers\Admin\Systems\UserController;
 use App\Http\Controllers\Admin\TeacherController;
 use App\Http\Controllers\Admin\UnitController;
 use App\Http\Controllers\Admin\PostController;
+use App\Http\Controllers\Admin\RecruitmentController;
 
 Route::middleware(['auth', 'verified'])->group(function () {
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
@@ -29,6 +30,7 @@ Route::middleware(['auth', 'verified'])->group(function () {
         'posts' => PostController::class,
         'courses' => CourseController::class,
         'menus' => MenuController::class,
+        'recruitments' => RecruitmentController::class,
     ]);
     Route::prefix('systems')->group(function () {
         Route::resources([

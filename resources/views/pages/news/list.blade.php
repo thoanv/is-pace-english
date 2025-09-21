@@ -9,7 +9,7 @@
                     <a href="/">Trang chủ</a>
                 </span>
                 | <span>
-                    <a href=""><strong>Tin tức và sự kiện</strong></a>
+                    <a href=""><strong>{{$cate['name']}}</strong></a>
                 </span>
             </span>
         </div>

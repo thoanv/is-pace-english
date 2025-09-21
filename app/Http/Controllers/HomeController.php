@@ -14,6 +14,7 @@ use App\Services\TeacherService;
 use App\Services\PostService;
 use App\Services\ActivityService;
 use App\Services\CategoryService;
+use App\Services\RecruitmentService;
 use Illuminate\Support\Str;
 
 class HomeController extends Controller
@@ -25,6 +26,7 @@ class HomeController extends Controller
         PostService  $postService,
         ActivityService  $activityService,
         CategoryService  $categoryService,
+        RecruitmentService  $recruitmentService,
     )
     {
         $this->courseService = $courseService;
@@ -33,6 +35,7 @@ class HomeController extends Controller
         $this->postService = $postService;
         $this->activityService = $activityService;
         $this->categoryService = $categoryService;
+        $this->recruitmentService = $recruitmentService;
     }
     /**
      * Display a listing of the resource.
@@ -85,6 +88,26 @@ class HomeController extends Controller
             $ids = $category->allChildrenIds();
             $lists =$this->postService->getListPosts($request, $ids);
             return view('pages.news.list', [
+                'cate' => $cate,
+                'lists' => $lists
+            ]);
+        }elseif($cate['type'] == CategoryEnum::TUYEN_DUNG){
+            if($slug){
+                $post = $this->recruitmentService->getPostBySlug($slug);
+                if(!$post){ return abort(404); }
+                $updateView = $this->recruitmentService->updateView($post);
+                $listNewPosts = $this->recruitmentService->getNewPostOtherSlug($post);
+                return view('pages.recruitments.detail', [
+                    'cate' => $cate,
+                    'lists' => $lists,
+                    'post' => $post,
+                    'listNewPosts' => $listNewPosts,
+                ]);
+            }
+            $category = Category::with('children')->find($cate['id']);
+            $ids = $category->allChildrenIds();
+            $lists =$this->recruitmentService->getListPosts($request, $ids);
+            return view('pages.recruitments.list', [
                 'cate' => $cate,
                 'lists' => $lists
             ]);
