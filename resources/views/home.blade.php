@@ -516,7 +516,7 @@
                     </div>
                     <div class="row" id="row-1461239073">
                         @foreach($activities as $key => $activitiy)
-                            <div id="col-69249228{{$key}}" class="col medium-4 small-12 large-4">
+                            <div id="col-69249228{{$key}}" class="col medium-6 small-12 large-4">
                                 <div class="col-inner">
                                     <p class="mb-0">
                                         <iframe loading="lazy" title="YouTube video player"
