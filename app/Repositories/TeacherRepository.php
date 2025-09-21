@@ -33,7 +33,7 @@ class TeacherRepository extends AbstractRepository
     }
     public function teachers()
     {
-        return $this->model->where([['status', CommonEnum::ACTIVATED], ['is_outstanding', CommonEnum::ACTIVATED]])->get();
+        return $this->model->where([['status', CommonEnum::ACTIVATED]])->get();
     }
     public function showPageAboutteachers()
     {
