@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title', 'Is Pace')
+@section('title', 'iSpace English')
 @section('content')
     <div id="content" role="main" class="content-area">
         <section class="section" id="section_1876643903">
