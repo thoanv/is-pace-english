@@ -742,12 +742,7 @@
 GIÀU KINH NGHIỆM
 </span><b></b>
                         </h3></div>
-                    <p style="text-align: justify;" class="text-223f81">
-                        <strong>Ms. Hương Đặng</strong>, Nhà Sáng lập & Giám đốc Điều hành của iSpace English cùng các
-                        Cộng sự là các giáo viên giàu kinh nghiệm, với năng lực giảng dạy xuất sắc đến từ Trường Đại học
-                        Ngoại ngữ, ĐH Quốc gia Hà Nội - Ngôi trường Đại học uy tín hàng đầu cả nước trong lĩnh vực Giảng
-                        dạy tiếng Anh, giúp khẳng định chất lượng đào tạo vượt trội tại iSpace English.
-                    </p>
+
 
                     <div class="row">
                         <div class="col small-12 large-5">
@@ -783,13 +778,25 @@ GIÀU KINH NGHIỆM
                                 <h2  class="text-223f81">
                                     <strong>Founder ISPACE ENGLISH - Cô Hương Đặng</strong>
                                 </h2>
-                                <p  class="text-223f81"><i>15 năm kinh nghiệm cấp Quản lý tại các Chuỗi giáo dục Trung tâm tiếng Anh uy tín
-                                        10 năm kinh nghiệm Biên soạn Chương trình giảng dạy & Đào tạo cho các Chuỗi giáo
+                                <p style="text-align: justify;" class="text-223f81">
+                                    <strong>Ms. Hương Đặng</strong>, Nhà Sáng lập & Giám đốc Điều hành của iSpace English cùng các
+                                    Cộng sự là các giáo viên giàu kinh nghiệm, với năng lực giảng dạy xuất sắc đến từ Trường Đại học
+                                    Ngoại ngữ, ĐH Quốc gia Hà Nội - Ngôi trường Đại học uy tín hàng đầu cả nước trong lĩnh vực Giảng
+                                    dạy tiếng Anh, giúp khẳng định chất lượng đào tạo vượt trội tại iSpace English.
+                                </p>
+                                <p  class="text-223f81">
+                                    <i><i class="fa fa-caret-right" aria-hidden="true"></i> 15 năm kinh nghiệm cấp Quản lý tại các Chuỗi giáo dục Trung tâm tiếng Anh uy tín
+                                    </i></p>
+                                <p  class="text-223f81">
+                                    <i><i class="fa fa-caret-right" aria-hidden="true"></i> 10 năm kinh nghiệm Biên soạn Chương trình giảng dạy & Đào tạo cho các Chuỗi giáo
                                         dục trung tâm tiếng Anh</i></p>
-                                <p  class="text-223f81"><i>Cử nhân loại Giỏi ngành Sư phạm tiếng Anh, ĐH Ngoại ngữ - ĐH Quốc Gia Hà Nội
-                                        Thạc sỹ loại Giỏi ngành Lý luận & Phương pháp giảng dạy tiếng Anh, ĐH Ngoại ngữ
+                                <p  class="text-223f81">
+                                    <i><i class="fa fa-caret-right" aria-hidden="true"></i> Cử nhân loại Giỏi ngành Sư phạm tiếng Anh, ĐH Ngoại ngữ - ĐH Quốc Gia Hà Nội.
+                                    </i></p>
+                                <p  class="text-223f81">
+                                    <i><i class="fa fa-caret-right" aria-hidden="true"></i> Thạc sỹ loại Giỏi ngành Lý luận & Phương pháp giảng dạy tiếng Anh, ĐH Ngoại ngữ
                                         - ĐH Quốc Gia Hà Nội</i></p>
-                                <p  class="text-223f81"><i>Chứng chỉ IELTS 7.5 (Speaking 8.0)</i></p>
+                                <p  class="text-223f81"><i><i class="fa fa-caret-right" aria-hidden="true"></i> Chứng chỉ IELTS 7.5 (Speaking 8.0)</i></p>
                             </div>
                         </div>
                     </div>
