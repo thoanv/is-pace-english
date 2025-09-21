@@ -34,7 +34,7 @@ $route = route('page',['cate_slug' => $post->category?->slug, 'slug' => $post['s
                 </div>
             </div>
             <p class="description text-223f81" title="{!! $post['description'] !!}">
-                {!! $post['description'] !!} {!! $post['description'] !!}
+                {!! $post['description'] !!}
             </p>
             <a href="{{$route}}" style="text-align: left;
     font-size: 14px;
