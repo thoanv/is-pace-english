@@ -5,7 +5,7 @@
         <section class="section" id="section_1876643903">
             <div class="bg section-bg fill bg-fill  bg-loaded">
             </div>
-            <div class="section-content relative">
+            <div class="section-content relative slides">
                 <div class="slider-wrapper relative home-slider" id="slider-2112147658"
                      style="background-color:rgb(0, 42, 66);">
                     <div class="slider slider-nav-circle slider-nav-large slider-nav-light slider-style-normal"
@@ -33,70 +33,70 @@
 
                             <div class="banner has-hover" id="banner-482679248{{$key}}">
                                 @if($slide['link'])
-                                <a href="{{$slide['link']}}" target="_blank">
-                                @endif
-                                <div class="banner-inner fill">
-
-                                    <div class="banner-bg fill">
-                                        <div class="bg fill bg-fill "></div>
-                                    </div>
-                                    <div class="banner-layers container">
-                                        <div class="fill banner-link"></div>
-                                        @if($slide['link'])
-                                            <div id="text-box-966456746{{$key}}"
-                                                 class="text-box banner-layer x15 md-x10 lg-x15 y75 md-y60 lg-y60 res-text">
-                                                <div class="text-box-content text dark">
-
-{{--                                                    <div class="text-inner text-center">--}}
-
-{{--                                                        <a rel="noopener noreferrer" href="{{$slide['link']}}"--}}
-{{--                                                           target="_blank" class="button white btn-custom"--}}
-{{--                                                           style="border-radius:99px;">--}}
-{{--                                                            <span>TÌM HIỂU THÊM</span>--}}
-{{--                                                        </a>--}}
-
-{{--                                                    </div>--}}
-                                                </div>
-
-                                                <style>
-                                                    #text-box-966456746{{$key}}         {
-                                                        width: 62%;
-                                                    }
-
-                                                    #text-box-966456746{{$key}} .text-box-content {
-                                                        font-size: 100%;
-                                                    }
-
-                                                    @media (min-width: 550px) {
-                                                        #text-box-966456746{{$key}}         {
-                                                            width: 40%;
-                                                        }
-                                                    }
-
-                                                    @media (min-width: 850px) {
-                                                        #text-box-966456746{{$key}}         {
-                                                            width: 24%;
-                                                        }
-                                                    }
-                                                </style>
-                                            </div>
+                                    <a href="{{$slide['link']}}" target="_blank">
                                         @endif
-                                    </div>
+                                        <div class="banner-inner fill">
 
-                                </div>
-                                    @if($slide['link'])
-                                </a>
+                                            <div class="banner-bg fill">
+                                                <div class="bg fill bg-fill "></div>
+                                            </div>
+                                            <div class="banner-layers container">
+                                                <div class="fill banner-link"></div>
+                                                @if($slide['link'])
+                                                    <div id="text-box-966456746{{$key}}"
+                                                         class="text-box banner-layer x15 md-x10 lg-x15 y75 md-y60 lg-y60 res-text">
+                                                        <div class="text-box-content text dark">
+
+                                                            {{--                                                    <div class="text-inner text-center">--}}
+
+                                                            {{--                                                        <a rel="noopener noreferrer" href="{{$slide['link']}}"--}}
+                                                            {{--                                                           target="_blank" class="button white btn-custom"--}}
+                                                            {{--                                                           style="border-radius:99px;">--}}
+                                                            {{--                                                            <span>TÌM HIỂU THÊM</span>--}}
+                                                            {{--                                                        </a>--}}
+
+                                                            {{--                                                    </div>--}}
+                                                        </div>
+
+                                                        <style>
+                                                            #text-box-966456746{{$key}}          {
+                                                                width: 62%;
+                                                            }
+
+                                                            #text-box-966456746{{$key}} .text-box-content {
+                                                                font-size: 100%;
+                                                            }
+
+                                                            @media (min-width: 550px) {
+                                                                #text-box-966456746{{$key}}          {
+                                                                    width: 40%;
+                                                                }
+                                                            }
+
+                                                            @media (min-width: 850px) {
+                                                                #text-box-966456746{{$key}}          {
+                                                                    width: 24%;
+                                                                }
+                                                            }
+                                                        </style>
+                                                    </div>
+                                                @endif
+                                            </div>
+
+                                        </div>
+                                        @if($slide['link'])
+                                    </a>
                                 @endif
                                 <style>
-                                    #banner-482679248{{$key}}         {
+                                    #banner-482679248{{$key}}          {
                                         padding-top: 700px;
                                     }
 
                                     #banner-482679248{{$key}} .bg.bg-loaded {
                                         background-image: url('{{$slide['image']}}');
                                         background-repeat: no-repeat;
-                                        background-position: center;  /* canh giữa ảnh */
-                                        background-size: cover;       /* phủ kín khung, cắt bớt nếu cần */
+                                        background-position: center; /* canh giữa ảnh */
+                                        background-size: cover; /* phủ kín khung, cắt bớt nếu cần */
                                         /*width: 100%;*/
                                     }
 
@@ -113,18 +113,21 @@
                                     @media (min-width: 550px) {
 
                                     }
+
                                     @media (max-width: 768px) {
-                                        #banner-482679248{{$key}}         {
-                                            padding-top: 197px!important;
+                                        #banner-482679248{{$key}}          {
+                                            padding-top: 197px !important;
                                         }
+
                                         #banner-482679248{{$key}} .bg.bg-loaded {
-                                            background-size: contain !important;  /* ảnh co gọn theo chiều ngang */
+                                            background-size: contain !important; /* ảnh co gọn theo chiều ngang */
                                             /*background-position: top center;*/
-                                            height: auto;              /* chiều cao co theo ảnh */
+                                            height: auto; /* chiều cao co theo ảnh */
                                             min-height: 200px; /* Chiều rộng = 100%, chiều cao tự động */
                                         }
-                                        .flickity-viewport{
-                                            height: 196px!important;
+
+                                        .slides .flickity-viewport {
+                                            height: 196px !important;
                                         }
 
                                     }
@@ -143,11 +146,11 @@
                 <div class="slider-botom">
 
                     <p>
-{{--                        <svg viewBox="0 0 1920 205" fill="none" xmlns="http://www.w3.org/2000/svg"> Đã xóa:--}}
-{{--                            <path d="M0 0C748.498 184.586 1168.9 184.445 1920 0V205H0V0Z" fill="white"/>--}}
-{{--                        </svg>--}}
+                        {{--                        <svg viewBox="0 0 1920 205" fill="none" xmlns="http://www.w3.org/2000/svg"> Đã xóa:--}}
+                        {{--                            <path d="M0 0C748.498 184.586 1168.9 184.445 1920 0V205H0V0Z" fill="white"/>--}}
+                        {{--                        </svg>--}}
                     </p>
-                        <br/>
+                    <br/>
                 </div>
 
             </div>
@@ -390,7 +393,9 @@
                             class="section-title section-title-center"><b></b><span class="section-title-main">Đội ngũ giáo viên bản ngữ & Việt Nam giàu kinh nghiệm</span><b></b>
                         </h3>
                     </div>
-                    <div class="row large-columns-4 medium-columns-3 small-columns-1">
+                    <div
+                        class="row large-columns-4 medium-columns- small-columns-1 slider row-slider slider-nav-circle slider-nav-outside slider-nav-light slider-nav-push"
+                        data-flickity-options='{"imagesLoaded": true, "groupCells": "100%", "dragThreshold" : 5, "cellAlign": "left","wrapAround": true,"prevNextButtons": true,"percentPosition": true,"pageDots": false, "rightToLeft": false, "autoPlay" : false}'>
                         @foreach($teachers as $teacher)
                             <div class="col team-item post-item">
                                 <div class="team-box-wrap">
@@ -399,7 +404,8 @@
                                             <div class="image-cover" style="padding-top:100%;">
                                                 <img width="300" height="225"
                                                      src="{{$teacher['image']}}"
-                                                     class="attachment-medium size-medium wp-post-image" alt="{{$teacher['name']}}"/>
+                                                     class="attachment-medium size-medium wp-post-image"
+                                                     alt="{{$teacher['name']}}"/>
                                                 <noscript><img width="300" height="225"
                                                                src="{{$teacher['image']}}"
                                                                class="attachment-medium size-medium wp-post-image"
@@ -422,13 +428,47 @@
                             </div>
                         @endforeach
                     </div>
+{{--                    <div class="row large-columns-4 medium-columns-3 small-columns-1">--}}
+{{--                        @foreach($teachers as $teacher)--}}
+{{--                            <div class="col team-item post-item">--}}
+{{--                                <div class="team-box-wrap">--}}
+{{--                                    <div class="team-box">--}}
+{{--                                        <div class="box-image">--}}
+{{--                                            <div class="image-cover" style="padding-top:100%;">--}}
+{{--                                                <img width="300" height="225"--}}
+{{--                                                     src="{{$teacher['image']}}"--}}
+{{--                                                     class="attachment-medium size-medium wp-post-image"--}}
+{{--                                                     alt="{{$teacher['name']}}"/>--}}
+{{--                                                <noscript><img width="300" height="225"--}}
+{{--                                                               src="{{$teacher['image']}}"--}}
+{{--                                                               class="attachment-medium size-medium wp-post-image"--}}
+{{--                                                               alt="" decoding="async"--}}
+{{--                                                               srcset="{{$teacher['image']}} 300w, {{$teacher['image']}} 1024w"--}}
+{{--                                                               sizes="(max-width: 300px) 100vw, 300px"/></noscript>--}}
+{{--                                            </div>--}}
+{{--                                        </div>--}}
+{{--                                        <div class="team-box-content">--}}
+{{--                                            <div class="position">--}}
+{{--                                                Giáo viên--}}
+{{--                                            </div>--}}
+{{--                                            <h4>{{$teacher['name']}}</h4>--}}
+{{--                                            <div class="desc content-teacher">--}}
+{{--                                                {!! $teacher['description'] !!}--}}
+{{--                                            </div>--}}
+{{--                                        </div>--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                        @endforeach--}}
+{{--                    </div>--}}
                 </div>
 
                 <style>
                     #col-811636745 > .col-inner {
                         margin: 30px 0px 0px 0px;
                     }
-                    .content-teacher p{
+
+                    .content-teacher p {
                         margin-bottom: 5px;
                     }
                 </style>
