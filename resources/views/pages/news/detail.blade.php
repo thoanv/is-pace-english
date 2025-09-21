@@ -351,6 +351,7 @@
     <style>
         .content-posts img{
             width: 100% !important;
+            height: auto !important;
         }
     </style>
 @endsection
