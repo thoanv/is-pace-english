@@ -24,7 +24,7 @@
 
         <div class="row">
             <div class="col large-9">
-                <div class="content program-detail-content">
+                <div class="content program-detail-content" style="padding: 30px 0 !important;">
                     <h1 style="margin-bottom: 0" title="{{ $post['title'] }}">
                         {{ $post['title'] }}</h1>
 
