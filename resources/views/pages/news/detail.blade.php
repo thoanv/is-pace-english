@@ -307,19 +307,9 @@
                                         <div class="box-image">
                                             <div class="image-zoom image-cover" style="padding-top:70%;">
                                                 <img width="300" height="225"
-                                                     src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%20225'%3E%3C/svg%3E"
+                                                     src="{{$val['image']}}"
                                                      class="attachment-medium size-medium wp-post-image"
-                                                     alt="{{$val['title']}}" decoding="async"
-                                                     data-lazy-srcset="{{$val['image']}} 300w, {{$val['image']}} 1024w"
-                                                     data-lazy-sizes="(max-width: 300px) 100vw, 300px"
-                                                     data-lazy-src="{{$val['image']}}">
-                                                <noscript><img width="300" height="225"
-                                                               src="{{$val['image']}}"
-                                                               class="attachment-medium size-medium wp-post-image"
-                                                               alt="{{$val['title']}}"
-                                                               decoding="async"
-                                                               srcset="{{$val['image']}} 300w, {{$val['image']}} 1024w"
-                                                               sizes="(max-width: 300px) 100vw, 300px"/></noscript>
+                                                     alt="{{$val['title']}}">
                                             </div>
                                         </div>
                                         <div class="box-text text-left" style="height: 235.219px;">
