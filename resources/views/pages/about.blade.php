@@ -40,7 +40,7 @@
                                     Chúng tôi tin rằng, với những nỗ lực không ngừng trong việc nghiên cứu và phát triển
                                     chương trình học, iSpace English sẽ trở thành hành trang, niềm tin, động lực và
                                     nguồn cảm hứng giúp học sinh vượt qua mọi thử thách, chinh phục điểm số môn tiếng
-                                    Anh và các kỳ thi tiếng Anh Quốc tế theo chuẩn Chứng chi Cambridge & IELTS.</p>
+                                    Anh và các kỳ thi tiếng Anh Quốc tế theo chuẩn Chứng chỉ Cambridge & IELTS.</p>
 
                                 <h1 class="about-h2 text-center text-bong">ISPACE ENGLISH - CHÚNG TÔI LÀ AI?</h1>
                                 <h2 class="about-h2 text-center text-bong">TẦM NHÌN & SỨ MỆNH</h2>
