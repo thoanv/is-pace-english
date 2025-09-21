@@ -62,7 +62,7 @@
                         </div>
 
                         <p><em>&nbsp;</em></p>
-                        {!! $content !!}
+                        <div class="content-posts">{!! $content !!}</div>
                     </div>
                     <div class="share">
                         <p> Chia sẻ: </p>
@@ -348,5 +348,9 @@
             </div>
         </div>
     </div>
-
+    <style>
+        .content-posts img{
+            width: 100% !important;
+        }
+    </style>
 @endsection
