@@ -5,28 +5,29 @@ namespace App\Http\Controllers;
 use App\Enums\CategoryEnum;
 use App\Models\Category;
 use App\Models\General;
-use App\Models\Teacher;
-use App\Services\MenuService;
-use Illuminate\Http\Request;
-use App\Services\CourseService;
-use App\Services\SlideService;
-use App\Services\TeacherService;
-use App\Services\PostService;
+use App\Models\Unit;
 use App\Services\ActivityService;
 use App\Services\CategoryService;
+use App\Services\CourseService;
+use App\Services\PostService;
 use App\Services\RecruitmentService;
+use App\Services\SlideService;
+use App\Services\TeacherService;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Http;
+use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Str;
 
 class HomeController extends Controller
 {
     public function __construct(
-        CourseService  $courseService,
-        SlideService  $slideService,
-        TeacherService  $teacherService,
-        PostService  $postService,
-        ActivityService  $activityService,
-        CategoryService  $categoryService,
-        RecruitmentService  $recruitmentService,
+        CourseService      $courseService,
+        SlideService       $slideService,
+        TeacherService     $teacherService,
+        PostService        $postService,
+        ActivityService    $activityService,
+        CategoryService    $categoryService,
+        RecruitmentService $recruitmentService,
     )
     {
         $this->courseService = $courseService;
@@ -37,6 +38,7 @@ class HomeController extends Controller
         $this->categoryService = $categoryService;
         $this->recruitmentService = $recruitmentService;
     }
+
     /**
      * Display a listing of the resource.
      */
@@ -48,7 +50,7 @@ class HomeController extends Controller
         $teachers = $this->teacherService->teachers();
         $posts = $this->postService->posts();
         $activities = $this->activityService->activities();
-        return view('home',[
+        return view('home', [
             'general' => $general,
             'courses' => $courses,
             'slides' => $slides,
@@ -64,16 +66,20 @@ class HomeController extends Controller
     public function page(Request $request, $cate_slug, $slug = null)
     {
         $cate = $this->categoryService->getCategoryBySlug($cate_slug);
-        if(!$cate){ return abort(404); }
+        if (!$cate) {
+            return abort(404);
+        }
         $lists = [];
-        if($cate['type'] == CategoryEnum::TIN_TUC){
-            if($slug){
+        if ($cate['type'] == CategoryEnum::TIN_TUC) {
+            if ($slug) {
                 $post = $this->postService->getPostBySlug($slug);
-                if(!$post){ return abort(404); }
+                if (!$post) {
+                    return abort(404);
+                }
                 $updateView = $this->postService->updateView($post);
                 $listPostSameCategories = $this->postService->getListPostSameCategories($post);
                 $listNewPosts = $this->postService->getNewPostOtherSlug($post);
-                $result  = $this->generateTOC($post['content']);
+                $result = $this->generateTOC($post['content']);
                 return view('pages.news.detail', [
                     'cate' => $cate,
                     'lists' => $lists,
@@ -86,15 +92,17 @@ class HomeController extends Controller
             }
             $category = Category::with('children')->find($cate['id']);
             $ids = $category->allChildrenIds();
-            $lists =$this->postService->getListPosts($request, $ids);
+            $lists = $this->postService->getListPosts($request, $ids);
             return view('pages.news.list', [
                 'cate' => $cate,
                 'lists' => $lists
             ]);
-        }elseif($cate['type'] == CategoryEnum::TUYEN_DUNG){
-            if($slug){
+        } elseif ($cate['type'] == CategoryEnum::TUYEN_DUNG) {
+            if ($slug) {
                 $post = $this->recruitmentService->getPostBySlug($slug);
-                if(!$post){ return abort(404); }
+                if (!$post) {
+                    return abort(404);
+                }
                 $updateView = $this->recruitmentService->updateView($post);
                 $listNewPosts = $this->recruitmentService->getNewPostOtherSlug($post);
                 return view('pages.recruitments.detail', [
@@ -106,32 +114,31 @@ class HomeController extends Controller
             }
             $category = Category::with('children')->find($cate['id']);
             $ids = $category->allChildrenIds();
-            $lists =$this->recruitmentService->getListPosts($request, $ids);
+            $lists = $this->recruitmentService->getListPosts($request, $ids);
             return view('pages.recruitments.list', [
                 'cate' => $cate,
                 'lists' => $lists
             ]);
-        }elseif ($cate['type'] == CategoryEnum::GIOI_THIEU){
+        } elseif ($cate['type'] == CategoryEnum::GIOI_THIEU) {
             $teachers = $this->teacherService->showPageAboutteachers();
             return view('pages.about', [
                 'cate' => $cate,
                 'teachers' => $teachers
             ]);
-        }elseif ($cate['type'] == CategoryEnum::KHOA_HOC){
-            if($slug){
+        } elseif ($cate['type'] == CategoryEnum::KHOA_HOC) {
+            if ($slug) {
                 $course = $this->courseService->getCourseBySlug($slug);
-                if(!$course){ return abort(404); }
+                if (!$course) {
+                    return abort(404);
+                }
                 $courses = $this->courseService->getCourseOthers($course);
-                if($course['id'] == 2){
+                if ($course['id'] == 2) {
                     $view = "pages.courses.tieng_anh_mam_non";
-                }
-                elseif($course['id'] == 4){
+                } elseif ($course['id'] == 4) {
                     $view = "pages.courses.tieng_anh_tieu_hoc";
-                }
-                elseif($course['id'] == 5){
+                } elseif ($course['id'] == 5) {
                     $view = "pages.courses.tieng_anh_thieu_nien";
-                }
-                elseif ($course['id'] == 6){
+                } elseif ($course['id'] == 6) {
                     $view = "pages.courses.luyen_thi_ielts";
                 }
                 return view($view, [
@@ -172,12 +179,12 @@ class HomeController extends Controller
             // Gắn id vào heading
             $content = str_replace(
                 $match[0],
-                '<h'.$level.' id="'.$id.'">'.$title.'</h'.$level.'>',
+                '<h' . $level . ' id="' . $id . '">' . $title . '</h' . $level . '>',
                 $content
             );
 
             // Thêm vào mục lục
-            $toc .= '<li class="level-'.$level.'"><a href="#'.$id.'">'.$title.'</a></li>';
+            $toc .= '<li class="level-' . $level . '"><a href="#' . $id . '">' . $title . '</a></li>';
         }
 
         $toc .= '</ul></div>';
@@ -193,7 +200,60 @@ class HomeController extends Controller
      */
     public function formRegister(Request $request)
     {
-        //
+        $validator = Validator::make($request->all(), [
+            'hoten'   => 'required|max:255',
+            'sdt'     => ['required', 'regex:/^(0|\+84)(3|5|7|8|9)[0-9]{8}$/'],
+            'dotuoi'  => 'required',
+            'coso'    => 'required',
+            'captcha' => 'required|captcha',
+        ], [
+            'hoten.required'   => 'Vui lòng nhập họ tên',
+            'sdt.required'     => 'Vui lòng nhập số điện thoại',
+            'sdt.regex'        => 'Số điện thoại không hợp lệ',
+            'dotuoi.required'  => 'Vui lòng chọn độ tuổi',
+            'coso.required'    => 'Vui lòng nhập cơ sở',
+            'captcha.required' => 'Vui lòng nhập mã captcha',
+            'captcha.captcha'  => 'Mã captcha không đúng',
+        ]);
+
+        if ($validator->fails()) {
+            return response()->json([
+                'status' => 'error',
+                'errors' => $validator->errors()
+            ], 422); // HTTP 422: Unprocessable Entity
+        }
+        $unit = Unit::find($request->coso);
+        $nameUnit = 'Không xác định';
+        if($unit) {
+            $nameUnit = $unit->name;
+        }
+        $data = [
+            'hoten'  => $request->hoten,
+            'sdt'    => $request->sdt,
+            'dotuoi' => $request->dotuoi,
+            'coso'   => $nameUnit,
+        ];
+        $response = Http::withHeaders([
+            'Content-Type' => 'application/json',
+        ])->withBody(
+            json_encode($data),
+            'application/json'
+        )->post('https://script.google.com/macros/s/AKfycbxRvJ5Mgl25AOhi_nnm3hoha0DZy_KNOKNwctWuCESbyDK-EmyLmplU8vInkO_baKGJ/exec');
+        // Kiểm tra response từ Google Apps Script
+        if ($response->failed()) {
+            return response()->json([
+                'status' => 'error',
+                'message' => 'Không thể kết nối đến Google Apps Script: ' . $response->status()
+            ], $response->status());
+        }
+        return response()->json([
+            'status'  => 'success',
+            'message' => 'Gửi dữ liệu thành công!',
+            'data'    => $response->json(), // dữ liệu từ Google Apps Script trả về
+        ], 200)
+            ->header('Access-Control-Allow-Origin', '*') // Cho phép tất cả origin (hoặc chỉ định domain cụ thể)
+            ->header('Access-Control-Allow-Methods', 'POST, OPTIONS')
+            ->header('Access-Control-Allow-Headers', 'Content-Type');
     }
 
     /**

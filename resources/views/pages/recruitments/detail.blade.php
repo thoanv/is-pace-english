@@ -28,9 +28,12 @@
                             </svg>
                             <span class="text-muted font-xs">{{$post['noi_lam_viec']}}</span></div>
                     </div>
-                    <div class="col small-12 large-4 text-lg-end">
-                        <div class="btn btn-apply-icon btn-apply btn-apply-big hover-up" data-bs-toggle="modal"
-                             data-bs-target="#ModalApplyJobForm"><strong>Đăng ký ứng tuyển</strong></div>
+                    <div class="col small-12 large-4">
+                        <div class="btn btn-apply-icon btn-apply">
+                            <strong>Đăng ký ứng tuyển</strong>
+                            <p class="mb-1">Hãy gửi mail cho chúng tôi</p>
+                            <a class="btn-mail-hr" href="mailto:{{$info['mail-hr']}}">Tại đây</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -183,14 +186,10 @@
                             <div class="sidebar-border">
                                 <div class="sidebar-heading">
                                     <div class="avatar-sidebar">
-                                        <figure><img alt="jobBox" src="{{$info['logo']}}"></figure>
+                                        <figure><img alt="jobBox" src="/images/tuyen_dung.png"></figure>
                                         <div class="sidebar-info"><span class="sidebar-company">
-                                                i-Space English</span><span
-                                                class="card-location" style="padding-left: 0">
-                                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" class="icon" height="16" width="16" xmlns="http://www.w3.org/2000/svg" style="margin-right: 8px;">
-                                                    <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M256 48c-79.5 0-144 61.39-144 137 0 87 96 224.87 131.25 272.49a15.77 15.77 0 0025.5 0C304 409.89 400 272.07 400 185c0-75.61-64.5-137-144-137z"></path>
-                                                    <circle cx="256" cy="192" r="48" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"></circle>
-                                                </svg> Hà Nội, Việt Nam</span></div>
+                                                i-Space English</span>
+                                            </div>
                                     </div>
                                 </div>
                                 <div class="sidebar-list-job">
@@ -349,7 +348,7 @@
         }
 
         .btn-apply-big {
-            background-color: #3c65f5;
+            background-color: #223f81;
             color: #fff;
             padding: 18px 35px;
             border-radius: 4px;
@@ -363,7 +362,7 @@
         }
 
         .btn-apply {
-            background-color: #3c65f5;
+            background-color: #223f81;
             color: #fff;
             padding: 12px 20px;
             border-radius: 4px;
@@ -494,20 +493,18 @@
         }
 
         .sidebar-border .sidebar-heading .avatar-sidebar figure img, .sidebar-shadow .sidebar-heading .avatar-sidebar figure img {
-            width: 85px;
-            height: 85px;
-            border-radius: 16px;
+            border-radius: 10px;
         }
 
         .sidebar-border .sidebar-heading .avatar-sidebar .sidebar-info, .sidebar-shadow .sidebar-heading .avatar-sidebar .sidebar-info {
             display: block;
-            padding-left: 100px;
+            /*padding-left: 100px;*/
             position: relative;
+            text-align: center;
         }
 
         .sidebar-border .sidebar-heading .avatar-sidebar .sidebar-info .sidebar-company, .sidebar-shadow .sidebar-heading .avatar-sidebar .sidebar-info .sidebar-company {
-            font-size: 18px;
-            font-family: Plus Jakarta Sans, sans-serif;
+            font-size: 25px;
             line-height: 18px;
             font-weight: 700;
             display: block;
@@ -515,7 +512,7 @@
         }
 
         .card-location {
-            font-size: 12px;
+            font-size: 15px;
             color: #a0abb8;
             display: inline-block;
             padding: 0 0 0 20px;
@@ -599,6 +596,14 @@
             color: #a0abb8;
             display: inline-block;
             padding: 0 15px;
+        }
+        .btn-mail-hr{
+            background: red;
+            color: #FFF;
+            padding: 10px 16px;
+            border-radius: 6px;
+            display: block;
+            text-align: center;
         }
     </style>
 @endsection

@@ -39,5 +39,6 @@ class General extends Model
         'image_left',
         'image_right',
         'tiktok',
+        'mail_hr'
     ];
 }

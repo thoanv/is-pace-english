@@ -900,7 +900,21 @@
     <link rel="stylesheet" href="/wp-content/cache/min/1/5d1a03a9692abe096ff5863deef595f3.css" media="all"
           data-minify="1"/>
 </noscript>
-
+<script>
+    function getCaptcha() {
+        fetch("{{ route('refresh-captcha') }}", {
+            method: "GET"
+        })
+            .then(response => response.json())
+            .then(data => {
+                console.log(data);
+                document.querySelector(".captcha span").innerHTML = data.captcha;
+            })
+            .catch(error => {
+                console.error("Error:", error);
+            });
+    }
+</script>
 @stack('libraries')
 @stack('scripts')
 <style>
@@ -1123,6 +1137,25 @@
             padding: 40px 16px;
         }
     }
+    /*.form-item{*/
+    /*    margin-bottom: 20px;*/
+    /*}*/
+    .wpcf7-form .form-dk input, .wpcf7-form .form-dk textarea, .wpcf7-form .form-select{
+        background: #223f81;
+        color: #FFF;
+    }
+    .wpcf7-form .form-dk input::placeholder {
+        color: #999;
+        font-style: italic;
+        opacity: 1; /* browsers default to lower opacity, override if you want full strength */
+    }
+
+    /* WebKit (old) */
+    .wpcf7-form .form-dk input::-webkit-input-placeholder { color: #999; font-style: italic; }
+
+    /* Microsoft (old Edge / IE) */
+    .wpcf7-form .form-dk input:-ms-input-placeholder { color: #999; font-style: italic; }
+    .wpcf7-form .form-dk input::-ms-input-placeholder { color: #999; font-style: italic; }
 </style>
 </body>
 </html>

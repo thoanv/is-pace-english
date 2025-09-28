@@ -93,14 +93,21 @@
                             <input type="text" name="name" class="form-control" id="name" value="{{$general['name']}}">
                         </div>
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-12">
                         <div class="form-group">
                             <label for="email" class="col-form-label">Địa chỉ Email</label>
                             <input type="text" name="email" class="form-control" id="email"
                                    value="{{$general['email']}}">
                         </div>
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-12">
+                        <div class="form-group">
+                            <label for="mail_hr" class="col-form-label">Email HR</label>
+                            <input type="text" name="mail_hr" class="form-control" id="mail_hr"
+                                   value="{{$general['mail_hr']}}">
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
                         <div class="form-group">
                             <label for="phone" class="col-form-label">Số điện thoại</label>
                             <input type="text" name="phone" class="form-control" id="phone"
