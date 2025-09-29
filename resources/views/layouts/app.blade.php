@@ -47,7 +47,7 @@
     <meta name="twitter:keyword" content="{{$info['meta_keyword']}}"/>
     <meta name="twitter:title" content="@yield('title')"/>
 
-    <link rel="icon" href="{{$info['favicon']}}" type="image/x-icon">
+    <link rel="icon" href="/images/favicon.png" type="image/x-icon">
     <!-- Google font-->
     <link rel="preload" as="style"
           href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&amp;display=swap"/>
