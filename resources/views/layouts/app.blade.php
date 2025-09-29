@@ -26,7 +26,7 @@
                 }
             }
         }</script>
-    <title>@yield('title', 'Is Pace')</title>
+    <title>@yield('title', 'Trung tâm iSpace English - Tiếng Anh Trẻ em & Luyện thi IELTS')</title>
 
     <link rel="canonical" href="@yield('canonical', route('home'))"/>
 
