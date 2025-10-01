@@ -327,9 +327,9 @@
 
                                                 </div>
                                                 <div class="program-box-content text-center">
-                                                    <h3 class="cut-text" style="font-size: 20px">
+                                                    <h3 class="cut-text" style="font-size: 20px" title="{{$course['name']}}">
                                                         {{$course['name']}} </h3>
-                                                    <div class="desc">
+                                                    <div class="desc" title="{{$course['description']}}">
                                                         {{$course['description']}}
                                                     </div>
 
