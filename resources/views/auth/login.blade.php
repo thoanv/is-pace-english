@@ -27,7 +27,7 @@
                                 @enderror
                                 <div class="form-group form-primary">
                                     <label>Email</label>
-                                    <input type="text" name="email" :value="old('email')" required autofocus
+                                    <input type="text" name="email" value="{{ old('email') }}" required autofocus
                                            autocomplete="email" class="form-control"
                                            placeholder="...">
                                     <span class="form-bar"></span>
@@ -50,7 +50,7 @@
                                     <div class="col-12">
                                         <div class="checkbox-fade fade-in-primary d-">
                                             <label>
-                                                <input type="checkbox" value="">
+                                                <input type="checkbox" value="1" name="remember"  {{ old('remember') ? 'checked' : '' }}>
                                                 <span class="cr"><i
                                                         class="cr-icon icofont icofont-ui-check txt-primary"></i></span>
                                                 <span class="text-inverse">Remember me</span>

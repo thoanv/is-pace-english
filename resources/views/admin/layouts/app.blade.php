@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>@yield('title', 'Is Pace')</title>
+    <title>@yield('title', 'Trung tâm iSpace English - Tiếng Anh Trẻ em & Luyện thi IELTS')</title>
 
     <link rel="icon" href="{{asset('admin/images/favicon.ico')}}" type="image/x-icon">
     <!-- Google font-->
