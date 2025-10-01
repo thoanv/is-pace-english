@@ -476,12 +476,12 @@
 
 
             <div id="col-232267773" class="col small-12 large-12">
-                <div class="col-inner text-center">
+                <div class="col-inner">
                     <div class="container section-title-container main-title"><h3
                             class="section-title section-title-center"><b></b><span class="section-title-main">Tin tức &amp; Sự kiện</span><b></b>
                         </h3>
                     </div>
-                    <div class="row">
+
                         @foreach($posts as $post)
                             @include('components.item-post', ['post' => $post])
                         @endforeach
@@ -491,11 +491,15 @@
                         $cate = \App\Models\Category::where([['status', \App\Enums\CommonEnum::ACTIVATED], ['type', \App\Enums\CategoryEnum::TIN_TUC]])->whereNull('parent_id')->first();
                     @endphp
                     @if($cate)
+                    <div class="row">
+                        <div class="col small-12 large-12 text-center">
                         <a href="{{route('page', ['cate_slug' => $cate['slug']])}}" target="_self"
                            class="button primary lowercase btn-custom"
                            style="border-radius:99px;">
                             <span>Xem chi tiết</span>
                         </a>
+                        </div>
+                    </div>
                     @endif
                 </div>
 
