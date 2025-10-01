@@ -8,7 +8,7 @@
     $info = \App\Models\General::first();
 @endphp
 @section('content')
-    <div class="main">
+    <div class="main tuyen-dung">
         <section class="section-box-2">
             <div class="container">
                 <div class="banner-hero banner-image-single"><img
@@ -296,6 +296,9 @@
         </section>
     </div>
     <style>
+        .main.tuyen-dung {
+            font-family: Roboto, sans-serif;
+        }
         .banner-hero.banner-image-single {
             padding: 20px 0;
         }
