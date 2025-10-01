@@ -12,7 +12,7 @@
         <section class="section-box-2">
             <div class="container">
                 <div class="banner-hero banner-image-single"><img
-                        src="https://jobs.ames.edu.vn/assets/imgs/Ames/banner.jpg" alt="AMES ENGLISH">
+                        src="/images/tuyen_dung_bg.jpg" alt="iSpace English">
                 </div>
                 <div class="row">
                     <div class="col small-12 large-8">
