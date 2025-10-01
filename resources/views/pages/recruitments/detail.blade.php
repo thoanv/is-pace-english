@@ -207,7 +207,7 @@
                                                 </svg>
                                             </td>
                                             <td style="background-color: unset">
-                                                <span class="text-muted" style="color: #223f81"
+                                                <span class="text-muted" style="color: #223f81; font-size: 14px !important;"
                                                 >{{$info['address']}}</span>
                                             </td>
                                         </tr>
@@ -504,7 +504,7 @@
         }
 
         .sidebar-border .sidebar-heading .avatar-sidebar .sidebar-info .sidebar-company, .sidebar-shadow .sidebar-heading .avatar-sidebar .sidebar-info .sidebar-company {
-            font-size: 25px;
+            font-size: 22px;
             line-height: 18px;
             font-weight: 700;
             display: block;
