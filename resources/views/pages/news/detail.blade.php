@@ -198,89 +198,89 @@
                         </aside>
 
 
-                        <div class="register-sidebar text-center">
-                            <div class="register-sidebar-title">
-                                Đăng ký
-                            </div>
+{{--                        <div class="register-sidebar text-center">--}}
+{{--                            <div class="register-sidebar-title">--}}
+{{--                                Đăng ký--}}
+{{--                            </div>--}}
 
-                            <div class="wpcf7 js" id="wpcf7-f10-o1" lang="vi" dir="ltr">
-                                <div class="screen-reader-response"><p role="status" aria-live="polite"
-                                                                       aria-atomic="true"></p>
-                                    <ul></ul>
-                                </div>
-                                <form action="/khoa-hoc-ielts-summer-fast-track-2025-tang-toc-de-but-pha/#wpcf7-f10-o1"
-                                      method="post" class="wpcf7-form init" aria-label="Form liên hệ"
-                                      novalidate="novalidate" data-status="init">
-                                    <div style="display: none;">
-                                        <input type="hidden" name="_wpcf7" value="10">
-                                        <input type="hidden" name="_wpcf7_version" value="5.9.3">
-                                        <input type="hidden" name="_wpcf7_locale" value="vi">
-                                        <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f10-o1">
-                                        <input type="hidden" name="_wpcf7_container_post" value="0">
-                                        <input type="hidden" name="_wpcf7_posted_data_hash" value="">
-                                        <input type="hidden" name="_wpcf7_lang" value="vi">
-                                        <input type="hidden" name="_wpcf7_recaptcha_response"
-                                               value="0cAFcWeA7bCRkt-8bUR3q8jaMEuGkrWtSti4IfVFOw7mxM6aZe4bfAQXxuaWMi_tNU0F-ttFeu0lSYXZTilWz9tziIFNvRzHeBoAIJG7qF_ts41YU312AqYC9e4q7geF9LOr6KKngl6Vv6a-hvAedtFG-j5U40rkfNZmowVQpdH2M0xh9tD_slFnDrIW-wGR-SHG5B2eU4z_47bZlG1Fd5gHuHLG8oGduxIU2szC1ljUqQe_Q-CvLSGv1toXSpOOUOdVcVUjCQ7ZLoQ7el7Utupj3RehS3fpKgIgo1bHiV1j_h1nSHoASPNa6zWGQpL3pqfcq49JdkGeOIi14eRMlLb3TfA8SBkwg_kGkEMLm5YS3RGqM8B_wybkq4M73cO_pBhtmTCfy_VmEc-La6GRoZeLhtK1sJzCsuNuVkeAhT0seklkHE2O2hUHewn64tkJmAzlf2dFiwEydWhSauFEzVUGxmZsfjQfVKQOjFoYkB74Lmay7XtHqhi91Kuntz79XvzUEFq3Ibqg_VwWGFZbKyO3CKC8LNujGLyMrV4DH9B9_w75EOzb8WSJVTFxyFRzWoGDQbgI5IITf7tHTq-JKOz_AacMMmm_BVoixr1AoqBjN-wp2jbaGPPTXF1abtIBwwp8HAop2KROBqwsAp7VL5pfCYMhFZWgVC3oKcCroScnKRGji6rnKs8MKLhIR4BB3jIX7Ywz-q85oXGyDLlojpW4liqbDgNEZkwMGNlCnYmGGQ7ErvOVKyBwmrLdow85pB1x26CPsAr-KbKhqbXlpnZHn_hyTo2jsTK6Eqf-4i7WOnUuDPX23vKY1W39CIjyQ4vBODDwAUNpGU5CIUKEaap3Mh-5goiNZDoB58lT8iEwKjAPBFIIAvVZleO8H0Am9qACVp4HIvEfdw3KMjktdbpORw70vpO8SkMmyqeAyU-IPWYyU-8-LmeyFsVCgJL-egoAThBaZvsslBctE0Z7Hf257BX97_X7Q7DveAV6AttP3Wb-_rahwng9EqqqoTgxrsCcXhbvkH7zrIvJBiyrSpCSrW6NDdpxRtGqLpv4StMaCGqQc43yJ5-LKoMUKhz0ivX_m2w-31GnY_99O0XBDuL8GIi0my3q6mapQNOoq8ANT-0Dasyr347dfnNB2p9zA4OgXbp4ZRFl1fbwnXezk-eRyvyiU6czQM63OKjCmv62tlh3LpZY-whoX8Ax87cwI6SEaeiy0pWcpJ458S2DMlx164B3YmM15hmz6oGqOkmGPh9updvBRENqyFUxc76f3gsP-da9rvNI9sq81QlMqVzxO4aaXUHLC5p_D2h2otb557qF-GdB4jGI891YAm9BxmVL1AbLwMVoKeUPjJNitML0bNnGNN3yHOCdgm4z3igYC3Rmuge1modeSD4U4cG9IHl6OR-41enYEx44kbEzEP8-5tINs4TcT9Svm5A_lYqT7BEeVlKie2WJo2tjoVdBTsXhT1S4VIMPyqV8_Rd2VRUOixso8qL_BbUO5JA4cBIIthbx18ONhzEfQICCaeY0UbrX7N2On5xw_0rK9t4iC67Oe3HJBwXlHiUeOdh-FwAncv7gB-MQsTrDU">
-                                    </div>
-                                    <div class="form-dk">
-                                        <h3 style="text-align: center">Đăng ký tư vấn
-                                        </h3>
-                                        <div class="form-item">
-                                            <p><span class="wpcf7-form-control-wrap" data-name="hoten"><input size="40"
-                                                                                                              class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
-                                                                                                              aria-required="true"
-                                                                                                              aria-invalid="false"
-                                                                                                              placeholder="Họ và tên"
-                                                                                                              value=""
-                                                                                                              type="text"
-                                                                                                              name="hoten"></span>
-                                            </p>
-                                        </div>
-                                        <div class="form-item">
-                                            <p><span class="wpcf7-form-control-wrap" data-name="email"><input size="40"
-                                                                                                              class="wpcf7-form-control wpcf7-email wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-email"
-                                                                                                              aria-required="true"
-                                                                                                              aria-invalid="false"
-                                                                                                              placeholder="Địa chỉ email"
-                                                                                                              value=""
-                                                                                                              type="email"
-                                                                                                              name="email"></span>
-                                            </p>
-                                        </div>
-                                        <div class="form-item">
-                                            <p><span class="wpcf7-form-control-wrap" data-name="sdt"><input size=""
-                                                                                                            class="wpcf7-form-control wpcf7-tel wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-tel"
-                                                                                                            aria-required="true"
-                                                                                                            aria-invalid="false"
-                                                                                                            placeholder="Số điện thoại"
-                                                                                                            value=""
-                                                                                                            type="tel"
-                                                                                                            name="sdt"></span>
-                                            </p>
-                                        </div>
-                                        <div class="form-item">
-                                            <p><span class="wpcf7-form-control-wrap" data-name="tinnhan"><textarea
-                                                        cols="40" rows="10"
-                                                        class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required"
-                                                        aria-required="true" aria-invalid="false" placeholder="Lời nhắn"
-                                                        name="tinnhan"></textarea></span>
-                                            </p>
-                                        </div>
-                                        <div class="text-center">
-                                            <p>
-                                                <button
-                                                    class="button wpcf7-form-control has-spinner wpcf7-submit primary lowercase btn-custom"
-                                                    style="border-radius:99px"><br>
-                                                    <span>Đăng ký</span><br>
-                                                </button>
-                                                <span class="wpcf7-spinner"></span>
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="wpcf7-response-output" aria-hidden="true"></div>
-                                </form>
-                            </div>
-                        </div>
+{{--                            <div class="wpcf7 js" id="wpcf7-f10-o1" lang="vi" dir="ltr">--}}
+{{--                                <div class="screen-reader-response"><p role="status" aria-live="polite"--}}
+{{--                                                                       aria-atomic="true"></p>--}}
+{{--                                    <ul></ul>--}}
+{{--                                </div>--}}
+{{--                                <form action="/khoa-hoc-ielts-summer-fast-track-2025-tang-toc-de-but-pha/#wpcf7-f10-o1"--}}
+{{--                                      method="post" class="wpcf7-form init" aria-label="Form liên hệ"--}}
+{{--                                      novalidate="novalidate" data-status="init">--}}
+{{--                                    <div style="display: none;">--}}
+{{--                                        <input type="hidden" name="_wpcf7" value="10">--}}
+{{--                                        <input type="hidden" name="_wpcf7_version" value="5.9.3">--}}
+{{--                                        <input type="hidden" name="_wpcf7_locale" value="vi">--}}
+{{--                                        <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f10-o1">--}}
+{{--                                        <input type="hidden" name="_wpcf7_container_post" value="0">--}}
+{{--                                        <input type="hidden" name="_wpcf7_posted_data_hash" value="">--}}
+{{--                                        <input type="hidden" name="_wpcf7_lang" value="vi">--}}
+{{--                                        <input type="hidden" name="_wpcf7_recaptcha_response"--}}
+{{--                                               value="0cAFcWeA7bCRkt-8bUR3q8jaMEuGkrWtSti4IfVFOw7mxM6aZe4bfAQXxuaWMi_tNU0F-ttFeu0lSYXZTilWz9tziIFNvRzHeBoAIJG7qF_ts41YU312AqYC9e4q7geF9LOr6KKngl6Vv6a-hvAedtFG-j5U40rkfNZmowVQpdH2M0xh9tD_slFnDrIW-wGR-SHG5B2eU4z_47bZlG1Fd5gHuHLG8oGduxIU2szC1ljUqQe_Q-CvLSGv1toXSpOOUOdVcVUjCQ7ZLoQ7el7Utupj3RehS3fpKgIgo1bHiV1j_h1nSHoASPNa6zWGQpL3pqfcq49JdkGeOIi14eRMlLb3TfA8SBkwg_kGkEMLm5YS3RGqM8B_wybkq4M73cO_pBhtmTCfy_VmEc-La6GRoZeLhtK1sJzCsuNuVkeAhT0seklkHE2O2hUHewn64tkJmAzlf2dFiwEydWhSauFEzVUGxmZsfjQfVKQOjFoYkB74Lmay7XtHqhi91Kuntz79XvzUEFq3Ibqg_VwWGFZbKyO3CKC8LNujGLyMrV4DH9B9_w75EOzb8WSJVTFxyFRzWoGDQbgI5IITf7tHTq-JKOz_AacMMmm_BVoixr1AoqBjN-wp2jbaGPPTXF1abtIBwwp8HAop2KROBqwsAp7VL5pfCYMhFZWgVC3oKcCroScnKRGji6rnKs8MKLhIR4BB3jIX7Ywz-q85oXGyDLlojpW4liqbDgNEZkwMGNlCnYmGGQ7ErvOVKyBwmrLdow85pB1x26CPsAr-KbKhqbXlpnZHn_hyTo2jsTK6Eqf-4i7WOnUuDPX23vKY1W39CIjyQ4vBODDwAUNpGU5CIUKEaap3Mh-5goiNZDoB58lT8iEwKjAPBFIIAvVZleO8H0Am9qACVp4HIvEfdw3KMjktdbpORw70vpO8SkMmyqeAyU-IPWYyU-8-LmeyFsVCgJL-egoAThBaZvsslBctE0Z7Hf257BX97_X7Q7DveAV6AttP3Wb-_rahwng9EqqqoTgxrsCcXhbvkH7zrIvJBiyrSpCSrW6NDdpxRtGqLpv4StMaCGqQc43yJ5-LKoMUKhz0ivX_m2w-31GnY_99O0XBDuL8GIi0my3q6mapQNOoq8ANT-0Dasyr347dfnNB2p9zA4OgXbp4ZRFl1fbwnXezk-eRyvyiU6czQM63OKjCmv62tlh3LpZY-whoX8Ax87cwI6SEaeiy0pWcpJ458S2DMlx164B3YmM15hmz6oGqOkmGPh9updvBRENqyFUxc76f3gsP-da9rvNI9sq81QlMqVzxO4aaXUHLC5p_D2h2otb557qF-GdB4jGI891YAm9BxmVL1AbLwMVoKeUPjJNitML0bNnGNN3yHOCdgm4z3igYC3Rmuge1modeSD4U4cG9IHl6OR-41enYEx44kbEzEP8-5tINs4TcT9Svm5A_lYqT7BEeVlKie2WJo2tjoVdBTsXhT1S4VIMPyqV8_Rd2VRUOixso8qL_BbUO5JA4cBIIthbx18ONhzEfQICCaeY0UbrX7N2On5xw_0rK9t4iC67Oe3HJBwXlHiUeOdh-FwAncv7gB-MQsTrDU">--}}
+{{--                                    </div>--}}
+{{--                                    <div class="form-dk">--}}
+{{--                                        <h3 style="text-align: center">Đăng ký tư vấn--}}
+{{--                                        </h3>--}}
+{{--                                        <div class="form-item">--}}
+{{--                                            <p><span class="wpcf7-form-control-wrap" data-name="hoten"><input size="40"--}}
+{{--                                                                                                              class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"--}}
+{{--                                                                                                              aria-required="true"--}}
+{{--                                                                                                              aria-invalid="false"--}}
+{{--                                                                                                              placeholder="Họ và tên"--}}
+{{--                                                                                                              value=""--}}
+{{--                                                                                                              type="text"--}}
+{{--                                                                                                              name="hoten"></span>--}}
+{{--                                            </p>--}}
+{{--                                        </div>--}}
+{{--                                        <div class="form-item">--}}
+{{--                                            <p><span class="wpcf7-form-control-wrap" data-name="email"><input size="40"--}}
+{{--                                                                                                              class="wpcf7-form-control wpcf7-email wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-email"--}}
+{{--                                                                                                              aria-required="true"--}}
+{{--                                                                                                              aria-invalid="false"--}}
+{{--                                                                                                              placeholder="Địa chỉ email"--}}
+{{--                                                                                                              value=""--}}
+{{--                                                                                                              type="email"--}}
+{{--                                                                                                              name="email"></span>--}}
+{{--                                            </p>--}}
+{{--                                        </div>--}}
+{{--                                        <div class="form-item">--}}
+{{--                                            <p><span class="wpcf7-form-control-wrap" data-name="sdt"><input size=""--}}
+{{--                                                                                                            class="wpcf7-form-control wpcf7-tel wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-tel"--}}
+{{--                                                                                                            aria-required="true"--}}
+{{--                                                                                                            aria-invalid="false"--}}
+{{--                                                                                                            placeholder="Số điện thoại"--}}
+{{--                                                                                                            value=""--}}
+{{--                                                                                                            type="tel"--}}
+{{--                                                                                                            name="sdt"></span>--}}
+{{--                                            </p>--}}
+{{--                                        </div>--}}
+{{--                                        <div class="form-item">--}}
+{{--                                            <p><span class="wpcf7-form-control-wrap" data-name="tinnhan"><textarea--}}
+{{--                                                        cols="40" rows="10"--}}
+{{--                                                        class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required"--}}
+{{--                                                        aria-required="true" aria-invalid="false" placeholder="Lời nhắn"--}}
+{{--                                                        name="tinnhan"></textarea></span>--}}
+{{--                                            </p>--}}
+{{--                                        </div>--}}
+{{--                                        <div class="text-center">--}}
+{{--                                            <p>--}}
+{{--                                                <button--}}
+{{--                                                    class="button wpcf7-form-control has-spinner wpcf7-submit primary lowercase btn-custom"--}}
+{{--                                                    style="border-radius:99px"><br>--}}
+{{--                                                    <span>Đăng ký</span><br>--}}
+{{--                                                </button>--}}
+{{--                                                <span class="wpcf7-spinner"></span>--}}
+{{--                                            </p>--}}
+{{--                                        </div>--}}
+{{--                                    </div>--}}
+{{--                                    <div class="wpcf7-response-output" aria-hidden="true"></div>--}}
+{{--                                </form>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
 
                     </div>
                 </div>
