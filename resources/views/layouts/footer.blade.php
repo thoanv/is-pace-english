@@ -5,7 +5,7 @@
     use App\Models\General;
     $info = General::first();
     $courses = Course::where('status', CommonEnum::ACTIVATED)->take(5)->get();
-    $units = Unit::where('status', CommonEnum::ACTIVATED)->take(5)->orderBy('id', 'ASC')->get()
+    $units = Unit::where('status', CommonEnum::ACTIVATED)->take(5)->orderBy('id', 'DESC')->get()
 @endphp
 <div style="background: #FFF">
     <footer id="footer" class="footer-wrapper" style="background-color: #223f81 !important;">
