@@ -26,7 +26,7 @@
                                   class="wpcf7-form init"
                                   aria-label="Form liên hệ" novalidate="novalidate" data-status="init">
                                 @csrf
-                                <div class="form-dk" style="background: unset!important;">
+                                <div class="form-dk" style="background: #223f81!important;">
                                     <h3 style="text-align: center" class="text-bong">Đăng ký tư vấn
                                     </h3>
                                     <div class="form-item">
@@ -111,8 +111,7 @@
                                                      style="display: flex;align-items: center;">
                                                     <span class="mr-2"
                                                           style="border: 1px solid #223f81; padding: 1px; border-radius: 6px;">{!! captcha_img() !!}</span>
-                                                    <a href="javascript:void(0)" class="btn-reload" style="color: #223f81;
-    margin-left: 10px;" onclick="getCaptcha()"><i
+                                                    <a href="javascript:void(0)" class="btn-reload" style="margin-left: 10px;" onclick="getCaptcha()"><i
                                                             class="fa fa-refresh"></i></a>
                                                 </div>
                                             </div>

@@ -1152,13 +1152,6 @@
             display: block;
         }
     }
-    /*.form-item{*/
-    /*    margin-bottom: 20px;*/
-    /*}*/
-    .wpcf7-form .form-dk input, .wpcf7-form .form-dk textarea, .wpcf7-form .form-select{
-        background: #223f81;
-        color: #FFF;
-    }
     .wpcf7-form .form-dk input::placeholder {
         color: #999;
         font-style: italic;

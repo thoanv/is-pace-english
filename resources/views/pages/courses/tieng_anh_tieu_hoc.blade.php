@@ -185,9 +185,13 @@
                         <div class="col-inner" style="margin-top: 30px">
                             <div id="text-3926705388" class="text">
 
-                                <h2 class="text-bong">CÙNG PHƯƠNG
+                                <h2 class="text-bong desktop">CÙNG PHƯƠNG
                                     PHÁP GIẢNG DẠY P-P-P<br>
                                     CHẠM TỚI PHIÊN BẢN TỐT NHẤT CỦA CON
+                                </h2>
+                                <h2 class="text-bong mobile">CÙNG PHƯƠNG
+                                    PHÁP<br> GIẢNG DẠY P-P-P<br>
+                                    CHẠM TỚI PHIÊN BẢN TỐT<br> NHẤT CỦA CON
                                 </h2>
 
                                 <style>
@@ -298,8 +302,11 @@
                     <div class="col medium-12 small-12 large-12">
                         <div class="col-inner text-center">
                             <div class="text">
-                                <h2 class="text-bong">
+                                <h2 class="text-bong desktop">
                                     PHƯƠNG PHÁP GIẢNG DẠY CLIL
+                                </h2>
+                                <h2 class="text-bong mobile">
+                                    PHƯƠNG PHÁP GIẢNG<br> DẠY CLIL
                                 </h2>
 
                             </div>
