@@ -36,7 +36,7 @@
                         <div class="col-inner">
                             <div class="text">
                                 <h1 class="text-bong">
-                                    KHÓA HỌC LUYỆN THI IELTS FLEXITIME
+                                    KHÓA HỌC LUYỆN THI IELTS FLEXI-TIME
                                 </h1>
                                 <h3 class="text-223f81" style="text-align: justify;">
                                     <strong>Hành Trình Chinh Phục Đỉnh Cao IELTS Cùng iSpace English
@@ -164,7 +164,7 @@
                         <div class="col-inner" style="margin-top: 30px">
                             <div id="text-3926705388" class="text">
 
-                                <h2 style="font-size: 2rem!important;line-height: 50px;" class="text-bong">LỢI THẾ KHI
+                                <h2  class="text-bong">LỢI THẾ KHI
                                     LỰA CHỌN ÔN THI IELTS CÙNG ISPACE ENGLISH
                                 </h2>
 
@@ -279,7 +279,7 @@
                     <div class="col medium-12 small-12 large-12">
                         <div class="col-inner text-center">
                             <div class="text">
-                                <h2 style="font-size: 2rem!important; color: #223f81 !important;" class="text-bong">
+                                <h2 style="color: #223f81 !important;" class="text-bong">
                                     02 GIAI ĐOẠN CHÍNH CỦA KHÓA HỌC LUYỆN THI IELTS
                                 </h2>
 
@@ -412,7 +412,7 @@
                         <div class="col-inner" style="margin-top: 30px">
                             <div id="text-3926705388" class="text">
 
-                                <h2 style="font-size: 2rem!important;line-height: 50px;" class="text-bong">
+                                <h2  class="text-bong">
                                     ĐIỂM KHÁC BIỆT CHỈ CÓ Ở KHÓA LUYỆN THI IELTS TẠI ISPACE
                                 </h2>
 

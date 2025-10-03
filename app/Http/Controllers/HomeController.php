@@ -148,6 +148,8 @@ class HomeController extends Controller
                 ]);
             }
             return redirect()->route('home');
+        } elseif ($cate['type'] == CategoryEnum::LIEN_HE){
+            return  view('pages.contact');
         }
 
     }

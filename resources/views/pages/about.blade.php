@@ -42,8 +42,11 @@
                                     nguồn cảm hứng giúp học sinh vượt qua mọi thử thách, chinh phục điểm số môn tiếng
                                     Anh và các kỳ thi tiếng Anh Quốc tế theo chuẩn Chứng chỉ Cambridge & IELTS.</p>
 
-                                <h1 class="about-h2 text-center text-bong">ISPACE ENGLISH - CHÚNG TÔI LÀ AI?</h1>
-                                <h2 class="about-h2 text-center text-bong">TẦM NHÌN & SỨ MỆNH</h2>
+                                <h1 class="about-h2 text-center text-bong desktop">ISPACE ENGLISH - CHÚNG TÔI LÀ AI?</h1>
+                                <h1 class="about-h2 text-center text-bong mobile mb-0">ISPACE ENGLISH <br>
+                                    CHÚNG TÔI LÀ AI?
+                                    </h1>
+                                <h2 class="about-h2 text-center text-bong mb-0">TẦM NHÌN & SỨ MỆNH</h2>
                                 <style>
                                     .text > p {
                                         color: rgb(68, 68, 68);
@@ -163,7 +166,8 @@
 
                             <div id="text-3926705388" class="text">
 
-                                <h2 style="font-size: 2rem!important;" class="text-bong">LỘ TRÌNH ĐÀO TẠO TOÀN DIỆN XUYÊN SUỐT</h2>
+                                <h2 class="text-bong desktop">LỘ TRÌNH ĐÀO TẠO TOÀN DIỆN XUYÊN SUỐT</h2>
+                                <h2 class="text-bong mobile">LỘ TRÌNH ĐÀO TẠO<br> TOÀN DIỆN XUYÊN SUỐT</h2>
 
                                 <style>
                                     #text-3926705388 {
@@ -252,7 +256,9 @@
                     <div class="col medium-12 small-12 large-12">
                         <div class="col-inner text-center">
                             <div class="text">
-                                <h2 style="font-size: 2rem!important; color: #223f81 !important;" class="text-bong">MỤC TIÊU ĐÀO TẠO TỔNG
+                                <h2 style="color: #223f81 !important;" class="text-bong desktop">MỤC TIÊU ĐÀO TẠO TỔNG
+                                    QUAN</h2>
+                                <h2 style="color: #223f81 !important;" class="text-bong mobile mb-0">MỤC TIÊU ĐÀO TẠO<br> TỔNG
                                     QUAN</h2>
                             </div>
                         </div>
@@ -382,7 +388,7 @@
 
                             <div id="text-3926705388" class="text text-center">
 
-                                <h2 style="font-size: 2rem!important;" class="text-bong">PHƯƠNG PHÁP GIẢNG DẠY</h2>
+                                <h2 class="text-bong">PHƯƠNG PHÁP GIẢNG DẠY</h2>
 
                                 <style>
                                     #text-3926705388 {
@@ -494,8 +500,11 @@
                     <div class="col medium-12 small-12 large-12">
                         <div class="col-inner text-center">
                             <div class="text">
-                                <h2 style="font-size: 2rem!important; color: #223f81 !important;" class="text-bong">HỆ THỐNG CƠ SỞ VẬT
+                                <h2 style="color: #223f81 !important;" class="text-bong desktop">HỆ THỐNG CƠ SỞ VẬT
                                     CHẤT TIÊU CHUẨN 5 SAO
+                                </h2>
+                                <h2 style="color: #223f81 !important;" class="text-bong mobile">HỆ THỐNG CƠ SỞ VẬT
+                                    CHẤT<br> TIÊU CHUẨN 5 SAO
                                 </h2>
                             </div>
                         </div>
@@ -632,7 +641,9 @@
 
                             <div id="text-3926705388" class="text text-center">
 
-                                <h2 style="font-size: 2rem!important;" class="text-bong">HỆ THỐNG ĐÁNH GIÁ
+                                <h2 class="text-bong desktop">HỆ THỐNG ĐÁNH GIÁ
+                                    & BAN QUẢN LÝ CHẤT LƯỢNG ĐÀO TẠO</h2>
+                                <h2 class="text-bong mobile">HỆ THỐNG ĐÁNH GIÁ<br>
                                     & BAN QUẢN LÝ CHẤT LƯỢNG ĐÀO TẠO</h2>
 
                                 <style>

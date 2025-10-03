@@ -36,7 +36,7 @@
                         <div class="col-inner">
                             <div class="text">
                                 <h1 class="text-bong">
-                                    KHÓA HỌC TIẾNG ANH TIỂU HỌC - PRIMARY
+                                    TIẾNG ANH TIỂU HỌC - PRIMARY
                                 </h1>
                                 <h3 class="text-223f81" style="text-align: justify;">
                                     <strong>03 CAM KẾT “VÀNG” CỦA KHÓA TIẾNG ANH TIỂU HỌC</strong>
@@ -185,7 +185,7 @@
                         <div class="col-inner" style="margin-top: 30px">
                             <div id="text-3926705388" class="text">
 
-                                <h2 style="font-size: 2rem!important;line-height: 50px;" class="text-bong">CÙNG PHƯƠNG
+                                <h2 class="text-bong">CÙNG PHƯƠNG
                                     PHÁP GIẢNG DẠY P-P-P<br>
                                     CHẠM TỚI PHIÊN BẢN TỐT NHẤT CỦA CON
                                 </h2>
@@ -298,7 +298,7 @@
                     <div class="col medium-12 small-12 large-12">
                         <div class="col-inner text-center">
                             <div class="text">
-                                <h2 style="font-size: 2rem!important; color: #223f81 !important;" class="text-bong">
+                                <h2 class="text-bong">
                                     PHƯƠNG PHÁP GIẢNG DẠY CLIL
                                 </h2>
 
@@ -431,8 +431,7 @@
 
                             <div id="text-3926705388" class="text text-center">
 
-                                <h2 style="font-size: 2rem!important;" class="text-bong">LỘ TRÌNH & GIÁO TRÌNH HỌC TIẾNG
-                                    ANH TIỂU HỌC
+                                <h2 class="text-bong">LỘ TRÌNH & GIÁO TRÌNH
                                 </h2>
 
                                 <style>
@@ -501,7 +500,7 @@
                     </div>
                     <style>
                         #row-132936916 > .col > .col-inner {
-                            padding: 30px 0px 0px 0px;
+                            padding: 20px 0px 0px 0px;
                         }
                     </style>
                 </div>
@@ -537,7 +536,7 @@
                     <div class="col medium-12 small-12 large-12">
                         <div class="col-inner text-center">
                             <div class="text">
-                                <h2 style="font-size: 2rem!important; color: #223f81 !important;" class="text-bong">
+                                <h2 style="color: #223f81 !important;" class="text-bong">
                                     GIÁO TRÌNH "LOOK" CÓ GÌ ĐẶC BIỆT?
                                 </h2>
                             </div>
@@ -632,7 +631,7 @@
                     </div>
                     <style>
                         #row-1179098426 > .col > .col-inner {
-                            padding: 40px 0px 0px 0px;
+                            padding: 20px 0px 0px 0px;
                         }
                     </style>
                 </div>
@@ -666,7 +665,7 @@
                             <div id="text-3926705388" class="text">
 
                                 <h2 style="font-size: 2rem!important;line-height: 50px;" class="text-bong">
-                                    CẤU TRÚC KHÓA HỌC TIẾNG ANH TIỂU HỌC
+                                    CẤU TRÚC KHÓA HỌC
                                 </h2>
 
                                 <style>

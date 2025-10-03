@@ -169,7 +169,7 @@
                         <div class="col-inner" style="margin-top: 30px">
                             <div id="text-3926705388" class="text">
 
-                                <h2 style="font-size: 2rem!important;line-height: 50px;" class="text-bong">VÌ SAO JUNIOR
+                                <h2 class="text-bong">VÌ SAO JUNIOR
                                     PLUS LÀ SỰ LỰA CHỌN TUYỆT VỜI
                                     CHO HỌC SINH TEENS?
                                 </h2>
@@ -373,7 +373,7 @@
                     <div class="col medium-12 small-12 large-12">
                         <div class="col-inner text-center">
                             <div class="text">
-                                <h2 style="font-size: 2rem!important; color: #223f81 !important;" class="text-bong">
+                                <h2 style="color: #223f81 !important;" class="text-bong">
                                     MỤC TIÊU ĐẦU RA<br>
                                     TIẾNG ANH THIẾU NIÊN - JUNIOR PLUS
 
@@ -512,8 +512,7 @@
 
                             <div id="text-3926705388" class="text text-center">
 
-                                <h2 style="font-size: 2rem!important;" class="text-bong">PHƯƠNG PHÁP GIẢNG DẠY KHÓA HỌC
-                                    JUNIOR PLUS
+                                <h2 class="text-bong">PHƯƠNG PHÁP GIẢNG DẠY
                                 </h2>
 
                                 <style>

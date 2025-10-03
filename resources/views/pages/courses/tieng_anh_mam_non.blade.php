@@ -362,8 +362,7 @@
                         <div class="col-inner text-center" style="margin-top: 30px">
                             <div id="text-3926705388" class="text">
 
-                                <h2 style="font-size: 2rem!important;" class="text-bong">GIÁO TRÌNH & TÀI LIỆU HỌC TIẾNG
-                                    ANH MẦM NON</h2>
+                                <h2 class="text-bong">GIÁO TRÌNH & TÀI LIỆU HỌC</h2>
 
                                 <style>
                                     #text-3926705388 {

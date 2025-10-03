@@ -925,6 +925,7 @@
         color: var(--main) !important;
         text-shadow: var(--text-shadow);
         text-transform: uppercase;
+        line-height: 60px;
     }
 
     .text-223f81 {
@@ -1129,12 +1130,26 @@
     .pagination .page-item:last-child .page-link {
         border-radius: 50%;
     }
+    .desktop{
+        display: block;
+    }
+    .mobile{
+        display: none;
+    }
     @media (max-width: 768px) {
         .text-bong{
-            font-size: 30px;
+            font-size: 28px!important;
+            margin-bottom: 16px;
+            line-height: 40px;
         }
         .home-form .form-dk{
             padding: 40px 16px;
+        }
+        .desktop{
+            display: none;
+        }
+        .mobile{
+            display: block;
         }
     }
     /*.form-item{*/

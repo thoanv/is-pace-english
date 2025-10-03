@@ -188,7 +188,8 @@
                     <div class="col medium-12 small-12 large-12" data-animate="fadeInLeft">
                         <div class="col-inner text-center">
                             <div id="text-977406082" class="text heading-title text-center">
-                                <h2 class="text-bong">Giới thiệu về ISPACE ENGLISH</h2>
+                                <h2 class="text-bong desktop">Giới thiệu về ISPACE ENGLISH</h2>
+                                <h2 class="text-bong mobile">Giới thiệu<br> về ISPACE ENGLISH</h2>
                             </div>
                             <div class="text-223f81">{!! $general['come_to_us'] !!}</div>
                         </div>
