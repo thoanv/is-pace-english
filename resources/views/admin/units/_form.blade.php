@@ -53,6 +53,17 @@
                             @endif
                         </div>
                     </div>
+                    <div class="col-lg-12">
+                        <div class="form-group">
+                            <label for="map" class="col-form-label">Map</label>
+                            <textarea id="map" rows="5" name="map" class="form-control">{{old('map', $data['map'])}}</textarea>
+                            @if ($errors->has('map'))
+                                <div class="col-form-label">
+                                    {{$errors->first('map')}}
+                                </div>
+                            @endif
+                        </div>
+                    </div>
 
                 </div>
             </div>
