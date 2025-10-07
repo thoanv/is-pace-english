@@ -77,7 +77,8 @@
 
                                         <ul>
                                             @foreach($courses as $item)
-                                                <li><a href="{{route('page', ['cate_slug' => $item->category?->slug, 'slug' => $item['slug']])}}">{{$item['name']}}</a>
+                                                <li>
+                                                    <a href="{{route('page', ['cate_slug' => $item->category?->slug, 'slug' => $item['slug']])}}">{{$item['name']}}</a>
                                                 </li>
                                             @endforeach
                                         </ul>
@@ -100,7 +101,8 @@
                                             <div id="text-614833993" class="text phone ft-icon">
 
 
-                                                <p style="color: #FFF"><a href="tel:{{$unit['phone']}}">{{$unit['phone']}}</a>
+                                                <p style="color: #FFF"><a
+                                                        href="tel:{{$unit['phone']}}">{{$unit['phone']}}</a>
                                             </div>
                                         </div>
                                     @endforeach
@@ -121,9 +123,52 @@
                                                 #text-1658597944 {
                                                     line-height: 2;
                                                 }
+
+                                                .ul-Follow li:first-child {
+                                                    margin-left: 0 !important;
+                                                }
+
+                                                .ul-Follow li {
+                                                    float: left;
+                                                    background: #FFF;
+                                                    width: 40px;
+                                                    height: 40px;
+                                                    display: flex;
+                                                    justify-content: center;
+                                                    align-items: center;
+                                                    border-radius: 50%;
+
+                                                    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .08);
+                                                }
                                             </style>
                                         </div>
-
+                                        <div>
+                                            <ul class="ul-Follow" style="list-style: none">
+                                                @if($info['facebook'])
+                                                    <li>
+                                                        <a href="{{$info['facebook']}}" target="_blank" title="Facebook">
+                                                            <img src="/images/facebook.png" alt="facebook">
+                                                        </a>
+                                                    </li>
+                                                @endif
+                                                @if($info['tiktok'])
+                                                    <li>
+                                                        <a href="{{$info['tiktok']}}" target="_blank" title="Tiktok">
+                                                            <img style="width: 20px;" src="/images/tik-tok.png"
+                                                                 alt="tik-tok">
+                                                        </a>
+                                                    </li>
+                                                @endif
+                                                @if($info['email'])
+                                                    <li>
+                                                        <a href="mailto:{{$info['email']}}" target="_blank" title="Email">
+                                                            <img style="width: 20px;" src="/images/email.png"
+                                                                 alt="email">
+                                                        </a>
+                                                    </li>
+                                                @endif
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
 

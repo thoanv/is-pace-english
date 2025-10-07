@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Enums\CategoryEnum;
+use App\Enums\CommonEnum;
 use App\Models\Category;
 use App\Models\General;
 use App\Models\Unit;
@@ -149,7 +150,10 @@ class HomeController extends Controller
             }
             return redirect()->route('home');
         } elseif ($cate['type'] == CategoryEnum::LIEN_HE){
-            return  view('pages.contact');
+            $units = Unit::where('status', CommonEnum::ACTIVATED)->get();
+            return  view('pages.contact', [
+                'units' => $units
+            ]);
         }
 
     }

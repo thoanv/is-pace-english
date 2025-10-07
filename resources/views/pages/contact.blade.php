@@ -20,12 +20,52 @@
                                     color: #223f81 !important;
                                     font-size: 2rem !important;
                                 }
+                                .box-info{
+                                    display: block;
+                                    box-shadow: 2px 8px 20px 0 rgba(25, 42, 70, .13) !important;
+                                    margin-bottom: 15px;
+                                    border: none;
+                                    border-radius: 5px;
+                                    padding: 16px;
+                                }
+                                .map iframe{
+                                    width: 100%!important;
+                                }
                             </style>
                         </div>
                         <p>
                         </p></div>
                 </div>
             </div>
+
+            <div class="row">
+                @foreach($units as $unit)
+                <div class="col medium-6 small-12 large-6">
+                    <div class="col-inner  box-info">
+                        <div id="text-3089750177" class="text" style="height: 36px;">
+                            <p><strong style="line-height: 1.8; color: #221638; font-weight: 800;">
+                                    {{$unit['name']}}
+                                </strong></p>
+                        </div>
+                        <div id="text-2317694089" class="text address">
+                            <p class="mb-0" style="padding-bottom: 10px">
+                                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                {{$unit['address']}}</p>
+                            <p class="mb-0" style="padding-bottom: 10px">
+                                <a href="tel: {{$unit['phone']}}">
+                                    <i class="fa fa-volume-control-phone" aria-hidden="true"></i>
+                                    <span> {{$unit['phone']}}</span>
+                                </a>
+                            </p>
+                        </div>
+                        <div class="map">
+                           {!! $unit['map'] !!}
+                        </div>
+                    </div>
+                </div>
+                @endforeach
+            </div>
+
         </div>
 
 
@@ -47,5 +87,5 @@
             }
         </style>
     </section>
-  @include('components.form-register')
+    @include('components.form-register')
 @endsection

@@ -35,9 +35,12 @@
                     <div class="col medium-12 small-12 large-12">
                         <div class="col-inner">
                             <div class="text">
-                                <h1 class="text-bong">
+                                <h1 class="text-bong desktop">
                                     KHÓA HỌC TIẾNG ANH THIẾU NIÊN - JUNIOR PLUS
                                     & MÔ HÌNH HỌC FLEX-TIME ƯU VIỆT
+                                </h1>
+                                <h1 class="text-bong mobile">
+                                    KHÓA HỌC TIẾNG ANH THIẾU NIÊN<br> JUNIOR PLUS<br> CÙNG MÔ HÌNH HỌC FLEX-TIME ƯU VIỆT
                                 </h1>
                                 <p class="text-223f81" style="text-align: justify;">
                                     JUNIOR PLUS là khóa học được thiết kế đặc biệt nhằm giúp học sinh trong độ tuổi
