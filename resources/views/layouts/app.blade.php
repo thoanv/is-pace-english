@@ -7,6 +7,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index, follow">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <script>if (navigator.userAgent.match(/MSIE|Internet Explorer/i) || navigator.userAgent.match(/Trident\/7\..*?rv:11/i)) {
             var href = document.location.href;
@@ -27,7 +28,6 @@
             }
         }</script>
     <title>@yield('title', 'Trung tâm iSpace English - Tiếng Anh Trẻ em & Luyện thi IELTS')</title>
-
     <link rel="canonical" href="@yield('canonical', route('home'))"/>
 
     <meta property="og:locale" content="vi_VN"/>
