@@ -49,10 +49,10 @@ class PostRepository extends AbstractRepository
     }
     public function getNewPostOtherSlug($item)
     {
-        return $this->model->where([['status', CommonEnum::ACTIVATED], ['id' , '<>', $item['id']]])->take(4)->orderBy('id', 'DESC')->get();
+        return $this->model->where([['status', CommonEnum::ACTIVATED], ['id' , '<>', $item['id']]])->take(4)->orderBy('date_publish', 'DESC')->get();
     }
     public function getListPostSameCategories($item)
     {
-        return $this->model->where([['status', CommonEnum::ACTIVATED], ['id' , '<>', $item['id']], ['category_id', $item['category_id']]])->take(4)->orderBy('id', 'DESC')->get();
+        return $this->model->where([['status', CommonEnum::ACTIVATED], ['id' , '<>', $item['id']], ['category_id', $item['category_id']]])->take(4)->orderBy('date_publish', 'DESC')->get();
     }
 }
